@@ -23,8 +23,9 @@
 
 * Fry, B. (2008). Visualizing data: Exploring and explaining data with the processing environment. " O'Reilly Media, Inc.". ch1
 * Steele, J., & Iliinsky, N. (2010). Beautiful visualization: Looking at data through the eyes of experts. " O'Reilly Media, Inc."., ch1, ch11
-* [Multimedia: from Wagner to Virtual Reality](http://www.w2vr.com/contents.html), 
+* [Multimedia: from Wagner to Virtual Reality](https://web.archive.org/web/20180731072917/http://w2vr.com/concepts/concepts.html), concepts, pioneers
 * [Ο Προγραμματισμός της Διάδρασης](http://mibook.org/gr), ΕΥΔΟΞΟΣ: 68371436, κεφ. 6 Σύνθεση και Κλίμακα
+* [How to learn D3.js](https://wattenberger.com/blog/d3)
 
 **Βαθμολογία:** 50% [project](https://courses-ionio.github.io/projects/), 30% Τελική εξέταση, 20% [Συμμετοχικό εκπαιδευτικό υλικό](https://courses-ionio.github.io/projects/social/)
 
