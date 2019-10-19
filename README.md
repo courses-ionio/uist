@@ -15,7 +15,7 @@
 
 **Στόχος:** Ο σκοπός του μαθήματος είναι η μελέτη της θεωρίας και η πρακτική εξάσκηση στην ανάπτυξη μιας εφαρμογής οπτικοποίησης δεδομένων. Η θεωρία και το υποχρεωτικό project καλύπτουν πολλές διαφορετικές περιοχές εφαρμογών με έμφαση σε επίκαιρες εφαρμογές όπως οι ενημερωτικές εφαρμογές και οι ψηφιακές συλλογές.
 
-**Μέθοδος διδασκαλίας:** Διάλεξη, ντέμο, [εργασία](https://courses-ionio.github.io/projects/), [κοινωνικά μέσα](https://courses-ionio.github.io/projects/social/).
+**Μέθοδος διδασκαλίας:** Διάλεξη, εργασία.
 
 **Συντονιστής συστημάτων τηλε-εκπαίδευσης:** [Διογένης Αλεξανδράκης](https://github.com/DiogenisAl/)
 
@@ -26,7 +26,8 @@
 * [Multimedia: from Wagner to Virtual Reality](https://web.archive.org/web/20180731072917/http://w2vr.com/concepts/concepts.html), concepts, pioneers
 * [Ο Προγραμματισμός της Διάδρασης](http://mibook.org/gr), ΕΥΔΟΞΟΣ: 68371436, κεφ. 6 Σύνθεση και Κλίμακα
 * [How to learn D3.js](https://wattenberger.com/blog/d3)
+* [Observable](https://observablehq.com)
 
-**Βαθμολογία:** 50% [project](https://courses-ionio.github.io/projects/), 30% Τελική εξέταση, 20% [Συμμετοχικό εκπαιδευτικό υλικό](https://courses-ionio.github.io/projects/social/)
+**Βαθμολογία:** 40% [project](https://courses-ionio.github.io/projects/), 40% Τελική εξέταση, 20% [Συμμετοχικό εκπαιδευτικό υλικό](https://courses-ionio.github.io/projects/social/)
 
 Παρακαλώ **μην πειράξετε** το παρόν αρχείο, αλλά δημιουργήστε νέο στο φάκελο σας σύμφωνα με τις [οδηγίες](https://courses-ionio.github.io/help/guide/).
