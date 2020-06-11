@@ -31,8 +31,11 @@
 * [Multimedia: from Wagner to Virtual Reality](https://web.archive.org/web/20180731072917/http://w2vr.com/concepts/concepts.html), concepts, pioneers
 * [Ο Προγραμματισμός της Διάδρασης](http://mibook.org/gr), ΕΥΔΟΞΟΣ: 68371436, κεφ. 6 Σύνθεση και Κλίμακα
 * [How to learn D3.js](https://wattenberger.com/blog/d3)
-* [Observable](https://observablehq.com)
 * [DataVizForAll TextBook](https://github.com/DataVizForAll/datavizforall-bookdown)
-**Βαθμολογία:** 40% [project](https://courses-ionio.github.io/projects/), 40% Τελική εξέταση, 20% [Συμμετοχικό εκπαιδευτικό υλικό](https://courses-ionio.github.io/projects/social/)
+
+**Εργαλεία και βιβλιοθήκες ανάπτυξης**
+* [Observable](https://observablehq.com)
+* [d3.js](https://d3js.org)
+* [glitch d3](https://glitch.com/@guides/guide-to-d-3)
 
 Παρακαλώ **μην πειράξετε** το παρόν αρχείο, αλλά δημιουργήστε νέο στο φάκελο σας σύμφωνα με τις [οδηγίες](https://courses-ionio.github.io/help/guide/).
