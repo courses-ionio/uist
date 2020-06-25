@@ -40,6 +40,7 @@
 
 **Παρόμοια μαθήματα**
 
-[Information visualization at KTH](https://www.kth.se/social/course/DH2321/)
+[KTH](https://www.kth.se/social/course/DH2321/): student projects
+[UTAH](http://www.sci.utah.edu/~miriah/cs6964/): lectures, readings
 
 Παρακαλώ **μην πειράξετε** το παρόν αρχείο, αλλά δημιουργήστε νέο στο φάκελο σας σύμφωνα με τις [οδηγίες](https://courses-ionio.github.io/help/guide/).
