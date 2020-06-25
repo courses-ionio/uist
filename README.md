@@ -24,7 +24,7 @@
 
 **Συντονιστής συστημάτων τηλε-εκπαίδευσης:** [Μανούσος Καμηλάκης](https://github.com/mkamgit/)
 
-**Βιβλίο μαθήματος:** 
+**Βιβλιογραφία** 
 
 * Fry, B. (2008). Visualizing data: Exploring and explaining data with the processing environment. " O'Reilly Media, Inc.". ch1
 * Steele, J., & Iliinsky, N. (2010). Beautiful visualization: Looking at data through the eyes of experts. " O'Reilly Media, Inc."., ch1, ch11
@@ -37,5 +37,9 @@
 * [Observable](https://observablehq.com)
 * [d3.js](https://d3js.org)
 * [glitch d3](https://glitch.com/@guides/guide-to-d-3)
+
+**Παρόμοια μαθήματα**
+
+[Information visualization at KTH](https://www.kth.se/social/course/DH2321/)
 
 Παρακαλώ **μην πειράξετε** το παρόν αρχείο, αλλά δημιουργήστε νέο στο φάκελο σας σύμφωνα με τις [οδηγίες](https://courses-ionio.github.io/help/guide/).
