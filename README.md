@@ -32,6 +32,8 @@
 * [Ο Προγραμματισμός της Διάδρασης](http://mibook.org/gr), ΕΥΔΟΞΟΣ: 68371436, κεφ. 6 Σύνθεση και Κλίμακα
 * [How to learn D3.js](https://wattenberger.com/blog/d3)
 * [DataVizForAll TextBook](https://github.com/DataVizForAll/datavizforall-bookdown)
+* [Visual representation](https://www.interaction-design.org/literature/book/the-encyclopedia-of-human-computer-interaction-2nd-ed/visual-representation)
+* [Data visualization for human perception](https://www.interaction-design.org/literature/book/the-encyclopedia-of-human-computer-interaction-2nd-ed/data-visualization-for-human-perception)
 
 **Εργαλεία και βιβλιοθήκες ανάπτυξης**
 * [Observable](https://observablehq.com)
