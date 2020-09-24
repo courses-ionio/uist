@@ -1,6 +1,6 @@
 # Οπτικοποίηση της Πληροφορίας
 
-Οι διαθέσιμες [εργασίες](https://courses-ionio.github.io/projects/) είναι αυτές που έχουν τον κωδικό ΙV.
+Το μάθημα αυτό είναι ελεύθερης επιλογής και έχει ως προαπαιτούμενο την άριστη επίδοση (8-9-10) στο μάθημα της Επικοινωνίας Ανθρώπου-Υπολογιστή (hci). Οι διαθέσιμες [εργασίες](https://courses-ionio.github.io/projects/) είναι αυτές που έχουν τον κωδικό ΙV.
 
 [Προθεσμίες παραδοτέων και τελική αναφορά](https://courses-ionio.github.io/help/deliverables/)
 
@@ -18,7 +18,7 @@
 
 **Μέθοδος διδασκαλίας:** Διάλεξη, εργασία.
 
-**Βαθμολογία:** 20% [2 ασκήσεις προγραμματισμού*](https://courses-ionio.github.io/projects/remix) + 20% [Συμμετοχικό εκπαιδευτικό υλικό*](https://courses-ionio.github.io/projects/social) + 60% [6 ασκήσεις γραμμής εντολών*](https://courses-ionio.github.io/projects/dokey) ή 60% [εργασία ανάπτυξης](https://courses-ionio.github.io/projects/dev/)
+**Βαθμολογία:** 20% [2 ασκήσεις προγραμματισμού](https://courses-ionio.github.io/projects/remix) + 20% [2 ασκήσεις γραμμής εντολών](https://courses-ionio.github.io/projects/dokey) + 20% [Συμμετοχικό εκπαιδευτικό υλικό](https://courses-ionio.github.io/projects/social)* + 40%(--80%) [εργασία ανάπτυξης](https://courses-ionio.github.io/projects/dev/)*
 
 *υποχρεωτική συμπλήρωση της βάσης για να γίνει τελική βαθμολόγηση
 
