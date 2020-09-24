@@ -2,7 +2,7 @@
 
 Οι διαθέσιμες [εργασίες](https://courses-ionio.github.io/projects/) είναι αυτές που έχουν τον κωδικό ΙV.
 
-[Περιεχόμενο για την αναφορά της εργασίας](https://courses-ionio.github.io/help/deliverables/)
+[Προθεσμίες παραδοτέων και τελική αναφορά](https://courses-ionio.github.io/help/deliverables/)
 
 [Οδηγίες και απαντήσεις σε συχνές απορίες](https://courses-ionio.github.io/help/) για την παράδοση της εργασίας.
 
