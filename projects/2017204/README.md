@@ -23,3 +23,12 @@
 
 ## Εισαγωγή
 Τα τελευταία χρόνια με τη μεγάλη εξέλιξη της τεχνολογίας και τη μαζική χρήση της, έχει δημιουργήθει η ανάγκη να γίνει καλύτερη οργάνωση του μεγάλου όγκου πληροφοριών μέσω της οπτικοποίησης της πληροφορίας, που έχει σαν στόχο ενός υψηλότερου επιπέδου διάδρασής της με τον χρήστη. Συνεπώς, με τον όρο οπτικοποίηση της πληροφορίας, εννοείται η δημιουργία μιας καλύτερης διάδρασης του χρήστη με τα δεδομένα.
+
+Ασκηση1 προγραμματισμου:
+
+<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="js,result" data-user="P2017204" data-slug-hash="PozZWOp" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="D3 chart 2">
+  <span>See the Pen <a href="https://codepen.io/P2017204/pen/PozZWOp">
+  D3 chart 2</a> by P2017204 (<a href="https://codepen.io/P2017204">@P2017204</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
