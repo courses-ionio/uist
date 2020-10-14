@@ -26,8 +26,7 @@
 
 ## Άσκηση 1 προγραμματισμού:
 
-Η άσκηση προγραμματισμού που επέλεξα είναι το "Visualization Dataset". Αρχικά πρόσθεσα στην html το DatasetC προσθέτοντας τον παρακάτω κώδικα:
-<a href="#" class="button" onclick="triggerDatasetC()"> </a>. Στη συνέχεια πρόσθεσα νέα δεδομένα για το Dataset C  χρησιμοποιώντας την εντολή var datasetC = [...] και τέλος function triggerDatasetC () { dataset = datasetC; ...}.
+Η άσκηση προγραμματισμού που επέλεξα είναι το "Visualization Dataset". Αρχικά πρόσθεσα στην html το DatasetC. Στη συνέχεια πρόσθεσα νέα δεδομένα για το Dataset C  στην js και τέλος πάλι στην js έβαλα function για την triggerDatasetC.
 
 ## Τα αποτελέσματα των παραπάνω αλλαγών φαίνονται παρακάτω:
 
