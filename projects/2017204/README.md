@@ -26,15 +26,15 @@
 
 Άσκηση 1 προγραμματισμού:
 Η άσκηση προγραμματισμού που επέλεξα είναι το "Visualization Dataset". Αρχικά πρόσθεσα στην html το DatasetC προσθέτοντας τον παρακάτω κώδικα:
-<a href="#" class="button" onclick="triggerDatasetC()">Dataset C </a>. Στη συνέχεια πρόσθεσα νέα δεδομένα για το Dataset C  χρησιμοποιώντας την εντολή var datasetC = [...] και τέλος function triggerDatasetC () { dataset = datasetC; ...}.
+<a href="#" class="button" onclick="triggerDatasetC()"> dataset C </a>. Στη συνέχεια πρόσθεσα νέα δεδομένα για το Dataset C  χρησιμοποιώντας την εντολή var datasetC = [...] και τέλος function triggerDatasetC () { dataset = datasetC; ...}.
 
-Τα αποτελέσματα των παραπάνω αλλαγών φαίνονται παρακάτω:
+## Τα αποτελέσματα των παραπάνω αλλαγών φαίνονται παρακάτω:
 
-[link](https://chris4dim.netlify.app/remix/visualization-dataset/)
+## [link](https://chris4dim.netlify.app/remix/visualization-dataset/)
 
-[codepen](https://codepen.io/P2017204/pen/PozZWOp)
+## [codepen](https://codepen.io/P2017204/pen/PozZWOp)
 
-[link κώδικα](https://github.com/chris4dim/site/blob/master/_remix/visualization-dataset.md)
+## [link κώδικα](https://github.com/chris4dim/site/blob/master/_remix/visualization-dataset.md)
 
    
    
