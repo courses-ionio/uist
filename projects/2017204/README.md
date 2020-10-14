@@ -29,8 +29,11 @@
 <a href="#" class="button" onclick="triggerDatasetC()">Dataset C </a>. Στη συνέχεια πρόσθεσα νέα δεδομένα για το Dataset C  χρησιμοποιώντας την εντολή var datasetC = [...] και τέλος function triggerDatasetC () { dataset = datasetC; ...}.
 
 Τα αποτελέσματα των παραπάνω αλλαγών φαίνονται παρακάτω:
+
 [link](https://chris4dim.netlify.app/remix/visualization-dataset/)
+
 [codepen](https://codepen.io/P2017204/pen/PozZWOp)
+
 [link κώδικα](https://github.com/chris4dim/site/blob/master/_remix/visualization-dataset.md)
 
    
