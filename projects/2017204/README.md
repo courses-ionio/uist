@@ -46,4 +46,11 @@
 ## [codepen](https://codepen.io/P2017204/pen/RwRrKGW)
 
 ## [link κώδικα](https://github.com/chris4dim/site/blob/master/_remix/image.md)
+
+# Askisi grammi entolwn
+
+## Η διαδικασία υλοποίησης της ανωτέρω άσκησης περιγράφεται με το παρακάτω demo:
+
+[gnuplot](https://asciinema.org/a/CWj5mW8bo0ZlKdR9s0kG09XST)
+
    
