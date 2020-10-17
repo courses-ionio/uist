@@ -8,7 +8,7 @@
 | --- | --- |
 | 1 | [Intro](#Intro) |
 | 2 | [First-Programming](#First-Programming) |
-| 3 | [Askisi grammi entolwn](#Askisi grammi entolwn) |
+| 3 | [Askisi-grammi-entolwn](#Askisi-grammi-entolwn) |
 | 4 | [Second-Programming](#Second-Programming) |
 | 5 | Άσκηση γραμμής εντολών |
 | 6 | Άσκηση προγραμματισμού (HCI) ή γραμμής εντολών (SW)+ συμμετοχικό περιεχόμενο |
@@ -47,7 +47,7 @@
 
 ## [link κώδικα](https://github.com/chris4dim/site/blob/master/_remix/image.md)
 
-# Askisi grammi entolwn
+# Askisi-grammi-entolwn
 
 ## Η διαδικασία υλοποίησης της ανωτέρω άσκησης περιγράφεται με το παρακάτω demo:
 
