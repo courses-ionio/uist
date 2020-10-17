@@ -51,6 +51,9 @@
 
 ## Η διαδικασία υλοποίησης της ανωτέρω άσκησης περιγράφεται με το παρακάτω demo:
 
-[Asciinema-gnuplot](https://asciinema.org/a/CWj5mW8bo0ZlKdR9s0kG09XST)
+## [Asciinema-gnuplot](https://asciinema.org/a/CWj5mW8bo0ZlKdR9s0kG09XST)
+
+Τα αποτελέσματα του παραπάνω demo φαίνονται παρακάτω:
+
 
    
