@@ -48,12 +48,13 @@
 ## [link κώδικα](https://github.com/chris4dim/site/blob/master/_remix/image.md)
 
 # Askisi-grammi-entolwn
+Για την υλοποίηση της συγκεκριμένης εργασίας χρησιμοποίησα το gnuplot, όπου έγινε η εγκατάσταση με την εξής εντολή: brew install gnuplot. Στη συνέχεια χρησιμοποίησα κάποια δεδομένα από το αρχείο "test1", τα οποία είναι από παλιότερη εργασία και με βάση αυτά δημιούργησα τα δύο διαγράμματα που φαίνοντα στην παρακάτω εικόνα
 
 ## Η διαδικασία υλοποίησης της ανωτέρω άσκησης περιγράφεται με το παρακάτω demo:
 
 ## [Asciinema-gnuplot](https://asciinema.org/a/CWj5mW8bo0ZlKdR9s0kG09XST)
 
-Τα αποτελέσματα του παραπάνω demo φαίνονται παρακάτω:
+## Τα αποτελέσματα του παραπάνω demo φαίνονται παρακάτω:
 
 <img width="1440" alt="gnuplot-apotelesma" src="https://user-images.githubusercontent.com/44117722/96353036-292daa80-10d1-11eb-9923-5df0e8ef89ac.png">
 
