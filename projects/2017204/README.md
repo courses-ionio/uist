@@ -55,5 +55,6 @@
 
 Τα αποτελέσματα του παραπάνω demo φαίνονται παρακάτω:
 
+<img width="1440" alt="gnuplot-apotelesma" src="https://user-images.githubusercontent.com/44117722/96353036-292daa80-10d1-11eb-9923-5df0e8ef89ac.png">
 
    
