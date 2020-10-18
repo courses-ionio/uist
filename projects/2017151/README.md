@@ -37,4 +37,11 @@
 *Άσκηση: Τροποποιήστε τον κώδικα του παραδείγματος προσθέτοντας και οπτικοποιώντας στο ίδιο πλαίσιο περισσότερα από 2 σετ δεδομένων (datasets).*
 
 Για την εκπόνηση της πρώτης εργασίας , έτσι ώστε να τροποποιήσω το visualazastion πρόσθεσα  ένα ακόμα   DataSet C κουμπί στο html κομμάτι , το οποίο να πηγαίνει στο function triggerDatasetC. Ακολούθως στo JS κομμάτι δήλωσα το dataset C με διαφορετικούς αριθμούς έτσι ώστε να έχω διαφορετικά αποτελέσματα.  Έπειτα δημιούργησα ένα νέο function το οποίο λέγετε triggerDatasetC το οποίο είναι ουσιαστικά ίδιο με τα αλλά δυο με την μονή διαφορά  η γραμμή κώδικα να είναι "var dataset = datasetC" ετσι ώστε να μπορεσω να εμφανίσω και τα 3 κουμπιά 
+
+[Codepen Link](https://codepen.io/p17theo3/pen/NWrrNWe)
+
+[Link Κώδικα](https://github.com/p17theo3/site/blob/master/_remix/visualization-dataset.md)
+
+[Link σελίδας αποτελέσματος](https://p17theo3.netlify.app/remix/visualization-dataset/)
+  
 - - - -
