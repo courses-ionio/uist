@@ -8,7 +8,7 @@
 | <a href="#P">1</a> |<a href="#P">Φορκ του αποθετηρίου και δημιουργία της σελίδας της αναφοράς με τα προσωπικά στοιχεία σας, της σύνοψης με αυτόν τον πίνακα περιεχομένων, και συγγραφή της εισαγωγής με περιγραφή των αναγκών και των στόχων σας για το αντίστοιχο μάθημα* </a> |
 | <a href="#P-1">2</a> |<a href="#P-1"> Άσκηση προγραμματισμού</a> |
 | <a href="#P-2">3</a> |<a href="#P-2">  Άσκηση γραμμής εντολών</a> |
-| 4 | Άσκηση προγραμματισμού + αίτημα ενσωμάτωσης (CSCW, IV) |
+| <a href="#P-3">4<a href="#P-3"> |<a href="#P-3"> Άσκηση προγραμματισμού + αίτημα ενσωμάτωσης (CSCW, IV)<a href="#P-3"> |
 | 5 | Άσκηση γραμμής εντολών |
 | 6 | Άσκηση προγραμματισμού (HCI) ή γραμμής εντολών (SW)+ συμμετοχικό περιεχόμενο |
 | 7 | Άσκηση γραμμής εντολών (SW) + αίτημα ενσωμάτωσης (CSCW, IV) |
@@ -47,7 +47,8 @@
 ### Άσκηση: visualize your data |	demo with your git commits history and percipation data per day for the last month from your city.
 
 [Asciinema-Spark](https://asciinema.org/a/367160)
- 
+
+Ξεκίνησα τη πρώτη άσκηση γραμμής εντολών με τη οπτικοποίηση των commits μου στο IV μέσο του εργαλείου spark.
 Άρχισα αυτή τη άσκηση με τη εγκατάσταση του spark:
 ```
 sudo sh -c "curl https://raw.githubusercontent.com/holman/spark/master/spark -o /usr/local/bin/spark && chmod +x /usr/local/bin/spark"
@@ -68,3 +69,82 @@ cpanm App::Git::Spark
 git spark --days 15 andreaspappoutas
 ```
   
+## <a name="P-3">Παραδοτέο 3</a>
+### Άσκηση 1: Τροποποιήστε το παράδειγμα έτσι ώστε όταν το αυτοκίνητο κινείται όπισθεν να έχει μικρότερη (τη μισή) ταχύτητα από το όταν κινείται έμπροσθεν.
+### Άσκηση 2: Δημιουργείστε περιμετρικά όρια έτσι ώστε το αυτοκίνητο να μη βγαίνει ποτέ έξω από την πίστα.
+
+Για τη άσκηση 1 βρήκα στο κώδικα javascript το "onkeydown" όπου και βλέπουμε ανά πόσα pixels αλλάζει το αυτοκίνητο όταν το κάθε κουμπί είναι πιεσμένο. Τα κουμπιά είναι γραμμένα με το κωδικό τους κάτι που μπορεί να βρεθεί εύκολα από αυτή τη [σελίδα](https://keycode.info).
+```
+if (key == 37) dx=-4; else if (key == 38) dy=-4; else if (key == 39) dx=4; else if (key == 40) dy=4;
+```
+Η όπισθεν είναι το κουμπί με το αριθμό 40 έτσι το αλλάζουμε να σε 2.
+```
+if (key == 40) dy=4
+```
+
+Στη άσκηση 2 αρχικά πρέπει να φτιάξουμε ένα function για το κάθε άξονα που θα ελέγχει αν το αυτοκίνητο είναι μέσα στα όρια του canvas.
+```
+function testX(x){
+  if((x<1000) && (x>0)){
+    return true;
+  }
+  else return false;
+}
+
+function testY(y){
+  if((y<800) && (y>0)){
+    return true;
+  }
+  else return false;
+}
+```
+Αν είναι μέσα στα όρια επιστρέφει true αλλιώς false
+Μέσο του ίδιου σκεπτικού φτιάχνουμε function για όταν το αυτοκίνητο είναι εκτός ορίων.
+}
+```
+function AllagiX(x){
+  if(x>=1000){
+    x=x-1;
+    //x=1; diaforetiko
+    return x;
+  }
+  else if(x<=0){
+    x=x+1;
+    //x=999;
+    return x;
+  }
+}
+function AllagiY(y){
+  if(y>=800){
+    y=y-1;
+    return y;
+  }
+  else if(y<=0){
+    y=y+1;
+    return y;
+  }
+}
+}
+```
+Αν βγει εκτός ορίων αριστερά η πάνω από το canvas του προσθέτουμε ενώ αντίθετα αν είναι δεξιά ή κάτω του αφαιρούμε.
+Τέλος συνδυάζουμε αυτά τα 2 functions με 2 απλά if όπου εφόσον έχουμε true δεν χρειάζεται να γίνει αλλαγή στη τοποθεσία του αυτοκινήτου έτσι δεν καλούνται οι function για αλλαγή.
+```
+if(testX(x)){
+    x = x - dy * Math.cos(angle * Math.PI / 180);
+  }
+    else{
+      x = AllagiX(x);
+    }
+    
+  if(testY(y)){
+    y = y - dy * Math.sin(angle * Math.PI / 180);
+  }
+    else{
+      y = AllagiY(y);
+    }
+```
+[Codepen Link](https://codepen.io/andreaspappoutas/pen/YzWwgMW)
+
+[Link Κώδικα](https://github.com/andreaspappoutas/site/blob/master/_remix/keyboard-input.md)
+
+[Link σελίδας αποτελέσματος](https://andreaspappoutas.netlify.app/remix/keyboard-input/)
