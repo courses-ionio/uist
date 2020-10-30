@@ -82,6 +82,10 @@ git spark --days 15 andreaspappoutas
 Έκανα χρήση του d3 σε αυτό το παράδειγμα εφόσον είχε περισσότερα commits.
 
 
+
+
+
+
 ### CSV Spark:
 Μέσο shell scripting και pipelining πιάνω ένα αρχείο csv, δίνω όνομα της στήλης που θα ήθελα να κάνω σε γράφημα και εμφανίζετε στο τέλος μέσο της εντολής spark.
 Για να γίνει αυτό έφτιξα 2 shell script.
@@ -160,8 +164,11 @@ xargs -t cut -d ',' -f
 ```
  sed "s/[^0-9]//g" | spark
 ```
-
-
+  
+<br/>
+<br/>
+<br/>
+  
 ### Github Commits Spark:
 Έφτιαξα 2 script. Το πρώτο φέρνει το log.csv ενώ το δεύτερο βρίσκει τη συχνότητα commits κάθε μέρας για το συγγραφέα που θα δώσουμε.
 Το τελικό command:
