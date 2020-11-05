@@ -6,7 +6,7 @@
 
 | Εβδομάδα* | Παραδοτέο |
 | --- | --- |
-| <a href="#P>1</a> |<a href="#P">Εισαγωγή </a> |
+| <a href="#P">1</a> |<a href="#P">Εισαγωγή </a> |
 | 2 | [First-Programming](#First-Programming) |
 | 3 | [Askisi-grammi-entolwn](#Askisi-grammi-entolwn) |
 | 4 | [Second-Programming](#Second-Programming) |
