@@ -473,7 +473,8 @@ with open('results.csv') as csvfile:
     for row in readCSV:
 	x.append(row[0])
 	y.append(row[1])
-```	
+```
+
 Ακολούθως κάνω το y αριθμούς float και το x σε μορφή date.
 ```
 test = [dt.datetime.strptime(d,'%m-%d-%Y ').date() for d in x]
@@ -500,3 +501,53 @@ plt.savefig('plot.png')
 ![plott](https://user-images.githubusercontent.com/44147982/98317544-5b05a300-1fe5-11eb-8056-ed39240d22c1.png)
 
 
+## Άσκηση Προγραμματισμού 3:
+### Άσκηση: Τροποποιήστε το παράδειγμα χρησιμοποιώντας φίλτρα εικόνας και συνδυασμούς αυτών. Παραδείγματα φίλτρων βρίσκονται ως σχόλια στην ενότητα με τον CSS κώδικα του παραδείγματος.
+
+Αρχικά έφτιαξα ένα dropdown menu όπου το κάθε κουμπί πάει σε ένα function με διαφορετικό αριθμό ενώ επίσης να αλλάζει το χρώμα του background.
+```
+<div class="dropdown">
+  <button class="button">Filters</button>
+  <div class="list">
+     <a onclick="changeStyle(0);document.body.style.backgroundColor = '#4B4F4F';">grayscale</a>
+ ...
+```
+Έβαλα και να γίνονται αλλαγές όταν γίνετε hover το κουμπί.
+```
+.dropdown:hover .button {
+  background-color: #333636;
+}
+```
+
+Στο κομμάτι του javascript αρχικά δημιουργώ style τύπου css όπου θα αλλάζω αργότερα.
+```
+var style = document.createElement('style');
+    style.type = 'text/css';
+```
+Μετά φτιάχνω το function που καλούν τα κουμπιά και ένα case αναλόγως με τι αριθμό έχει το κάθε κουμπί.
+```
+function changeStyle(p){
+  switch (p){
+```
+
+Εδώ θα δείξω 2 παραδείγματα case αλλά και τα υπόλοιπα έχουν το ίδιο σκεπτικό. Πιάνω το innerHTML του style που έφτιαξα και έβαλα πιο πάνω και εφόσον βάλω το στυλ που θέλω το κάνω append στο <head>, δηλαδή το βάζω μέσα στο html.
+
+Με grayscale
+```
+case 0:
+      style.innerHTML = "img:hover{filter:grayscale(1);}";
+      document.getElementsByTagName("head")[0].appendChild(style);
+      break;
+```
+
+Συνδυασμός
+```
+case 8:
+      style.innerHTML = "img:hover{filter:hue-rotate(90deg) sepia(1) brightness(.15);}";
+      document.getElementsByTagName("head")[0].appendChild( style );
+```
+[Codepen Link](https://codepen.io/andreaspappoutas/pen/LYZmzKN)
+
+[Link Κώδικα](https://github.com/andreaspappoutas/site/blob/master/_remix/image-filter.md)
+
+[Link σελίδας αποτελέσματος](https://andreaspappoutas.netlify.app/remix/image-filter/)
