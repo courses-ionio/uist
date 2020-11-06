@@ -8,8 +8,8 @@
 | <a href="#P">1</a> |<a href="#P">Φορκ του αποθετηρίου και δημιουργία της σελίδας της αναφοράς με τα προσωπικά στοιχεία σας, της σύνοψης με αυτόν τον πίνακα περιεχομένων, και συγγραφή της εισαγωγής με περιγραφή των αναγκών και των στόχων σας για το αντίστοιχο μάθημα* </a> |
 | <a href="#P-1">2</a> |<a href="#P-1"> Άσκηση προγραμματισμού</a> |
 | <a href="#P-2">3</a> |<a href="#P-2">  Άσκηση γραμμής εντολών</a> |
-| <a href="#P-3">4<a href="#P-3"> |<a href="#P-3"> Άσκηση προγραμματισμού + αίτημα ενσωμάτωσης (CSCW, IV)<a href="#P-3"> |
-| 5 | Άσκηση γραμμής εντολών |
+| <a href="#P-3">4</a> |<a href="#P-3"> Άσκηση προγραμματισμού + αίτημα ενσωμάτωσης (CSCW, IV)</a> |
+|  <a href="#P-4">5 </a> |<a href="#P-4"> Άσκηση γραμμής εντολών</a> |
 | 6 | Άσκηση προγραμματισμού (HCI) ή γραμμής εντολών (SW)+ συμμετοχικό περιεχόμενο |
 | 7 | Άσκηση γραμμής εντολών (SW) + αίτημα ενσωμάτωσης (CSCW, IV) |
 | 8 | Άσκηση προγραμματισμού (HCI) ή γραμμής εντολών (SW) |
@@ -88,7 +88,7 @@ git spark --days 15 andreaspappoutas
 
 ### CSV Spark:
 Μέσο shell scripting και pipelining πιάνω ένα αρχείο csv, δίνω όνομα της στήλης που θα ήθελα να κάνω σε γράφημα και εμφανίζετε στο τέλος μέσο της εντολής spark.
-Για να γίνει αυτό έφτιξα 2 shell script.
+Για να γίνει αυτό έφτιαξα 2 shell script.
 Η τελική εντολή είναι η παρακάτω:
 ```
 bash Script1.sh https://WEBSITE.COM/OURFILE.csv | xargs -t bash Script2.sh "COLUMN_TO_SPARK" | xargs -t cut -d ',' -f | sed "s/[^0-9]//g" | spark
@@ -305,3 +305,198 @@ if(testX(x)){
 [Link Κώδικα](https://github.com/andreaspappoutas/site/blob/master/_remix/keyboard-input.md)
 
 [Link σελίδας αποτελέσματος](https://andreaspappoutas.netlify.app/remix/keyboard-input/)
+
+
+## <a name="P-4">Παραδοτέο 4</a>
+## Άσκηση: generate plots	create plots for your data from some other course or project
+Χρήση δεδομένων από covid-19
+COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University
+https://github.com/CSSEGISandData/COVID-19
+# [Asciinema MatPlotLib](https://asciinema.org/a/370795)
+Έγινε χρήση shell scripting, pipelining και python. Μέσο του shell script κατεβάζω τα δεδομένα από το github. Μέσο του python φτιάχνω το plot. Εφόσον τα δεδομένα είναι πολλά το περισσότερο pipelining έγινε μέσα στο πρόγραμμα.
+Οι 2 εντολές χρησιμοποιούνται όπως παρακάτω. Ο χρήστης δίνει τη χώρα που θέλει στο bash script και στο python script δίνει το όνομα για το plot του.
+```
+bash covid.sh COUNTRY_NAME
+
+python covid.py CHART_NAME
+```
+
+Για υλοποίηση αυτής της άσκησης εγκατέστησα το MatPlotLib με τη παρακάτω εντολή.
+```
+python -m pip install -U matplotlib
+```
+
+## Το αρχείο covid.sh
+```
+#!/bin/bash
+
+echo "" > ~/CovidResults/results.csv
+
+cd ~ && cd ~/repositories/COVID-19/csse_covid_19_data/csse_covid_19_daily_reports && git pull
+
+lista=`cd ~ && ls repositories/COVID-19/csse_covid_19_data/csse_covid_19_daily_reports/*.csv`
+
+for KatheFile in $lista
+
+do
+
+count=0
+
+	cd ~ && cat $KatheFile|while IFS=, read -r col1 col2 col3 col4 col5 col6 col7 col8 col9 col10 col11 col13 col14
+
+	do
+
+    		if [[ $col4 == $1 ]]; then
+
+			count=$((count+1))
+
+			cd ~ && echo -n $(echo "$KatheFile" | cut -b 70-79 ) "," >> ~/CovidResults/results.csv && awk 'NR=='$count'' $KatheFile | cut -d ',' -f 8 >> ~/CovidResults/results.csv 
+
+			break;
+
+		else
+
+			count=$((count+1))
+
+		fi
+
+	done
+
+done
+```
+## Το αρχείο covid.py
+```
+#!/usr/bin/python
+import csv
+import datetime as dt
+from matplotlib import pyplot as plt                                            
+from matplotlib import style                                                    
+import numpy as np
+import sys                                                             
+                                                                                
+style.use('ggplot')    
+x = []   
+y = []
+
+with open('results.csv') as csvfile:
+    readCSV = csv.reader(csvfile, delimiter=',')
+    next(readCSV)
+    for row in readCSV:
+	x.append(row[0])
+	y.append(row[1])
+                                                         
+                                                          
+test = [dt.datetime.strptime(d,'%m-%d-%Y ').date() for d in x]
+arr = np.array(y)
+arr2 = arr.astype(np.float)
+                                                                          
+plt.plot(test,arr2)                                                                                                                       
+ 
+#plt.plot_date(test, arr2)
+                                                                               
+plt.title(sys.argv[1])                                                              
+plt.ylabel("Confirmed")                                                            
+plt.xlabel("Time")                                                                      
+                                                                                
+plt.show()                                                                      
+                                                                                
+plt.savefig('plot.pdf')                                                         
+plt.savefig('plot.svg')                                                         
+plt.savefig('plot.png')   
+```
+
+## Το results.csv θα είναι στο τέλος της παρακάτω μορφής
+```
+03-22-2020 ,624
+03-23-2020 ,695
+03-24-2020 ,743
+03-25-2020 ,821
+03-26-2020 ,892
+03-27-2020 ,966
+03-28-2020 ,1061
+03-29-2020 ,1156
+03-30-2020 ,1212
+03-31-2020 ,1314
+...
+```
+
+
+Αρχικά στο shell script αδειάζω το αρχείο results.csv για να το χρησιμοποιήσω για τα νέα δεδομένα.
+```
+echo "" > ~/CovidResults/results.csv
+```
+Μετά ελέγχω αν βγήκαν καινούργια δεδομένα στο github όπου είναι τα δεδομένα.
+```
+cd ~ && cd ~/repositories/COVID-19/csse_covid_19_data/csse_covid_19_daily_reports && git pull
+```
+Ακολούθως μπαίνω στο cloned repository και παίρνω λίστα με όλα τα αρχεία που τελειώνουν σε csv.
+```
+lista=`cd ~ && ls repositories/COVID-19/csse_covid_19_data/csse_covid_19_daily_reports/*.csv`
+```
+
+Πιάνω ένα ένα τα αρχεία απο αυτή τη λιστα και μηδενίζω το counter για καθένα από αυτά στη αρχή έτσι ώστε να μην έχω προβλήματα.
+```
+for KatheFile in $lista
+
+do
+
+count=0
+```
+ Μετά στο κάθε αρχείο πιάνω ένα ένα τα column μέσα σε ένα while, οπού βάζω ότι χωρίζεται με ερωτηματικό.
+ ```
+ cd ~ && cat $KatheFile|while IFS=, read -r col1 col2 col3 col4 col5 col6 col7 col8 col9 col10 col11 col13 col14
+
+	do
+```
+Τέλος συγκρίνω το όνομα του κάθε column της 4ης σειράς όπου στο κάθε αρχείο είναι το όνομα της χώρας και αν είναι ίδιο με αυτό που δίνει ο χρήστης τότε γράφω στο αρχείο results.csv . Αρχικά γράφω τη ημερομηνία όπου και είναι το όνομα του αρχείου έτσι κόβω αναλόγως τα byte(αυτό για κάθε path αλλάζει). Μετά μέσο του awk και του counter που έχω κόβω στη γραμμή όπου είναι η χώρα. Τέλος μέσω cut πιάνω το αριθμό των confirmed που είναι στη 8η γραμμή.
+```
+if [[ $col4 == $1 ]]; then
+
+			count=$((count+1))
+
+			cd ~ && echo -n $(echo "$KatheFile" | cut -b 70-79 ) "," >> ~/CovidResults/results.csv && awk 'NR=='$count'' $KatheFile | cut -d ',' -f 8 >> ~/CovidResults/results.csv 
+
+			break;
+
+		else
+
+			count=$((count+1))
+
+		fi
+```
+
+Στο covid.py αρχίζω με άνοιγμα του αρχείου csv όπου και αναθέτω τη κάθε γραμμή σε ένα πίνακα.
+```
+with open('results.csv') as csvfile:
+    readCSV = csv.reader(csvfile, delimiter=',')
+    next(readCSV)
+    for row in readCSV:
+	x.append(row[0])
+	y.append(row[1])
+```	
+Ακολούθως κάνω το y αριθμούς float και το x σε μορφή date.
+```
+test = [dt.datetime.strptime(d,'%m-%d-%Y ').date() for d in x]
+arr = np.array(y)
+arr2 = arr.astype(np.float)
+```
+
+Στο τέλος αυτού του αρχείου βάζω τίτλο αυτό που έδωσε ο χρήστης, δείχνω το plot και το κάνω export.
+```
+plt.title(sys.argv[1])                                                              
+plt.ylabel("Confirmed")                                                            
+plt.xlabel("Time")                                                                      
+                                                                                
+plt.show()                                                                      
+                                                                                
+plt.savefig('plot.pdf')                                                         
+plt.savefig('plot.svg')                                                         
+plt.savefig('plot.png')
+```
+
+Στο τελικό αποτέλεσμα μπορείς να δεις ακριβώς σε κάθε ημερομηνία πόσα κρούσματα υπάρχουν.
+
+Το αποτέλεσμα σε εικόνα png:
+![plott](https://user-images.githubusercontent.com/44147982/98317544-5b05a300-1fe5-11eb-8056-ed39240d22c1.png)
+
+
