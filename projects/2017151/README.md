@@ -14,7 +14,7 @@
 |<a href="#Paradoteo1"> 2</a> | <a href="#Paradoteo1">Άσκηση προγραμματισμού </a>|
 | <a href="#Paradoteo2"> 3</a>  |<a href="#Paradoteo2"> Άσκηση γραμμής εντολών </a>|
 | <a href="#Paradoteo3"> 4</a>  |<a href="#Paradoteo3"> Άσκηση προγραμματισμού </a>|
-| 5 | Άσκηση γραμμής εντολών |
+| <a href="#Paradoteo3"> 5</a>  |<a href="#Paradoteo4"> Άσκηση προγραμματισμού </a>|
 | 6 | Άσκηση προγραμματισμού (HCI) ή γραμμής εντολών (SW)+ συμμετοχικό περιεχόμενο |
 | 7 | Άσκηση γραμμής εντολών (SW) + αίτημα ενσωμάτωσης (CSCW, IV) |
 | 8 | Άσκηση προγραμματισμού (HCI) ή γραμμής εντολών (SW) |
@@ -164,6 +164,58 @@ alert('δοκίμασε να κάνεις ζούμ!!!!');
 [Link σελίδας αποτελέσματος](https://p17theo3.netlify.app/remix/image-zoom/)
   
 - - - -
+
+
+
+
+## <a name="Paradoteo4">:point_right: *Τέταρτο Παραδοτέο*</a>
+
+*Άσκηση: visualize git commits display your commits from a previous course, eg hci.*
+```
+#!/bin/bash
+
+if [[ -n $3 ]]; then
+cd ~ && cd Desktop/myrepos/$1/ && git-bars -p $2 -u $3
+else
+cd ~ && cd Desktop/myrepos/$1/ && git-bars -p $2
+fi
+```
+
+*μέσω αφού του κώδικα ο χρήστης δίνει τρία  arguments , το πρώτο είναι το όνομα του repository , το δεύτερο η διάρκεια και το τρίτο ο συγγραφέας. Αν δεν δώσει τρίτο argument όμως πάλι λειτουργά.*
+
+Παράδειγμα:
+```
+
+Bash barrues.sh mm day p17theo3 
+```
+
+*αρχικά στον κώδικα έλεγχο αν υπάρχει το τρίτα argument και αν ναι τρέχω το πρόγραμμα με συγγραφέα.*
+```
+
+if [[ -n $3 ]]; then
+cd ~ && cd Desktop/myrepos/$1/ && git-bars -p $2 -u $3
+```
+
+*ακολούθως αν δεν υπάρχει απλά το πρόγραμμα τρέχει χωρίς συγγραφέα *
+```
+else
+cd ~ && cd Desktop/myrepos/$1/ && git-bars -p $2
+fi
+```
+
+[Link αποτελέσματος](https://asciinema.org/a/370970)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
