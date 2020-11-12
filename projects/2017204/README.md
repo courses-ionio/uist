@@ -68,7 +68,7 @@
 
 Για να εκτελεστεί το scrypt εκτελώ την εντολή bash askisi2.sh vi days 10 20 30 και bash askisi2.sh vi days 20 40 60. Με βάση τις δύο παραπάνω εντολές εμφανίζει τα αντίστοιχα γραφήματα. Αν δεν υπάρχει ο φάκελος git στην προκειμένη iv, τότε βγάζει μήνυμα "Dwse swsto onoma repository h alliws kane clone". To scrypt έγινε με τον παρακάτω κώδικα:
 
-'''
+```
 
 #!/bin/bash
 
@@ -77,4 +77,4 @@ echo "Dwse swsto onoma repository h alliws kane clone"
 else cd $1 && spark --$2 $3 $4
 fi
 
-'''
+```
