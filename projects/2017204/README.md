@@ -66,7 +66,15 @@
 
 ## [Asciinema-spark](https://asciinema.org/a/371392)
 
-Για να εκτελεστεί το scrypt εκτελώ την εντολή bash askisi2.sh vi days 10 20 30 και bash askisi2.sh vi days 20 40 60. Με βάση τις δύο παραπάνω εντολές εμφανίζει τα αντίστοιχα γραφήματα. Αν δεν υπάρχει ο φάκελος git στην προκειμένη vi, τότε βγάζει μήνυμα "γράψε σωστά το φάκελο ή αλλιώς κάνε clone". To scrypt έγινε με τον παρακάτω κώδικα:
+Για να εκτελεστεί το scrypt εκτελώ την εντολή bash askisi2.sh vi days 10 20 30 και bash askisi2.sh vi days 20 40 60. Με βάση τις δύο παραπάνω εντολές εμφανίζει τα αντίστοιχα γραφήματα. Αν δεν υπάρχει ο φάκελος git στην προκειμένη iv, τότε βγάζει μήνυμα "Dwse swsto onoma repository h alliws kane clone". To scrypt έγινε με τον παρακάτω κώδικα:
+
 '''
+
+#!/bin/bash
+
+cd ~ && if [ ! -d "$1"]; then
+echo "Dwse swsto onoma repository h alliws kane clone"
+else cd $1 && spark --$2 $3 $4
+fi
 
 '''
