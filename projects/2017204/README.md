@@ -31,6 +31,7 @@
 
 ## [link σελίδας](https://chris4dim.netlify.app/remix/visualization-dataset/)
 
+
 ## [codepen](https://codepen.io/P2017204/pen/PozZWOp)
 
 ## [link κώδικα](https://github.com/chris4dim/site/blob/master/_remix/visualization-dataset.md)
@@ -65,4 +66,7 @@
 
 ## [Asciinema-spark](https://asciinema.org/a/371392)
 
+Για να εκτελεστεί το scrypt εκτελώ την εντολή bash askisi2.sh vi days 10 20 30 και bash askisi2.sh vi days 20 40 60. Με βάση τις δύο παραπάνω εντολές εμφανίζει τα αντίστοιχα γραφήματα. Αν δεν υπάρχει ο φάκελος git στην προκειμένη vi, τότε βγάζει μήνυμα "γράψε σωστά το φάκελο ή αλλιώς κάνε clone". To scrypt έγινε με τον παρακάτω κώδικα:
+'''
 
+'''
