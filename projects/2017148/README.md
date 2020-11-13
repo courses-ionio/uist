@@ -10,7 +10,7 @@
 | <a href="#P-2">3</a> |<a href="#P-2">  Άσκηση γραμμής εντολών</a> |
 | <a href="#P-3">4</a> |<a href="#P-3"> Άσκηση προγραμματισμού + αίτημα ενσωμάτωσης (CSCW, IV)</a> |
 |  <a href="#P-4">5 </a> |<a href="#P-4"> Άσκηση γραμμής εντολών</a> |
-| 6 | Άσκηση προγραμματισμού (HCI) ή γραμμής εντολών (SW)+ συμμετοχικό περιεχόμενο |
+| <a href="#P-5">6 </a>|<a href="#P-5"> συμμετοχικό περιεχόμενο</a> + <a href="#P-5-1"> Άσκηση προγραμματισμού 3</a> |
 | 7 | Άσκηση γραμμής εντολών (SW) + αίτημα ενσωμάτωσης (CSCW, IV) |
 | 8 | Άσκηση προγραμματισμού (HCI) ή γραμμής εντολών (SW) |
 | 9 | Άσκηση γραμμής εντολών (SW) ή αίτημα ενσωμάτωσης (CSCW, IV) |
@@ -501,7 +501,235 @@ plt.savefig('plot.png')
 ![plott](https://user-images.githubusercontent.com/44147982/98317544-5b05a300-1fe5-11eb-8056-ed39240d22c1.png)
 
 
-## Άσκηση Προγραμματισμού 3:
+
+## <a name="P-5">Παραδοτέο 5</a>
+## Συμμετοχικό εκπαιδευτικό υλικό
+Εφτιαξα 3 διαφορετικα εργαλεία στο codepen. Το πρωτο δειχνη πως λειτουργουν τα keyframe animations. Το δευτερο δειχνει οπτικοποιηση δεδομένων μέσο google charts. Τελος στο τριτο εφτιαξα ένα απλο εργαλείο pen.
+
+### Css Animation:
+[Link σελίδας αποτελέσματος](https://andreaspappoutas.netlify.app/remix/keyframes_animation/)</br>
+[Codepen Link](https://codepen.io/andreaspappoutas/pen/dyXQxbb)</br>
+[Link αρχείου md](https://github.com/andreaspappoutas/site/blob/master/_remix/Keyframes_Animation.md)</br>
+
+
+
+
+### Google Charts:
+[Link σελίδας αποτελέσματος](https://andreaspappoutas.netlify.app/remix/googe-charts/)</br>
+[Codepen Link](https://codepen.io/andreaspappoutas/pen/ExyOJZz)</br>
+[Link αρχείου md](https://github.com/andreaspappoutas/site/blob/master/_remix/googe-charts.md)</br>
+
+
+
+
+### Pen Tool:
+[Link σελίδας αποτελέσματος](https://andreaspappoutas.netlify.app/remix/pen-tool/)</br>
+[Codepen Link](https://codepen.io/andreaspappoutas/pen/VwjqMgX)</br>
+[Link αρχείου md](https://github.com/andreaspappoutas/site/blob/master/_remix/pen-tool.md)</br>
+
+
+
+
+
+### CSS animation
+Στο css animation αρχικά δημιούργησα ένα κύκλο div.
+```
+<div id="mycircle" class="circle"></div>
+
+.circle {
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  border-radius: 50%;
+}
+```
+
+Στο κομμάτι του javascript έπιασα το div με όνομα circle ενώ επίσης έφτιαξα eventlisteners για αν μετακινηθεί το ποντίκι ή εάν γίνει κλικ.
+```
+var circle = document.getElementById("mycircle");
+document.addEventListener("mousemove", Thesi); 
+document.body.addEventListener('click', RunAnimation); 
+```
+
+Στο function Thesi παίρνω το χ και το ψ του ποντικιού και ακολούθως βάζω το κύκλο εκεί.
+```
+function Thesi(){
+  x = event.x-20; //-20 gia na einai kentron
+  y = event.y-20;//-20 gia na einia kentron
+  circle.style.position = "absolute";
+  circle.style.left = x + 'px';
+  circle.style.top = y + 'px';
+}
+```
+
+Στο function RunAnimation βάζω να τρέξει το animation και εφόσον τρέξει μέσο timout το αδειάζω έτσι ώστε να μπορεί να τρέξει αυτόματος ξανά στο κλικ.
+```
+function RunAnimation(){
+  circle.style.animation="MyAnimation 4s ease-in-out";
+  setTimeout('circle.style.animation=""', 4000)
+}
+```
+
+Το keyframes MyAnimation
+```
+@keyframes MyAnimation {
+  0% {
+    
+    transform: scale(1);
+  }
+
+  33% {
+    background-color: blue;
+    opacity: 0.5;
+    transform: scale(0);
+  }
+  66% {
+    opacity: 0.8;
+    transform: scale(2);
+  }
+	100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+```
+  
+  
+### Google Charts
+Αρχικά έβαλα όλα τα κατάλληλα που χρειάζονται για google charts μαζί με το div όπου θα μπει το chart.
+```
+<div id="Google_paradeigma" style="width: 700px; height: 400px"></div>
+
+document.getElementById('Google_paradeigma')
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+```
+Έβαλα το data και options για κάθε παράδειγμα.
+```
+var data = google.visualization.arrayToDataTable([
+['Year', 'Cyprus', 'Greece'],
+['1955', 529972, 8011124],
+['1960', 572930, 8273629],
+...
+var options = {
+          title: 'Country Population',
+...
+```
+
+Έφτιαξα ένα dropdown μενού που καλεί τη function των google charts που λέγεται drawChart και μέσα βάζω μια μεταβλητή αναλόγως ποιο γράφημα θέλω.
+```
+<div class="dropdown">
+  <button class="button">Datasets</button>
+  <div class="list">
+     <a onclick="drawChart(0)">Population</a>
+    <a onclick="drawChart(1)">GDP per capita</a>
+    
+  </div>
+</div>
+```
+
+Τέλος μέσο ενός switch μέσα στο drawChart εμφανίζω τα chart που θέλω.
+```
+switch(p){
+          case 0:
+            chart.clearChart() //oxi anagkastiko
+            chart.draw(data, options);
+            break;
+          case 1:
+            chart.clearChart() //oxi anagkastiko
+            chart.draw(data2, options2);
+            
+        }
+```
+
+### Pen Tool
+Ξεκίνησα φτιάχνοντας το canvas και περνώντας το αυτό μαζί με το context του στο κομμάτι του javascript
+```
+<canvas id="toCanvas" width="600" height="300"></canvas>
+
+var canvas = document.getElementById("toCanvas");
+var ctx = canvas.getContext("2d");
+```
+
+Στο επόμενο κομμάτι δήλωσα ένα control variable που θα χρησιμοποιήσω για να ξέρω τη κατάσταση του πλήκτρου space ενώ επίσης έθεσα τα χ, ψ και πάχος γραμμής
+var control= false;
+```
+let x =0;
+let y= 0;
+ctx.lineWidth = 5;
+```
+
+Εδώ έβαλα αρχικά eventlistener εάν πατήσω κλικ και μετά ένα για αν πατήσω κάποιο πλήκτρο
+```
+document.body.addEventListener('mousedown', e => {
+  document.body.onkeyup = function(e){
+```  
+  
+Αν πατηθεί το space τότε αντιστρέφω το control και αναλόγως αλλάζω το χρώμα των γραμμάτων κάτω από το canvas. Επίσης θέτω τα χ και ψ στο offset του event κάτι που λειτουργεί σαν reset για αυτά.
+```
+if(e.keyCode == 32){
+        control = !control
+        if(control==false){
+          document.getElementById("space").style.color="black";
+        }else{
+          document.getElementById("space").style.color="green";
+        }
+        
+        x = e.offsetX
+        y = e.offsetY
+    }
+```
+
+Αν το control είναι θετικό τότε πατήθηκε το space. Οι συντεταγμένες που θα πάρει θα είναι από το eventlistener για κλικ εφόσον δεν θα περάσει από το πιο πάνω if. Τέλος εδώ δημιουργούμε το σχέδιο μέσο του moveTo και lineTo.   
+```
+if(control==true){
+        const newX = e.offsetX;
+        const newY = e.offsetY;
+        ctx.beginPath();
+        ctx.moveTo( x, y ); //apo p na 3ekina
+        ctx.lineTo( newX, newY ); //pou na pigeni
+        ctx.stroke();
+  }
+```
+
+Eventlistener για να βρίσκουμε που να προχωρά η γραμμή.
+```
+window.addEventListener('mouseup', e => {
+  x = e.offsetX
+  y = e.offsetY
+```
+
+Έφτιαξα επίσης ένα κουμπί που κάνει clear το canvas.
+```
+<button onclick="clearCanvas()">clear</button>
+
+function clearCanvas(){
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+}
+```
+
+Επίσης ένα slider όπου επιλέγει μέγεθος. Επίσης αλλάζει πιο πάνω το innerHTML και δείχνω τι μέγεθος έχουμε.
+```
+<input type="range" min="1" max="10" value="5" id="LineWidth">
+<h3>Width:</h3><h4 id="h4txt">5</h4>
+
+var valueTXT = document.getElementById("h4txt");
+lineWidth.oninput = function() {
+  valueTXT.innerHTML = this.value;
+  ctx.lineWidth = this.value
+}
+```
+
+Τέλος έβαλα και την επιλογή να αλλάζει το χρώμα ο χρήστης.
+```
+<input id="color" type="color" value="#000000" onchange="color()">
+
+function color(){
+   ctx.strokeStyle = document.getElementById("color").value;
+  
+}
+```
+
+### <a name="P-5-1"> Άσκηση Προγραμματισμού 3: </a>
 ### Άσκηση: Τροποποιήστε το παράδειγμα χρησιμοποιώντας φίλτρα εικόνας και συνδυασμούς αυτών. Παραδείγματα φίλτρων βρίσκονται ως σχόλια στην ενότητα με τον CSS κώδικα του παραδείγματος.
 
 Αρχικά έφτιαξα ένα dropdown menu όπου το κάθε κουμπί πάει σε ένα function με διαφορετικό αριθμό ενώ επίσης να αλλάζει το χρώμα του background.
