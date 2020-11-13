@@ -78,3 +78,12 @@ else cd $1 && spark --$2 $3 $4
 fi
 
 ```
+
+## Α. Συμμετοχικό Εκπαιδευτικό Υλικό
+Χρησιμοποίησα ένα διαδραστικό γράφημα όπου ο χρήστης μετακινώντας τον δείκτη του ποντικιού να μπορεί να βλέπει την οπτικοποίηση που έχει γίνει σε ένα στατιστικό παράδειγμα που έχει επιλέξει. Το αποτέλεσμα φαίνεται παρακάτω:
+
+## [link σελίδας](https://chris4dim.netlify.app/remix/visualization/)
+
+## [codepen](https://codepen.io/P2017204/pen/zYBeGwG)
+
+## [link κώδικα](https://github.com/chris4dim/site/blob/master/_remix/visualization.md)
