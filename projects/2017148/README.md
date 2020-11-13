@@ -516,9 +516,9 @@ plt.savefig('plot.png')
 
 
 ### Google Charts:
-[Link σελίδας αποτελέσματος](https://andreaspappoutas.netlify.app/remix/googe-charts/)</br>
+[Link σελίδας αποτελέσματος](https://andreaspappoutas.netlify.app/remix/google-charts/)</br>
 [Codepen Link](https://codepen.io/andreaspappoutas/pen/ExyOJZz)</br>
-[Link αρχείου md](https://github.com/andreaspappoutas/site/blob/master/_remix/googe-charts.md)</br>
+[Link αρχείου md](https://github.com/andreaspappoutas/site/blob/master/_remix/google-charts.md)</br>
 
 
 
