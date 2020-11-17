@@ -56,14 +56,14 @@
 
 Εισαγωγή νέου μαθήματος επιλογής στο Ζ εξάμηνο με όνομα Επιστήμη των Δεδομένων:
 
-[link](https://chris4dim-sitegr.netlify.app/courses/data-science/)
+[Επιστήμη των Δεδομένων](https://chris4dim-sitegr.netlify.app/courses/data-science/)
 
 Αφαίρεση του μαθήματος Ειδικά Θέματα Ασφάλειας Πληροφοριών από το ΣΤ εξάμηνο:
 Διέγραψα το αντίστοιχο αρχείο md από το sitegr/all_collections/courses.
 
 Προσθήκη του μαθήματος επιλογής στο Ζ εξάμηνο με ονομασία Επίδοση Υπολογιστικών Συστημάτων:
 
-[link](https://chris4dim-sitegr.netlify.app/courses/computer-system-performance/)
+[Επίδοση Υπολογιστικών Συστημάτων](https://chris4dim-sitegr.netlify.app/courses/computer-system-performance/)
 
 
 ## <a name="P-2">Άσκηση Γραμμή Εντολών 1</a>
