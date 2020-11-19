@@ -12,7 +12,7 @@
 | <a href="#P-3">4</a> |<a href="#P-3">Άσκηση Προγραμματισμού 2 + Άιτημα Ενσωμάτωσης 1 </a> |
 | <a href="#P-4">5</a> |<a href="#P-4">Άσκηση Γραμμής Εντολών 2 </a> |
 | <a href="#P-5">6</a> |<a href="#P-5">Συμμετοχικό περιεχόμενο A </a> |
-| 7 | Άσκηση γραμμής εντολών (SW) + αίτημα ενσωμάτωσης (CSCW, IV) |
+| <a href="#P-6">7</a> |<a href="#P-6">Άιτημα Ενσωμάτωσης 2 </a> |
 | 8 | Άσκηση προγραμματισμού (HCI) ή γραμμής εντολών (SW) |
 | 9 | Άσκηση γραμμής εντολών (SW) ή αίτημα ενσωμάτωσης (CSCW, IV) |
 | 10 | συμμετοχικό περιεχόμενο |
@@ -114,3 +114,8 @@ fi
 ## [codepen](https://codepen.io/P2017204/pen/zYBevNz?fbclid=IwAR1yV1YumgHqOIdyIBcjeJGmdAW4eDNUJ186HN1EJhy3mDaRlYkS4vmhADE)
 
 ## [link κώδικα](https://github.com/chris4dim/site/blob/master/_remix/menu-slide.md)
+
+
+## <a name="P-6">Άιτημα Ενσωμάτωσης 2</a>
+
+
