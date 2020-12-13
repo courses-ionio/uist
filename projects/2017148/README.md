@@ -11,7 +11,7 @@
 | <a href="#P-3">4</a> |<a href="#P-3"> αίτημα ενσωμάτωσης (CSCW, IV) </a> + <a href="#P-3-1">Άσκηση προγραμματισμού </a>  |
 |  <a href="#P-4">5 </a> |<a href="#P-4"> Άσκηση γραμμής εντολών</a> |
 | <a href="#P-5">6 </a>|<a href="#P-5"> συμμετοχικό περιεχόμενο</a> + <a href="#P-5-1"> Άσκηση προγραμματισμού 3</a> |
-| 7 | Άσκηση γραμμής εντολών (SW) + αίτημα ενσωμάτωσης (CSCW, IV) |
+| <a href="#P-6">7 </a>|<a href="#P-6">αίτημα ενσωμάτωσης (CSCW, IV)</a> |
 | 8 | Άσκηση προγραμματισμού (HCI) ή γραμμής εντολών (SW) |
 | 9 | Άσκηση γραμμής εντολών (SW) ή αίτημα ενσωμάτωσης (CSCW, IV) |
 | 10 | συμμετοχικό περιεχόμενο |
@@ -801,3 +801,64 @@ case 8:
 [Link Κώδικα](https://github.com/andreaspappoutas/site/blob/master/_remix/image-filter.md)
 
 [Link σελίδας αποτελέσματος](https://andreaspappoutas.netlify.app/remix/image-filter/)
+
+
+## <a name="P-6">Παραδοτέο 6</a>
+## Αίτημα ενσωμάτωσης 2
+
+### Link Αποτελέσματος στο sitegr: [sitegr results](https://epic-hamilton-da9ac8.netlify.app/people/)
+### Link Αποτελέσματος στο δικό μου site: [andreaspappoutas-sitegr results](https://paradoteo2-fixed--andreaspappoutas-sitegr.netlify.app/people/)
+### Repository branch: [minimal-ionio branch](https://github.com/andreaspappoutas/minimal-ionio/tree/paradoteo2-fixed)
+###                    [sitegr-branch](https://github.com/andreaspappoutas/sitegr/tree/paradoteo2-fixed)
+		   
+### Issue  [Sitegr issue](https://github.com/ioniodi/sitegr/issues/15)
+### Pull Request στο sitegr [sitegr pull-request](https://github.com/ioniodi/sitegr/pull/16)
+### Pull request στο minimal-ionio [minimal-ionio pull-request](https://github.com/ioniodi/minimal-ionio/pull/37)
+
+### Σε αυτό το παραδοτέο έφτιαξα κώδικα έτσι ώστε ανάλογα με τι αριθμό έχει ο κάθε καθηγητής στο rank του να μπαίνει σε μια κατηγορία. Τα βήματα που ακολούθησα είναι τα παρακάτω:
+
+Αρχικά έφτιαξα grid-containers για τη κάθε βαθμίδα. Διάλεξα να κάνω χρήση grid εφόσον καθηγητές με μεγάλα ονόματα έκαναν overlap και μέσω grid θα είναι καλύτερο.
+```
+<div id="people-rank-1" class="grid-container" ><h1 class="rank_title">Καθηγητές</h1>
+</div>
+<div id="people-rank-2" class="grid-container" ><h1 class="rank_title">Αναπληρωτές Καθηγητές</h1>
+</div>
+..
+..
+```
+
+Επίσης έβαλα ένα header σε καθένα από αυτά τα grid-containers. Αυτό θα είναι στο πρώτο κελί άλλα εφόσον θέλω να είναι ο τίτλος έκανα το παρακάτω κώδικα στο css κομμάτι. Αρχικά ο τίτλος είναι πρώτο κελί και πάει οριζοντίως 4. Επίσης έβαλα το container να είναι ανά 4 με gap 50. Τέλος έβαλα το κάθε container να μην φαίνεται εξ αρχής. Αυτό έγινε επειδή μπορεί κάποια βαθμίδα να μην έχει καθηγητές. Έτσι πιο μετά αν ο κώδικας βρει ένα καθηγητή αυτομάτως θα εμφανίζει τη βαθμίδα του σε grid.
+```
+.rank_title {
+  grid-column: 1 / span 4;
+}
+.grid-container {
+  display: none;
+  float: inherit;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 50px;
+}
+```
+
+Ακολούθως έφτιαξα ένα case που ελέγχει το αριθμό του rank του κάθε καθηγητή. Στη συνέχεια κάνει include το κώδικα που θα δείξω παρακάτω και περνά μέσα τη τιμή της κάθε βαθμίδας.
+```
+{% case post.rank %}
+  {% when 1 %}
+      {% include people-rank-div.html content="1" %}
+  {% when 2 %}
+      {% include people-rank-div.html content="2" %}
+  {% when 3 %}
+ ..
+ .. 
+```
+Πιο κάτω έχουμε το people-rank-div include. Εδώ αρχικά έβαλα το id του κάθε grid-item, δηλαδή του κάθε κελιού με το καθηγητή του να έχει σαν id το reference του καθηγητή. Έβαλα μέσα στο κελί το archive-people το οποίο εμφανίζει το κάθε καθηγητή μαζί με τη εικόνα του. Μέτα έβαλα ένα javascript το οποίο βάζει αυτό το grid-item μέσα στο κατάλληλο container μέσο του αριθμού που έγινε passed από το προηγούμενο include ενώ επίσης εμφανίζει το container αυτό εφόσον τώρα ξέρουμε ότι υπάρχει καθηγητής μέσα.
+```
+<div id="{{ post.ref }}" style="float: left;" class="grid__item" >
+        {% include archive-people.html %}
+      </div>
+      <script>
+            document.getElementById("people-rank-{{ include.content }}").style.display = "grid";
+            document.getElementById('people-rank-{{ include.content }}').appendChild(document.getElementById( "{{ post.ref }}" ));
+</script>
+```
+Τέλος πέρασα από όλους τους καθηγητές και άλλαξα το αριθμό του rank τους αναλόγως με τι βαθμίδα έχουν.
