@@ -14,7 +14,7 @@
 | <a href="#P-6">7 </a>|<a href="#P-6">αίτημα ενσωμάτωσης (CSCW, IV)</a> |
 | 8 | Άσκηση προγραμματισμού (HCI) ή γραμμής εντολών (SW) |
 | 9 | Άσκηση γραμμής εντολών (SW) ή αίτημα ενσωμάτωσης (CSCW, IV) |
-| 10 | συμμετοχικό περιεχόμενο |
+| <a href="#P-7">10</a> | <a href="#P-7">συμμετοχικό περιεχόμενο </a>|
 | 11 | αίτημα ενσωμάτωσης (CSCW, IV) |
 | 12 | Τελική αναφορά* |
 
@@ -862,3 +862,40 @@ case 8:
 </script>
 ```
 Τέλος πέρασα από όλους τους καθηγητές και άλλαξα το αριθμό του rank τους αναλόγως με τι βαθμίδα έχουν.
+
+
+## <a name="P-7">Παραδοτέο 7</a>
+## Συμμετοχικό περιεχόμενο 2 - tweets
+
+Αρχικά έφτιαξα ένα include που πέρνει σαν παράμετρο το όνομα κάπιου χρήστη και εμφανίζει τα tweets του μέσο κώδικα του publish.twitter.com
+Έβαλα επίσης το κατάλληλο κώδικα έτσι ώστε να εμφανίζετε σωστά
+```
+<div class="feature__item">
+  <div class="archive__item">
+    <div class="archive__item-body">
+      <h2 class="archive__item-title">Tweets</h2>
+      <a class="twitter-timeline" 
+         href="https://twitter.com/{{ include.content }}?ref_src=twsrc%5Etfw" 
+         data-height="450" data-chrome="nofooter transparent noborders">
+        Tweets by {{ include.content }}
+      </a> 
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  </div>
+</div>
+```
+Στο index.html κάλεσα το include με το όνομα του twitter μου.
+```
+{% include twitter-posts.html content="p17papp1" type="center" index=random %}
+```
+
+Τα tweets που έφτιαξα είναι τα παρακάτω:
+https://twitter.com/p17papp1/status/1337450338861916161
+https://twitter.com/p17papp1/status/1337381055943335937
+https://twitter.com/p17papp1/status/1337377574868148225
+https://twitter.com/p17papp1/status/1337175898383114243
+https://twitter.com/p17papp1/status/1337173135725113344
+https://twitter.com/p17papp1/status/1337170593704271872
+
+λινκ αποτελέσματος:
+andreaspappoutas.netlify.app
