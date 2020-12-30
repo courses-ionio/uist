@@ -890,12 +890,17 @@ case 8:
 ```
 
 Τα tweets που έφτιαξα είναι τα παρακάτω:
-https://twitter.com/p17papp1/status/1337450338861916161
-https://twitter.com/p17papp1/status/1337381055943335937
-https://twitter.com/p17papp1/status/1337377574868148225
-https://twitter.com/p17papp1/status/1337175898383114243
-https://twitter.com/p17papp1/status/1337173135725113344
-https://twitter.com/p17papp1/status/1337170593704271872
+[tweet 1](https://twitter.com/p17papp1/status/1337450338861916161)
+[tweet 2](https://twitter.com/p17papp1/status/1337381055943335937)
+[tweet 3](https://twitter.com/p17papp1/status/1337377574868148225)
+[tweet 4](https://twitter.com/p17papp1/status/1337175898383114243)
+[tweet 5](https://twitter.com/p17papp1/status/1337173135725113344)
+[tweet 6](https://twitter.com/p17papp1/status/1337170593704271872)
 
-λινκ αποτελέσματος:
-andreaspappoutas.netlify.app
+
+
+
+
+## λινκ αποτελέσματος:
+[site](https://andreaspappoutas.netlify.app)
+
