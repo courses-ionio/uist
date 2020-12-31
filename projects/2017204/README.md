@@ -143,7 +143,7 @@ fi
 ## [Tweet 6](https://twitter.com/p17chr1/status/1343997601293729793)
 ## [Tweet 7](https://twitter.com/p17chr1/status/1344380869994278914)
 ## [Tweet 8](https://twitter.com/p17chr1/status/1344383601178259460)
-## [Tweet 9]()
+## [Tweet 9](https://twitter.com/p17chr1/status/1344675190467342336)
 ## [Tweet 10]()
 
 
