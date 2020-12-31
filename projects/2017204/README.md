@@ -17,7 +17,7 @@
 | 9 | Άσκηση γραμμής εντολών (SW) ή αίτημα ενσωμάτωσης (CSCW, IV) |
 | <a href="#P-9">10</a> |<a href="#P-9">Συμμετοχικό περιεχόμενο B </a> |
 | 11 | αίτημα ενσωμάτωσης (CSCW, IV) |
-| 12 | Τελική αναφορά* |
+| <a href="#P-11">12</a> |<a href="#P-11">Τελική Αναφορά</a> |
 
 
 ## <a name="P">Εισαγωγή</a>
@@ -144,6 +144,6 @@ fi
 ## [Tweet 7](https://twitter.com/p17chr1/status/1344380869994278914)
 ## [Tweet 8](https://twitter.com/p17chr1/status/1344383601178259460)
 ## [Tweet 9](https://twitter.com/p17chr1/status/1344675190467342336)
-## [Tweet 10]()
+## [Tweet 10](https://twitter.com/p17chr1/status/1344677986356883456)
 
 
