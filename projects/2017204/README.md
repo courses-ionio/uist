@@ -15,7 +15,7 @@
 | <a href="#P-6">7</a> |<a href="#P-6">Άιτημα Ενσωμάτωσης 2 </a> |
 | 8 | Άσκηση προγραμματισμού (HCI) ή γραμμής εντολών (SW) |
 | 9 | Άσκηση γραμμής εντολών (SW) ή αίτημα ενσωμάτωσης (CSCW, IV) |
-| 10 | συμμετοχικό περιεχόμενο |
+| <a href="#P-9">10</a> |<a href="#P-9">Συμμετοχικό περιεχόμενο B </a> |
 | 11 | αίτημα ενσωμάτωσης (CSCW, IV) |
 | 12 | Τελική αναφορά* |
 
@@ -56,14 +56,14 @@
 
 Εισαγωγή νέου μαθήματος επιλογής στο Ζ εξάμηνο με όνομα Επιστήμη των Δεδομένων. Ανανέωσα τα στοιχεία του συγκεκριμένου μαθήματος στο αντίστοιχο αρχείο data-sciense.md το οποίο βρίσκεται all_collection/courses και το αποτέλεσμα φαίνεται παρακάτω:
 
-[Επιστήμη των Δεδομένων](https://chris4dim-sitegr.netlify.app/courses/data-science/)
+## [Επιστήμη των Δεδομένων](https://chris4dim-sitegr.netlify.app/courses/data-science/)
 
 Αφαίρεση του μαθήματος Ειδικά Θέματα Ασφάλειας Πληροφοριών από το ΣΤ εξάμηνο:
 Διέγραψα το αντίστοιχο αρχείο md από το sitegr/all_collections/courses.
 
 Προσθήκη του μαθήματος επιλογής στο Ζ εξάμηνο με ονομασία Επίδοση Υπολογιστικών Συστημάτων. Ανανέωσα τα στοιχεία του συγκεκριμένου μαθήματος στο αντίστοιχο αρχείο computer-system-performance.md το οποίο βρίσκεται all_collection/courses και το αποτέλεσμα φαίνεται παρακάτω:
 
-[Επίδοση Υπολογιστικών Συστημάτων](https://chris4dim-sitegr.netlify.app/courses/computer-system-performance/)
+## [Επίδοση Υπολογιστικών Συστημάτων](https://chris4dim-sitegr.netlify.app/courses/computer-system-performance/)
 
 
 ## <a name="P-2">Άσκηση Γραμμή Εντολών 1</a>
@@ -130,9 +130,20 @@ fi
 - Μάθημα Δίκτυα 2 του Ε εξαμήνου, όπου υπάρχουν 2 διδάσκοντες.
 
 
-## Συμμετοχικό Περιεχόμενο Β
+## <a name="P-9">Α.Συμμετοχικό Εκπαιδευτικό Υλικό B</a>
 
-Τα twitts στο site βρίσκονται στο παρακάτω λινκ:
-[link σελίδας](https://chris4dim.netlify.app/)
+Τα tweets βρίσκονται στο παρακάτω λινκ:
+## [link σελίδας](https://chris4dim.netlify.app/)
+
+## [Tweet 1](https://twitter.com/p17chr1/status/1343263974654173192)
+## [Tweet 2](https://twitter.com/p17chr1/status/1343265756897832961)
+## [Tweet 3](https://twitter.com/p17chr1/status/1343268237119639553)
+## [Tweet 4](https://twitter.com/p17chr1/status/1343271331819827201)
+## [Tweet 5](https://twitter.com/p17chr1/status/1343994678144888833)
+## [Tweet 6](https://twitter.com/p17chr1/status/1343997601293729793)
+## [Tweet 7](https://twitter.com/p17chr1/status/1344380869994278914)
+## [Tweet 8](https://twitter.com/p17chr1/status/1344383601178259460)
+## [Tweet 9]()
+## [Tweet 10]()
 
 
