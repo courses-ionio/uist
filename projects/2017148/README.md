@@ -13,9 +13,9 @@
 | <a href="#P-5">6 </a>|<a href="#P-5"> συμμετοχικό περιεχόμενο</a> + <a href="#P-5-1"> Άσκηση προγραμματισμού 3</a> |
 | <a href="#P-6">7 </a>|<a href="#P-6">αίτημα ενσωμάτωσης (CSCW, IV)</a> |
 | 8 | Άσκηση προγραμματισμού (HCI) ή γραμμής εντολών (SW) |
-| 9 | Άσκηση γραμμής εντολών (SW) ή αίτημα ενσωμάτωσης (CSCW, IV) |
+| <a href="#P-8">9</a> |<a href="#P-8">αίτημα ενσωμάτωσης (CSCW, IV)</a> |
 | <a href="#P-7">10</a> | <a href="#P-7">συμμετοχικό περιεχόμενο </a>|
-| 11 | αίτημα ενσωμάτωσης (CSCW, IV) |
+| <a href="#P-8">11</a> |<a href="#P-8"> αίτημα ενσωμάτωσης (CSCW, IV)</a> |
 | 12 | Τελική αναφορά* |
 
 
@@ -903,4 +903,19 @@ case 8:
 
 ## λινκ αποτελέσματος:
 [site](https://andreaspappoutas.netlify.app)
+
+
+## <a name="P-8">Παραδοτέο 8</a>
+## Αίτημα ενσωμάτωσης 3+4
+
+### Link Αποτελέσματος στο sitegr: [sitegr results]()
+### Link Αποτελέσματος στο δικό μου site: [andreaspappoutas-sitegr results](ects-demo--andreaspappoutas-sitegr.netlify.app/ects-calculator)
+### Repository branch: [minimal-ionio branch](https://github.com/andreaspappoutas/minimal-ionio/tree/ects-calc)
+###                    [sitegr-branch](https://github.com/andreaspappoutas/sitegr/tree/ects-calc)
+		   
+### Issue  [Sitegr issue](https://github.com/ioniodi/sitegr/issues/20)
+### Pull Request στο sitegr [sitegr pull-request](https://github.com/ioniodi/sitegr/pull/21)
+### Pull request στο minimal-ionio [minimal-ionio pull-request](https://github.com/ioniodi/minimal-ionio/pull/38)
+
+### Σε αυτό το παραδοτέο έφτιαξα μια σελίδα για τους φοιτητές να υπολογίζουν ects.
 
