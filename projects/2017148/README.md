@@ -889,15 +889,17 @@ case 8:
 {% include twitter-posts.html content="p17papp1" type="center" index=random %}
 ```
 
-Τα tweets που έφτιαξα είναι τα παρακάτω:
-[tweet 1](https://twitter.com/p17papp1/status/1337450338861916161)
-[tweet 2](https://twitter.com/p17papp1/status/1337381055943335937)
-[tweet 3](https://twitter.com/p17papp1/status/1337377574868148225)
-[tweet 4](https://twitter.com/p17papp1/status/1337175898383114243)
-[tweet 5](https://twitter.com/p17papp1/status/1337173135725113344)
-[tweet 6](https://twitter.com/p17papp1/status/1337170593704271872)
-
-
+Τα tweets που έφτιαξα είναι τα παρακάτω:  
+[tweet 1](https://twitter.com/p17papp1/status/1337450338861916161)  
+[tweet 2](https://twitter.com/p17papp1/status/1337381055943335937)  
+[tweet 3](https://twitter.com/p17papp1/status/1337377574868148225)  
+[tweet 4](https://twitter.com/p17papp1/status/1337175898383114243)  
+[tweet 5](https://twitter.com/p17papp1/status/1337173135725113344)  
+[tweet 6](https://twitter.com/p17papp1/status/1337170593704271872)  
+[tweet 7](https://twitter.com/p17papp1/status/1344378635386499076)  
+[tweet 8](https://twitter.com/p17papp1/status/1344380704793235464)  
+[tweet 9](https://twitter.com/p17papp1/status/1344384376084291586)  
+[tweet 10](https://twitter.com/p17papp1/status/1348634216226058241)  
 
 
 
