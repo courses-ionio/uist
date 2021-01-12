@@ -910,7 +910,7 @@ case 8:
 ## <a name="P-8">Παραδοτέο 8</a>
 ## Αίτημα ενσωμάτωσης 3+4
 
-### Link Αποτελέσματος στο sitegr: [sitegr results]()
+### Link Αποτελέσματος στο sitegr: [sitegr results](https://epic-hamilton-da9ac8.netlify.app/ects-calculator)
 ### Link Αποτελέσματος στο δικό μου site: [andreaspappoutas-sitegr results](ects-demo--andreaspappoutas-sitegr.netlify.app/ects-calculator)
 ### Repository branch: [minimal-ionio branch](https://github.com/andreaspappoutas/minimal-ionio/tree/ects-calc)
 ###                    [sitegr-branch](https://github.com/andreaspappoutas/sitegr/tree/ects-calc)
@@ -921,3 +921,172 @@ case 8:
 
 ### Σε αυτό το παραδοτέο έφτιαξα μια σελίδα για τους φοιτητές να υπολογίζουν ects.
 
+Αρχικά στο sitegr έφτιαξα ένα νέο αρχείο με το όνομα ects-calculator.md με λινκ να είναι το /ects-calculator/. Ακολούθος μέσο του navigation.yml το πρόσθεσα στο μενού.
+Επόμενο βήμα είναι η διμιουργία ενός include στο minimal-ionio με το οποίο να έχουμε checkbox δίπλα απο κάθε μάθημα. Αυτό αρχικά έγινε με το ίδιο τρόπο που εμφανίζονται τα άλλα μαθήματα. Η διαφορά είναι στο archive-single όπου στο δικό μου αρχείο πρόσθεσα τη παρακάτω γραμμή κώδικα:
+```
+<p><input type="checkbox" id="{{ post.ref }}" name="{{ post.ref }}" value="{{ post.ref }}" ects="{{ post.ects }}" sem="{{ post.semester }}" c_type="{{ post.type }}"><a href="{{ post.link }}">{{ title }}</a> <a href="{{ post.url | relative_url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a></p>
+```
+Σε αυτό το κώδικα προσθέτο ενα checkbox με id το reference του κάθε μαθήματος. Επίσης βάζω attributes όπως πόσα ects είναι,εξάμηνο και το τύπο του.
+Μέσα στο sitegr ects-calculator.md έφτιαξα ένα νέο div με το όνομα boxes έτσι ώστε να τα πέρνω με ευκολία πιο μετα. Μέσα σε αυτό το div έβαλα τα μαθήματα και επίσης το markdown του github σε δικό του div εφόσον το έπερνε σαν html.
+
+```
+<div id="boxes">
+{% include toc title = "ΜΑΘΗΜΑΤΑ" icon = "graduation-cap" %}
+
+<div markdown="1"> 
+# ΠΡΟΠΤΥΧΙΑΚΟ 
+</div>
+...
+```
+Ακολούθος πρόσθεσα ένα span μέσο του οποίου να εμφανίζω τα ects.
+```
+<p><span id ="ects_span">0</span> <span>ects in total</span></p>
+<p><span>Απομένουν:  </span><span id="ects_span_240"></span></p>
+```
+Επίσης πρόσθεσα ένα javascript αρχέιο το οποίο μετά το έφτιαξα στο minimal-ionio.
+```
+<script type="text/javascript" src="/assets/js/ects.js"></script>
+```
+
+Μέσα στο ects.js αρχικά πέρνουμε όλα τα checkboxes των μαθημάτων ένα ένα αλλά επίσης και τα span για να αλλάζουμε τα ects. Το LoadArrays() είναι ενα function το οποίο θα εξηγησω πιο μετά.
+Εφόσον πιάννω ένα ένα τα checkbox τους βάζω ενα eventListener το οποίο βλέπει αν έγινε αλλαγή στη κατάσταση. Αν γίνει αλλαγή καλώ το ects_total().
+```
+function LoadVariables(){
+  var all_courses = document.getElementById('boxes'); 
+  var courses_input = all_courses.getElementsByTagName('input');
+  var text = document.getElementById("text");
+
+  for (var i=0, len=courses_input.length; i<len; i++) {
+          if(courses_input[i].hasAttribute('ects')){
+            courses_input[i].addEventListener("change", ects_total)
+        }
+    }
+
+  LoadArrays();
+}
+```
+
+Στο ects_total αρχικά πέρνουμε τα text με τα οποία θα οπτικοποιούμε στο χρήστη τα ects. Ακολούθος ελένχουμε αν το checkbox το οποίο κάλεσε αυτό το function είναι checked. Αν είναι τότε ο χρήστης το έκανε checked έτσι πρέπει να προσθέσουμε τα ects του. Ακολούθος τα οπτικοποιούμε. Αν είναι αρνητικό τότε το έκανε uncheck έτσι αφαιρούμε.
+```
+function ects_total(){
+   var changing_text = document.getElementById("ects_span");
+   var ects = parseInt(changing_text.innerHTML);
+   var diff = document.getElementById("ects_span_240");
+
+   if(this.checked){  
+     ects += parseInt(this.getAttribute('ects'));
+     changing_text.innerHTML=(ects);
+     var difference = 240 - ects;
+     diff.innerHTML=(difference);
+   }
+   else{
+     ects -= parseInt(this.getAttribute('ects'));
+     console.log(ects);
+     changing_text.innerHTML=(ects);
+     var difference = 240 - ects;
+     diff.innerHTML=(difference);
+   }
+
+}
+```
+
+Για να έχουμε λιγότερα clicks έκανα τη επιλογή στους χρήστες να επιλέγουν πολλαπλά μαθήματα με ένα click. Αυτο αρχικα έγινε με το να βάλουμε τα checkboxes του κάθε μαθήματος σε πίνακες. Αυτό το function πέρνει το έξάμηνο και το τύπο και φτιάχνει πίνακα με τα ανάλογα μαθήματα. Ακολούθος εφόσον αυτός είναι απλά πίνακας με ονόματα και όχι τα elements ξαναπερνάμε απο το καινούργιο πίνακα και βάζουμε μέσα τα elements που αναλογούν.
+```
+function Create_Arrays(semester,type){
+  var course_checkbox = document.getElementById('boxes'); 
+  var course_input = course_checkbox.getElementsByTagName('input');
+  var arrayrtn = new Array();
+
+  for (var i=0, len=course_input.length; i<len; i++) {
+           if( (course_input[i].getAttribute('c_type') == type) && ( course_input[i].getAttribute('sem') == semester) ){
+                arrayrtn.push(course_input[i].id)
+           }
+    }
+
+  for( var i=0, len=arrayrtn.length; i<len; i++){
+    arrayrtn[i] = document.getElementById(arrayrtn[i]);
+  }
+
+  return arrayrtn;
+}
+```
+
+Ακολούθος φτιάχνουμε όλους τους πίνακες.
+```
+function LoadArrays(){
+ for (i = 1; i < 9; i++) {
+   window['mandatory'+i] = Create_Arrays(i,"M");
+   window['AE'+i] = Create_Arrays(i,"H");
+   window['PS'+i] = Create_Arrays(i,"I");
+  }
+
+ window.mandatory_all = mandatory1.concat(mandatory2, mandatory3,mandatory4,mandatory5,mandatory6,mandatory7,mandatory8);
+ window.AE_all = AE1.concat(AE2, AE3,AE4,AE5,AE6,AE7,AE8);
+ window.PS_all = PS1.concat(PS2, PS3,PS4,PS5,PS6,PS7,PS8);
+}
+```
+
+Μετά φτιάχνουμε function με το οπόιο θα μπόρουμε να ελένξουμε αν έκανε κλικ πάνω στο checkbox για πολλαπλά. Το function πιάννει σαν μεταβλητές το πίνακα με μαθήματα που θέλουμε αυτομάτος να γινουν checked αλλά και το element_box το όποιο το καλεί αυτό. Περνάμε μέσα απο όλα τα μαθήματα και ελένχουμε αν είναι checked ή όχι. Αν είναι ήδη checked απο πριν τα αφήνουμε ενω διαφορετικα καλούμε το ects_total_multiple με μεταβλήτη το μάθημα. Όλο αυτό είναι μέσα στο if που ελένχει τη κατάσταση του checkbox που καλεί το autoCheck.
+```
+function autoCheck(m,element_box){
+  var check_for_all = document.getElementById('mandatory_checkbox');
+
+
+  for (var i=0, len2=m.length; i<len2; i++) {
+    if(element_box.checked==true){
+      if(m[i].checked==true){
+        m[i].checked=true;
+      }else{
+        m[i].checked=true;
+       ects_total_multiple(m[i]);
+      }
+
+    }else{
+      if(m[i].checked==true){
+        m[i].checked=false;
+       ects_total_multiple(m[i]);
+      }else{
+        m[i].checked=false;
+      }
+    }
+  }
+```
+  
+  
+Τέλος αυτο ακολουθή τη ίδια λογική με το ects_total() με τη διαφορά οτι πιάννει μεταβλητή αντί απλά να πιάννει το "this".
+```
+  function ects_total_multiple(m){//function gia xrisi tou autoCheck
+
+  var changing_text = document.getElementById("ects_span");
+
+  var ects = parseInt(changing_text.innerHTML);
+
+  var diff = document.getElementById("ects_span_240");
+
+  if(m.checked){
+    ects += parseInt(m.getAttribute('ects'));
+    changing_text.innerHTML=(ects);
+    var difference = 240 - ects;
+    diff.innerHTML=(difference);
+  }
+  else{
+    ects -= parseInt(m.getAttribute('ects'));
+    changing_text.innerHTML=(ects);
+    var difference = 240 - ects;
+    diff.innerHTML=(difference);
+  }
+
+  window.autocheck = 0;
+}
+  ```
+  
+Έτσι στο τέλος πίσω στο ects-calculator.md φτιάχνουμε νέα checkbox με τα οποία καλούμε το autoCheck. Δίνουμε μεταβλητές το πίνακα που θέλουμε και το checkbox το ίδιο.
+```
+<p><input onclick="autoCheck(mandatory5,this)" type="checkbox" id="mandatory5_checkbox" name="mandatory5_checkbox">
+<label style="display: initial;" for="mandatory5_checkbox">Όλα τα υποχρεωτικά - Δ εξάμηνο</label></p>
+
+<p><input onclick="autoCheck(AE5,this)" type="checkbox" id="AE5_checkbox" name="AE5_checkbox">
+<label style="display: initial;" for="AE5_checkbox">Όλα του Α.Ε - Ε εξάμηνο</label></p>
+ ```
+ 
+ Τέλος εφόσον τα προσθέσαμε για όλα τα εξάμηνα το calculator λειτουργά κανονικά.
