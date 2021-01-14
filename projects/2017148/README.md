@@ -911,7 +911,7 @@ case 8:
 ## Αίτημα ενσωμάτωσης 3+4
 
 ### Link Αποτελέσματος στο sitegr: [sitegr results](https://epic-hamilton-da9ac8.netlify.app/ects-calculator)
-### Link Αποτελέσματος στο δικό μου site: [andreaspappoutas-sitegr results](ects-demo--andreaspappoutas-sitegr.netlify.app/ects-calculator)
+### Link Αποτελέσματος στο δικό μου site: [andreaspappoutas-sitegr results](https://ects-demo--andreaspappoutas-sitegr.netlify.app/ects-calculator)
 ### Repository branch: [minimal-ionio branch](https://github.com/andreaspappoutas/minimal-ionio/tree/ects-calc)
 ###                    [sitegr-branch](https://github.com/andreaspappoutas/sitegr/tree/ects-calc)
 		   
@@ -1091,6 +1091,14 @@ function autoCheck(m,element_box){
  
  Τέλος εφόσον τα προσθέσαμε για όλα τα εξάμηνα το calculator λειτουργά κανονικά.
 
+
+## extra
+Το plugin PWA-jekyll έκανε update και είχαν εμφανιστή προβλήματα. Έκανα τη πιο κάτω αλλαγή.
+```
+gem 'jekyll-pwa-plugin', git: 'https://github.com/lavas-project/jekyll-pwa'
+```
+[pull request](https://github.com/ioniodi/sitegr/pull/23)
+[issue](https://github.com/ioniodi/sitegr/issues/22)
 
 ## <a name="P-10">Παραδοτέο 10</a>
 ### Σύνοψη:
