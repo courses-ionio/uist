@@ -15,8 +15,8 @@
 | <a href="#Paradoteo2"> 3</a>  |<a href="#Paradoteo2"> Άσκηση γραμμής εντολών </a>|
 | <a href="#Paradoteo3"> 4</a>  |<a href="#Paradoteo3"> Άσκηση προγραμματισμού </a>|
 | <a href="#Paradoteo4"> 5</a>  |<a href="#Paradoteo4"> Γραμμή εντολών </a>|
-| <a href="#Paradoteo5"> 5</a>  |<a href="#Paradoteo5">συμμετοχικό περιεχόμενο </a>|
-| <a href="#Paradoteo6"> 5</a>  |<a href="#Paradoteo6">αιτημα ενσωμάτωσης</a>|
+| <a href="#Paradoteo5"> 6</a>  |<a href="#Paradoteo5">συμμετοχικό περιεχόμενο </a>|
+| <a href="#Paradoteo6"> 7</a>  |<a href="#Paradoteo6">αιτημα ενσωμάτωσης</a>|
 | 8 | Άσκηση προγραμματισμού (HCI) ή γραμμής εντολών (SW) |
 | 9 | Άσκηση γραμμής εντολών (SW) ή αίτημα ενσωμάτωσης (CSCW, IV) |
 | 10 | συμμετοχικό περιεχόμενο |
@@ -222,7 +222,7 @@ fi
 *Σαν άσκηση έβαλα να πρέπει να αλλάξουν των κώδικα έτσι ώστε να μπορεί να γίνετε χρήση ελληνικών χαρακτήρων*
 
 ## <a name="Paradoteo6">:point_right: *Έκτο Παραδοτέο*</a>
-Αιτημα ενσωματωσης - Εχω επιλεξη να ενημερωσω το προγραμμα σπουδων
+*Αιτημα ενσωματωσης - Εχω επιλεξη να ενημερωσω το προγραμμα σπουδων
 
 Αλλαγες - 
 -Μετακίνηση μαθήματος επιλογής Ζ' εξαμήνου «Ειδικά θέματα Διδακτικής της Πληροφορικής» ως μάθημα επιλογής στο Η’ εξάμηνο
@@ -235,14 +235,20 @@ fi
 [link sto pull request](https://github.com/ioniodi/sitegr/pull/19)
 
 
+## <a name="Paradoteo7">:point_right: *Ευδομο Παραδοτέο*</a>
 
+*για το συμετοχικό περιεχόμενο έφτιαξα δέκα tweets 
 
-
-
-
-
-
-
+[tweet1](https://twitter.com/p17theo3/status/1348725616087064579)
+[tweet2](https://twitter.com/p17theo3/status/1348725876058447872)
+[tweet3](https://twitter.com/p17theo3/status/1348726125434990592)
+[tweet4](https://twitter.com/p17theo3/status/1348731887251030017)
+[tweet5](https://twitter.com/p17theo3/status/1348732500949008387)
+[tweet6](https://twitter.com/p17theo3/status/1348733561126477824)
+[tweet7](https://twitter.com/p17theo3/status/1348734216180215808)
+[tweet8](https://twitter.com/p17theo3/status/1348735006861090818)
+[tweet9](https://twitter.com/p17theo3/status/1348735402262355969)
+[tweet10](https://twitter.com/p17theo3/status/1348735853665906697)
 
 
 
