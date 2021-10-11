@@ -35,7 +35,7 @@
 
 **Μέθοδος διδασκαλίας:** Διάλεξη, εργασία.
 
-**Κριτήρια βαθμολογίας:** 10% [εβδομαδιαίο κουίζ](https://courses-ionio.github.io/projects/quiz/) + 20% [2 ασκήσεις γραμμής εντολών](https://courses-ionio.github.io/projects/dokey) + 10% [ομαδικότητα και συνεργασία](https://courses-ionio.github.io/projects/teamwork/) + 10% [Συμμετοχικό εκπαιδευτικό υλικό](https://courses-ionio.github.io/projects/social)* + 50% [εργασία ανάπτυξης](https://courses-ionio.github.io/projects/dev/) + 10% [προαιρετικό bonus](https://courses-ionio.github.io/projects/bonus/)
+**Κριτήρια βαθμολογίας:** 10% [εβδομαδιαίο κουίζ](https://courses-ionio.github.io/projects/quiz/) + 30% [2 ασκήσεις γραμμής εντολών](https://courses-ionio.github.io/projects/dokey) + 10% [ομαδικότητα και συνεργασία](https://courses-ionio.github.io/projects/teamwork/) + 20% [Συμμετοχικό εκπαιδευτικό υλικό](https://courses-ionio.github.io/projects/social)* + 30% [εργασία ανάπτυξης](https://courses-ionio.github.io/projects/dev/) + 10% [προαιρετικό bonus](https://courses-ionio.github.io/projects/bonus/)
 
 **Τελική βαθμολόγηση:** υποχρεωτική συμπλήρωση της βάσης σε όλα τα κριτήρια για να γίνει τελική βαθμολόγηση
 
