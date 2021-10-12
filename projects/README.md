@@ -2,8 +2,8 @@
 
 Παρακαλώ **μην πειράξετε** το παρόν αρχείο, αλλά δημιουργήστε νέο στο φάκελό σας σύμφωνα με τις [οδηγίες](https://courses-ionio.github.io/help/guide/).
 
-Στον φάκελο [2020XXX](https://github.com/courses-ionio/iv/tree/master/projects/2020XXX) υπάρχει ένα **ενδεικτικό παράδειγμα 
+Στον φάκελο [201XXXX](https://github.com/courses-ionio/iv/tree/master/projects/201XXXX) υπάρχει ένα **ενδεικτικό παράδειγμα 
 αναφοράς/παραδοτέων** από μια εργασία παλαιότερου έτους.
 
-Το συγκεκριμένο περιεχόμενο του φακέλου [2020XXX](https://github.com/courses-ionio/iv/tree/master/projects/2020XXX/README.md) θα πρέπει να 
+Το συγκεκριμένο περιεχόμενο του φακέλου [201XXXX](https://github.com/courses-ionio/iv/tree/master/projects/201XXXX/README.md) θα πρέπει να 
 χρησιμοποιηθεί σαν ευρύτερο παράδειγμα καλής **δομής** των **παραδοτέων** μιας εργασίας και όχι σαν αποκλειστικό πρότυπο. Σε κάθε περίπτωση πρέπει να ακολουθούνται οι **τρέχουσες οδηγίες για το [περιεχόμενο της αναφοράς](https://courses-ionio.github.io/help/deliverables/)**.
