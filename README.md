@@ -35,7 +35,7 @@
 
 **Μέθοδος διδασκαλίας:** Ασκήσεις, εργασία.
 
-**Κριτήρια βαθμολογίας:** 30% [2 ασκήσεις γραμμής εντολών](https://courses-ionio.github.io/projects/dokey) + 20% [Συμμετοχικό εκπαιδευτικό υλικό](https://courses-ionio.github.io/projects/social) + 40% [εργασία ανάπτυξης](https://courses-ionio.github.io/projects/dev/) + 10% [υποχρεωτικό bonus](https://courses-ionio.github.io/projects/bonus/)
+**Κριτήρια βαθμολογίας:** 20% [2 ασκήσεις γραμμής εντολών](https://courses-ionio.github.io/projects/dokey) + 20% [Συμμετοχικό εκπαιδευτικό υλικό](https://courses-ionio.github.io/projects/social) + 50% [εργασία ανάπτυξης](https://courses-ionio.github.io/projects/dev/) + 10% [υποχρεωτικό bonus](https://courses-ionio.github.io/projects/bonus/)
 
 **Τελική βαθμολόγηση:** υποχρεωτική συμπλήρωση της βάσης σε όλα τα κριτήρια για να γίνει τελική βαθμολόγηση
 
