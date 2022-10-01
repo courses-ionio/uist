@@ -35,7 +35,7 @@
 
 **Μέθοδος διδασκαλίας:** Ασκήσεις, εργασία.
 
-**Κριτήρια βαθμολογίας:** 10% [2 ασκήσεις γραμμής εντολών](https://courses-ionio.github.io/help/cli/) + 10% [Συμμετοχικό εκπαιδευτικό υλικό](https://courses-ionio.github.io/help/social) + 20% [ομαδικότητα και συνεργασία](https://courses-ionio.github.io/help/teamwork/) + 20% [συμμετοχή στην τάξη](https://courses-ionio.github.io/help/classroom/) + 20% [συνεργατική κατασκευή οδηγού σπουδών](https://github.com/ioniodi/guide) + 20% [εναλλακτικά συστήματα λογισμικού](https://courses-ionio.github.io/help/alt/) 
+**Κριτήρια βαθμολογίας:** 10% [4 ασκήσεις γραμμής εντολών](https://courses-ionio.github.io/help/cli/) + 10% [Συμμετοχικό εκπαιδευτικό υλικό](https://courses-ionio.github.io/help/social) + 20% [ομαδικότητα και συνεργασία](https://courses-ionio.github.io/help/teamwork/) + 20% [συμμετοχή στην τάξη](https://courses-ionio.github.io/help/classroom/) + 20% [συνεργατική κατασκευή οδηγού σπουδών](https://github.com/ioniodi/guide) + 20% [εναλλακτικά συστήματα λογισμικού](https://courses-ionio.github.io/help/alt/) 
 
 **Τελική βαθμολόγηση:** υποχρεωτική συμπλήρωση της βάσης σε όλα τα κριτήρια για να γίνει τελική βαθμολόγηση
 
