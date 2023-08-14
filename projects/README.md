@@ -25,54 +25,17 @@ GitHub organisation url: [OMADA11](https://github.com/OMADA10)
 | 12 | <ul><li> [x] <a href="#FINAL">Τελική αναφορά </a></li></ul>|  [Ανέβασμα στο σχολιασμό της συζήτησης το Παραδοτέο 10](https://github.com/courses-ionio/cscw/discussions/200)| `Βαθμός:9.6/10` <a href="#aks12">Τελική αυταξιολόγηση</a> |
 
 # <h1 id ="introduction">1ο ΠΑΡΑΔΟΤΕΟ - ΕΙΣΑΓΩΓΗ:</h1>
-Μέσω του μαθήματος Οπτικοποίηση της Πληροφορίας, το οποίο βασίζεται στο αποτέλεσμα που επιτελείτε μετά την διαχείρηση και επεξεργασία διάφορετικών δεδομένων προκειμένου να βρει κάποιο νοημα μέσω αυτών, ευελπιστώ να εξελίξω και να αποκτήσω τις παράκατω χρήσιμες  
+Μέσω του μαθήματος Οπτικοποίηση της Πληροφορίας, το οποίο βασίζεται στο αποτέλεσμα που επιτελείτε μετά την διαχείρηση και επεξεργασία διάφορετικών δεδομένων προκειμένου να βρει κάποιο νοημα μέσω αυτών, ευελπιστώ να εξελίξω και να αποκτήσω τις παράκατω χρήσιμες δεξιότητες:
 
+- Την δυνατότητα να μπορώ να δημιουργώ ενδιαφέρον και ελκυστικές ιστορίες, άρθρα, παράγραφους είτε ακόμη και στατιστικούς γράφους μόνο με την χρήση απλών νούμερων ή δεδομένων. Αύτη η δεξιότητα θα μου φανεί εξαιρετικά χρήσιμη στο μέλλον σε περίπτωση που ασχολειθώ με την ανάπτυξη ιστοσελίδων που ασχολούνται με το marketing, τις πωλήσεις, τις ηλεκτρονικές αγορές κλπ, διότι θα μάθω να δημιουργώ ιστοσελίδα πιο εμφανίσημη και πιο ελκυστική προς το πελάτη, αυξάνοντας έτσι τις πωλήσεις μιας επιχείρησης.
 
-
+- Το να έχω την ικανότητα να παίρνω σοβαρές αποφάσεις με περισσότερη αποδοτικότητα για κάποια επιχείρηση. Πιο συγκεκριμένα, κάνοντας ανάλυση δεδομένων και έχοντας μπροστά μου τα αποτελέσματα σε μία πιο ευανάγνωστη μορφή, όπως κάποιο γράφο, μπορούν να δωθούν ευκαιρίες ή δυνατότητες που με σωστή διαχείρηση μπορούν να προσφέρουν πολλά σε μια επιχείρηση καθώς επίσης και να φανερωθούν προβλήματα ή αδυναμίες με αποτέλεσματα να μπορέσουν να επιλυθούν συντόμως.
 
 ## <h2 id=aks1> Αυταξιολόγηση: `βαθμός 10/10`</h2>
 Στο παραδοτέο αυτό πραγματοποιήθηκαν όλα τα ζητούμενα εμπρόθεσμα. Δηλαδή έγινε η `Εισαγωγή` μου, στην οποία περιέγραψα όλους τους στόχους που είχα για το συγκεκριμένο μάθημα. Επίσης, δημιουργήθηκε [η ομάδα μου](https://github.com/OMADA11) και έπειτα έφτιαξα σωστά την αναφορά μου κάνοντας `fork -> δημιουργία branch ΑΜ -> μέσα στον φάκελο project έφτιαξα έναν φάκελο με όνομα τον ΑΜ μου -> μέσα σε αυτόν έφτιαξα ένα README.md όπου ειναι η αναφορά μου και έναν copy paste τον πίνακα περιεχομένων`. Τέλος, ανέβασα εμπρόθεσμα το παραδοτέο 1 στη συζητήση [#174](https://github.com/courses-ionio/cscw/discussions/174).
  
-# <h1 id="1st_pull_request"> 2ο ΠΑΡΑΔΟΤΕΟ - Αίτημα ενσωμάτωσης Α (απλή προσθήκη-αλλαγή δεδομένων):</h1>
+# <h1 id="arch_wm"> 2ο ΠΑΡΑΔΟΤΕΟ - Άσκηση γραμμής εντολών (archlinux+wm)</h1>
 ## Επεξήγηση παραδοτέου:
-Στο συγκεκριμένο παραδοτέο χρειάστηκε να συνεισφέρουμε στην κεντρική ιστοσελίδα του τμήματος πληροροφορικής στο [netlify](https://epic-hamilton-da9ac8.netlify.app/) μέσω του github αποθετηρίου [sitegr](https://github.com/ioniodi/sitegr), έτσι ώστε να μην διαφέρει τόσο πολύ με την [κύρια ιστοσελίδα του τμήματος πληροφορικής](https://di.ionio.gr/). 
-## Δήλωση θέματος - issue#414:
-Αρχικά, δημιούργησα ένα [issue#414](https://github.com/ioniodi/sitegr/issues/414) στο αποθετήριο [sitegr](https://github.com/ioniodi/sitegr) του github δηλώνοντας το θέμα μου και περιμένοντας το `green light` από κάποιο καθηγητή, προκειμένου να μην καταλήξω να έχω το ίδιο με κάποιον άλλο συμφοιτητή μου. Πιο συγκεκριμένα, προσωπικά επέλεξα να κάνω την εξής αλλαγή:
-
-    Πρόσθεση νέας καθηγήτριας [`Δέσποινα Μουρατίδη`](https://di.ionio.gr/gr/department/staff/841-mouratidi) στην ίδια υποκατηγορία `Ακαδημαϊκοί Υπότροφοι`.
-
- ## Η συνεισφορά μου σε demo branch:
-Αρχικά, έκανα `fork` το [sitegr από το ioniodi](https://github.com/ioniodi/sitegr) από το <a href="https://github.com/nkanagno"> github profile μου</a>, μετά έφτιαξα νέο [demo branch](https://github.com/nkanagno/sitegr/tree/demo-branch) για τις αλλαγές στο netlify, έπειτα σε αυτό το [demo branch](https://github.com/nkanagno/sitegr/tree/demo-branch) έφτιαξα τo submodule του, αλλάζοντας το φάκελο [`.gitmodules`](https://github.com/nkanagno/sitegr/blob/master/.gitmodules) και εκτελόντας τις παρακάτω εντολές:
-```
-git clone https://github.com/nkanagno/sitegr
-cd sitegr/
-git submodule update --remote --init
-git submodule update --remote --merge
-git add .
-git commit -m "update submodules"
-git push origin
-```
-Έπειτα από το φάκελο `_data` πρόσθεσα στο αρχείο [`authors.yml`](https://github.com/nkanagno/sitegr/blob/master/_data/authors.yml), τα στοιχεία της καθηγήτριας `Δέσποινας Μουρατίδη`:
-```
-dmouratidi:
- name: "Δέσποινα Μουρατίδη"
- email: "dmouratidi@gmail.com"
- bio: ""
- avatar: "/assets/images/dmouratidi.jpg"
- 
- dmouratidi-en:
- name: "Despoina Mouratidi"
- email: "dmouratidi@gmail.com"
- bio: ""
- avatar: "/assets/images/dmouratidi.jpg"
- ```
-και πρόσθεσα στο `/assets/images/` την εικόνα [`dmouratidi.jpg`](https://github.com/nkanagno/sitegr/blob/master/assets/images/dmouratidi.jpg).
-
-Τέλος, Πρόσθεσα τo παρακάτω αρχείo στον φάκελο `all_collections`:
-- [dmouratidi.md](https://github.com/nkanagno/all_collections/blob/277f1a5c6a094d3ce665ea508c738dbee5c1d13a/_people/dmouratidi.md)
-
-## Demo link και Pull request:
-Το Demo προσωπικό μου link στο [netlify sitegr](https://nkanagno-sitegr.netlify.app/) (πιο συγκεκριμένα, link στο netlify κατευθείαν στη κατηγορία [προσωπικό](https://nkanagno-sitegr.netlify.app/people/) που έγιναν οι αλλαγές) ως απόδειξη ότι όλα δουλεύουν κανονικά σε νέο [demo branch](https://github.com/nkanagno/sitegr/tree/demo-branch), τo [pull request που έκανα στο all_collections](https://github.com/ioniodi/all_collections/pull/70) και το [pull request που έκανα στο sitegr](https://github.com/ioniodi/sitegr/pull/422) του [master branch με το αρχικό submodule του ioniodi](https://github.com/nkanagno/sitegr/tree/master).
 
 ## <h2 id="aks2"> Αυταξιολόγηση: `βαθμός 10/10`</h2>
 Στο παραδοτέο αυτό πραγματοποιήθηκαν όλα τα ζητούμενα εμπρόθεσμα. Δηλαδή, έγινε merge το pull request μου για την συνεισφορά μου στο ανεπίσημο site του τμήματος. Τέλος, ανέβασα εμπρόθεσμα το παραδοτέο 2 στη συζητήση [#177](https://github.com/courses-ionio/cscw/discussions/177).
