@@ -33,7 +33,7 @@
 
 **Μέθοδος διδασκαλίας:** Ασκήσεις, εργασία.
 
-**Κριτήρια βαθμολογίας:** 40% [4 ασκήσεις γραμμής εντολών](https://courses-ionio.github.io/help/cli/) + 20% [ομαδικότητα και συνεργασία](https://courses-ionio.github.io/help/teamwork/) + 20% [συμμετοχή στην τάξη](https://courses-ionio.github.io/help/classroom/) + 10% [συνεργατική κατασκευή οδηγού σπουδών](https://github.com/ioniodi/guide) + 10% [εναλλακτικά συστήματα λογισμικού διάδρασης](https://courses-ionio.github.io/help/alt/) 
+**Κριτήρια βαθμολογίας:** 40% [4 ασκήσεις γραμμής εντολών](https://epidrome.github.io/teaching/cli/) + 20% [ομαδικότητα και συνεργασία](https://epidrome.github.io/teacing/teamwork/) + 20% [συμμετοχή στην τάξη](https://epidrome.github.io/teaching/classroom/) + 10% [συνεργατική κατασκευή οδηγού σπουδών](https://github.com/ioniodi/guide) + 10% [εναλλακτικά συστήματα λογισμικού διάδρασης](https://epidrome.github.io/teaching/alt/) 
 
 **Τελική βαθμολόγηση:** υποχρεωτική συμπλήρωση της βάσης σε όλα τα κριτήρια για να γίνει τελική βαθμολόγηση
 
