@@ -8,7 +8,7 @@
 
 | Εβδομάδα | [Όλα τα παραδοτέα βρίσκονται στην ίδια σελίδα της τελικής αναφοράς](https://epidrome.github.io/teaching/deliverables/) με τα προσωπικά στοιχεία σας (Όνομα, ΑΜ, github profile) και μαζί με αυτόν εδώ τον πίνακα περιεχομένων | Σύνδεσμος στην [εβδομαδιαία παρουσίαση προόδου στις συζητήσεις](https://github.com/courses-ionio/iv/discussions/categories/show-and-tell) | Αυτοαξιολόγηση σύμφωνα με τα κριτήρια της αντίστοιχης άσκησης |
 | --- | --- | --- | --- |
-| 1 |  [Φορκ και δημιουργία σελίδας τελικής αναφοράς](https://courses-ionio.github.io/help/guide/), [προσθήκη πίνακα περιεχομένων](https://raw.githubusercontent.com/courses-ionio/iv/master/README.md), [συγγραφή της εισαγωγής](https://epidrome.github.io/teaching/intro/), αποστολή της εισαγωγής για σχολιασμό στην συζήτηση και καταγραφή του συνδέσμου συζήτησης δίπλα --> |[go!]() | |
+| 1 |  [Φορκ και δημιουργία σελίδας τελικής αναφοράς](https://courses-ionio.github.io/help/guide/), [προσθήκη πίνακα περιεχομένων](https://raw.githubusercontent.com/courses-ionio/iv/master/README.md), [συγγραφή της εισαγωγής](https://epidrome.github.io/teaching/intro/), αποστολή της εισαγωγής για σχολιασμό στην συζήτηση και καταγραφή του συνδέσμου συζήτησης δίπλα --> |[go!](https://github.com/courses-ionio/iv/discussions/16) | |
 | 2 | Άσκηση γραμμής εντολών (archlinux+wm) |[go!]()|
 | 3 | Εναλλακτικό σύστημα |[go!]()|
 | 4 | Άσκηση γραμμής εντολών (custom wm) |[go!]()|
