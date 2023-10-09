@@ -9,7 +9,7 @@
 | Εβδομάδα | [Όλα τα παραδοτέα βρίσκονται στην ίδια σελίδα της τελικής αναφοράς](https://epidrome.github.io/teaching/deliverables/) με τα προσωπικά στοιχεία σας (Όνομα, ΑΜ, github profile) και μαζί με αυτόν εδώ τον πίνακα περιεχομένων | Σύνδεσμος στην [εβδομαδιαία παρουσίαση προόδου στις συζητήσεις](https://github.com/courses-ionio/iv/discussions/categories/show-and-tell) | Αυτοαξιολόγηση σύμφωνα με τα κριτήρια της αντίστοιχης άσκησης |
 | --- | --- | --- | --- |
 | 1 |  [Φορκ και δημιουργία σελίδας τελικής αναφοράς](https://courses-ionio.github.io/help/guide/), [προσθήκη πίνακα περιεχομένων](https://raw.githubusercontent.com/courses-ionio/iv/master/README.md), [συγγραφή της εισαγωγής](https://epidrome.github.io/teaching/intro/), αποστολή της εισαγωγής για σχολιασμό στην συζήτηση και καταγραφή του συνδέσμου συζήτησης δίπλα --> |[go!](https://github.com/courses-ionio/iv/discussions/16) | |
-| 2 | Άσκηση γραμμής εντολών (archlinux+wm) |[go!]()|
+| 2 | Άσκηση γραμμής εντολών (archlinux+wm) |[go!](https://github.com/courses-ionio/iv/discussions/17)|
 | 3 | Εναλλακτικό σύστημα |[go!]()|
 | 4 | Άσκηση γραμμής εντολών (custom wm) |[go!]()|
 | 5 | Αίτημα ενσωμάτωσης |[go!]()|
@@ -17,7 +17,7 @@
 | 7 | Εναλλακτικό σύστημα |[go!]()|
 | 8 | Άσκηση γραμμής εντολών (cli data analysis) |[go!]()|
 | 9 | Αίτημα ενσωμάτωσης |[go!]()|
-| 10 | Τελική αναφορά |[go!2]()|
+| 10 | Τελική αναφορά |[go!]()|
 
 
 ## [Εβδομάδα Πρώτη: Εισαγωγή]()
@@ -33,8 +33,11 @@
 
 ## [Εβδομάδα Δεύτερη: Arch lnstall]()
 
+Το Arch Linux ήταν είδη εγκατεστημένο από το [hci](). Ως window manager χρησιμοποιώ τον **xmonad**
+
 [![asciicast](https://asciinema.org/a/8HNs8aCMSVI4XlMK29togXope.svg)](https://asciinema.org/a/8HNs8aCMSVI4XlMK29togXope)
 
+[πίνακας περιεχομένων :arrow_up:](https://github.com/inf2021090/iv/tree/inf2021090/projects/2021090#%CF%80%CE%AF%CE%BD%CE%B1%CE%BA%CE%B1%CF%82-%CF%80%CE%B5%CF%81%CE%B9%CE%B5%CF%87%CE%BF%CE%BC%CE%AD%CE%BD%CF%89%CE%BD)
 <details>
   <summary>βιβλιογραφία</summary>
 
