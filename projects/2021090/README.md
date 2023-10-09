@@ -35,6 +35,12 @@
 
 [![asciicast](https://asciinema.org/a/8HNs8aCMSVI4XlMK29togXope.svg)](https://asciinema.org/a/8HNs8aCMSVI4XlMK29togXope)
 
+<details>
+  <summary>βιβλιογραφία</summary>
+
+  ||
+</details>
+
 ## [Εβδομάδα Τρίτη: Εναλλακτικό Σύστημα]()
 
 ## [Εβδομάδα Τέταρτη: Arch + wm]()
