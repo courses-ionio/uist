@@ -39,7 +39,7 @@
 Πριν κάνω reboot και τελειώσω το installation, φρόντισα να δημιουργήσω ένα προφίλ με την εντολή `vim /etc/hostname` και προσωπικό κωδικό με την εντολή `passwd`. Μετά την εκτέλεση αυτών των 2, βγήκα από το root profile με την εντολή `exit` και με την εντολή `reboot` πραγματοποίησα επανεκκίνηση στο σύστημα μου.
 
 ### ASCIINEMA VIDEOS
-* [`neofetch-journalctl`](https://asciinema.org/a/528720)
+* [`neofetch-journalctl`](https://asciinema.org/a/zgjfOm0K8xKFlJdwyMhj8Jhtg)
 
 ## ΕΓΚΑΤΑΣΤΑΣΗ I3
 Η εγκατάσταση του `WM` i3 ήταν πολύ απλή, χρησιμοποίησα την εντολή `sudo pacman -S i3` για να εγκαταστήσω τον i3. Στην συνέχεια, με την εντολή `nano -w .xinitrc` άνοιξά το αρχείο xinitrc και έγραψα την εντολή `exec i3` με σκοπό να ενεργοποιήσω στο X Window System τον i3, έπειτα έκανα reboot το σύστημα μου και για να εκκινήσω τον i3 χρησιμοποίησα την εντολή `startx`.
