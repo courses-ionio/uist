@@ -48,6 +48,15 @@
 
 ## [Εβδομάδα Τέταρτη: Arch + wm]()
 
+![Imgur](https://i.imgur.com/8w55Va2.png)
+
+[πίνακας περιεχομένων :arrow_up:](https://github.com/inf2021090/iv/tree/inf2021090/projects/2021090#%CF%80%CE%AF%CE%BD%CE%B1%CE%BA%CE%B1%CF%82-%CF%80%CE%B5%CF%81%CE%B9%CE%B5%CF%87%CE%BF%CE%BC%CE%AD%CE%BD%CF%89%CE%BD)
+<details>
+  <summary>βιβλιογραφία</summary>
+
+  ||
+</details>
+
 ## [Εβδομάδα Πέμπτη: Αίτημα Ενσωμάτωσης]()
 
 ## [Εβδομάδα Έκτη: cli data analysis]()
