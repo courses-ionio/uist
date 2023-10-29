@@ -55,3 +55,6 @@
 
 ### Bar
 Για `status-bar` επέλεξα ένα έτοιμο theme ένα repository στο github. Πιο συγκεκριμένα, επισκέφτηκα το repository με [όνομα](https://github.com/tobi-wan-kenobi/bumblebee-status), έκανα `git clone` στον δίσκο μου το αποθετήριο με τα διαθέσημα themes. Στην συνέχεια, άνοιξα το αρχέιο `.config/i3/config` και δημιούργησα ένα block κώδικα, στο οποίο αντέγραψα τον έτοιμο κώδικα που είχε το repository και τον προσάρμοσα στις δικές μου απαιτήσεις(αλλαγή θέσης του bar, προβολή δικών μου δεδομένων).
+
+## Notification
+Για notification manager επέλεξα τον dunst, 
