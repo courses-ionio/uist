@@ -52,9 +52,12 @@
 
 ### Wallpaper
 Για να αλλάξω το μαύρο φόντο που υπάρχει εξ αρχής στην επιφάνεια του i3, χρειάστηκε να εγκαταστήσω το πακέτο `feh` με το οποίο είναι εφικτή η προβολή εικόνων. Στην συνέχεια κατέβασα από το διαδίκτυο μια εικόνα της αρεσκείας μου και για να την προβάλω στην επιφάνεια του i3, χρειάστηκε να ανοίξω το αρχείο `.config/i3/config` και να προσθέσω μια νέα κατηγορία με όνομα `DISPLAY`, στην οποία τρέχω την εντολή `exec_always feh --bg-fill /home/Axileas/Downloads/Arch.jpg`.
+![wallpaper](https://github.com/Axileaszervos/iv/assets/115211756/13989031-3a7c-44de-8fe2-8b56cce4b555)
 
 ### Bar
 Για `status-bar` επέλεξα ένα έτοιμο theme ένα repository στο github. Πιο συγκεκριμένα, επισκέφτηκα το repository με [όνομα](https://github.com/tobi-wan-kenobi/bumblebee-status), έκανα `git clone` στον δίσκο μου το αποθετήριο με τα διαθέσιμα themes. Στην συνέχεια, άνοιξα το αρχέιο `.config/i3/config` και δημιούργησα ένα block κώδικα, στο οποίο αντέγραψα τον έτοιμο κώδικα που είχε το repository και τον προσάρμοσα στις δικές μου απαιτήσεις(αλλαγή θέσης του bar, προβολή δικών μου δεδομένων).
+![status-bar](https://github.com/Axileaszervos/iv/assets/115211756/f507c068-6ae1-4be3-9192-c8f02fc9dcb3)
 
 ## Notification
 Για notification manager επέλεξα τον dunst, με την εντολή `sudo pacman -S dunst` τον εγκατέστησα και με την εντολή `notify-send` μπορώ να γράψω κάτι και να το λάβω σαν ειδοποίηση. Προσωπικά, έφτιαξα ένα shell script, που όταν το καλώ, μου βγάζει ειδοποίηση για τις διαθέσιμες ενημερώσεις του συστήματος.
+![dunst](https://github.com/Axileaszervos/iv/assets/115211756/e7abde6b-2ebd-4d75-a871-5869f94240f7)
