@@ -59,5 +59,5 @@
 ![status-bar](https://github.com/Axileaszervos/iv/assets/115211756/f507c068-6ae1-4be3-9192-c8f02fc9dcb3)
 
 ## Notification
-Για notification manager επέλεξα τον dunst, με την εντολή `sudo pacman -S dunst` τον εγκατέστησα και με την εντολή `notify-send` μπορώ να γράψω κάτι και να το λάβω σαν ειδοποίηση. Προσωπικά, έφτιαξα ένα shell script, που όταν το καλώ, μου βγάζει ειδοποίηση για τις διαθέσιμες ενημερώσεις του συστήματος.
+Για notification manager επέλεξα τον dunst, με την εντολή `sudo pacman -S dunst` τον εγκατέστησα και με την εντολή `notify-send` μπορώ να γράψω κάτι και να το λάβω σαν ειδοποίηση. Όπως φαίνεται και στην εικόνα, όταν ενεργοποιώ τον dunst, μου εμφανίζει την κατάσταση της σύνδεσης μου.
 ![dunst](https://github.com/Axileaszervos/iv/assets/115211756/e7abde6b-2ebd-4d75-a871-5869f94240f7)
