@@ -72,8 +72,7 @@ GitHub organisation url: [OMADA11](https://github.com/OMADA10)
 
 
 # <h1 id="cli_data_analysis1"> 6ο ΠΑΡΑΔΟΤΕΟ - Άσκηση γραμμής εντολών (cli data analysis) </h1>
- Showing git commits with git-bar and spark (Pipelining, ShellScripting):
-Δημιούργησα ένα shell script με το παρακάτω περιεχόμενο 
+Δημιούργησα ένα shell script με το παρακάτω περιεχόμενο:
 ```
 #!/bin/bash                                                                                                                                           
                                                                                                                                                       
