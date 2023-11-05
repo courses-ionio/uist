@@ -15,14 +15,14 @@ GitHub organisation url: [OMADA11](https://github.com/OMADA10)
 | 2 | <ul><li> [x] <a href="#arch_wm"> Άσκηση γραμμής εντολών (archlinux+wm) </a></li></ul>| [Ανέβασμα στο σχολιασμό της συζήτησης το Παραδοτέο 2](https://github.com/courses-ionio/iv/discussions/22) | |
 | 3 | <ul><li> [x] <a href="#fantasyconsoles1">Εναλλακτικό σύστημα 1 </a></li></ul> | |  |
 | 4 | <a href="#wm"> Άσκηση γραμμής εντολών (custom wm) </a></li></ul>| | |
-| 5 |  <ul><li> [x] <a href="#2A">Συμμετοχικό περιεχόμενο 2A </a></li></ul>| |  |
-| 6 | <ul><li> [x] <a href="#pull_request1">Αίτημα ενσωμάτωσης 1 </a></li></ul>| | |
-| 7 | <ul><li> [x] <a href="#cli_data_analysis1">Άσκηση γραμμής εντολών (cli data analysis) </a></li></ul>|  | |
-| 8 | <ul><li> [x] <a href="#fantasyconsoles2">Εναλλακτικό σύστημα </a></li></ul>|  | |
-| 9 | <ul><li> [x] <a href="#cli_data_analysis1">Άσκηση γραμμής εντολών (cli data analysis) </a></li></ul>| | |
-| 10 | <ul><li> [x] <a href="#2B">Συμμετοχικό περιεχόμενο 2B </a></li></ul>| | |
-| 11 | <ul><li> [x] <a href="#pull_request2">Αίτημα ενσωμάτωσης 2 </a></li></ul>| | |
-| 12 | <ul><li> [x] <a href="#FINAL">Τελική αναφορά </a></li></ul>|  | |
+| 5 |  <ul><li> [x] <a href="#pull_request1">Αίτημα ενσωμάτωσης 1 </a></li></ul>| | |
+| 6 | <ul><li> [x] <a href="#cli_data_analysis1">Άσκηση γραμμής εντολών (cli data analysis) </a></li></ul>|  | |
+| 7 | <ul><li> [x] <a href="#fantasyconsoles2">Εναλλακτικό σύστημα </a></li></ul>|  | |
+| 8 | <ul><li> [x] <a href="#cli_data_analysis1">Άσκηση γραμμής εντολών (cli data analysis) </a></li></ul>| | |
+| 9 | <ul><li> [x] <a href="#pull_request2">Αίτημα ενσωμάτωσης 2 </a></li></ul>| | |
+| 10 | <ul><li> [x] <a href="#FINAL">Τελική αναφορά </a></li></ul>|  | |
+
+
 
 # <h1 id ="introduction">1ο ΠΑΡΑΔΟΤΕΟ - ΕΙΣΑΓΩΓΗ:</h1>
 Μέσω του μαθήματος Οπτικοποίηση της Πληροφορίας, το οποίο βασίζεται στο αποτέλεσμα που επιτελείτε μετά την διαχείρηση και επεξεργασία διάφορετικών δεδομένων προκειμένου να βρει κάποιο νοημα μέσω αυτών, ευελπιστώ να εξελίξω και να αποκτήσω τις παράκατω χρήσιμες δεξιότητες:
@@ -67,7 +67,12 @@ GitHub organisation url: [OMADA11](https://github.com/OMADA10)
 ```startx```
 και ξεκίνησα ένα terminal πατώντας τα κουμπί των windows πάνω στο πληκτρολόγιό μου και enter.
 
-## Showing git commits with git-bar and spark (Pipelining, ShellScripting):
+# <h1 id="wm"> 4ο ΠΑΡΑΔΟΤΕΟ - Άσκηση γραμμής εντολών (custom wm) (cli data analysis) </h1>
+Αφότου πραγματοποιήθηκε επιτυχώς η εγκατάσταση του window manager i3,
+
+
+# <h1 id="cli_data_analysis1"> 6ο ΠΑΡΑΔΟΤΕΟ - Άσκηση γραμμής εντολών (cli data analysis) </h1>
+ Showing git commits with git-bar and spark (Pipelining, ShellScripting):
 Δημιούργησα ένα shell script με το παρακάτω περιεχόμενο 
 ```
 #!/bin/bash                                                                                                                                           
