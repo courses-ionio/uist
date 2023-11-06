@@ -10,9 +10,9 @@
 | --- | --- | --- | --- |
 | 1 |  [Φορκ και δημιουργία σελίδας τελικής αναφοράς](https://courses-ionio.github.io/help/guide/), [προσθήκη πίνακα περιεχομένων](https://raw.githubusercontent.com/courses-ionio/iv/master/README.md), [συγγραφή της εισαγωγής](https://epidrome.github.io/teaching/intro/), αποστολή της εισαγωγής για σχολιασμό στην συζήτηση και καταγραφή του συνδέσμου συζήτησης δίπλα --> |https://github.com/courses-ionio/iv/discussions/15 | |
 | 1 | Φορκ του αποθετηρίου και δημιουργία της σελίδας της αναφοράς με τα προσωπικά στοιχεία σας, της σύνοψης με αυτόν τον πίνακα περιεχομένων, και συγγραφή της εισαγωγής με περιγραφή των αναγκών και των στόχων σας για το αντίστοιχο μάθημα* |
-| 2 | Άσκηση γραμμής εντολών (archlinux+wm) |
-| 3 | Εναλλακτικό σύστημα |
-| 4 | Άσκηση γραμμής εντολών (custom wm) |
+| 2 | Άσκηση γραμμής εντολών (archlinux+wm) | https://github.com/courses-ionio/iv/discussions/24
+| 3 | Εναλλακτικό σύστημα | https://github.com/courses-ionio/iv/discussions/25
+| 4 | Άσκηση γραμμής εντολών (custom wm) | https://github.com/courses-ionio/iv/discussions/26
 | 5 | Αίτημα ενσωμάτωσης |
 | 6 | Άσκηση γραμμής εντολών (cli data analysis) |
 | 7 | Εναλλακτικό σύστημα |
@@ -58,7 +58,7 @@
 
 # ΠΑΡΑΔΟΤΕΟ 4 - Άσκηση γραμμής εντολών (custom wm)
 
-Για window manager επέλεξα τον `i3` και παρακάτω θα παρουσιάσο όλα τα assignments που υπάρχουν στο παραδοτέο για την παραμετροποίηση του window manager.
+Για window manager επέλεξα τον `i3` και παρακάτω θα παρουσιάσω όλα τα assignments όλα τα assignments που επέλεξα για την παραμετροποίηση του window manager.
 
 ### Wallpaper
 Για να αλλάξω το μαύρο φόντο που υπάρχει εξ αρχής στην επιφάνεια του i3, χρειάστηκε να εγκαταστήσω το πακέτο `feh` με το οποίο είναι εφικτή η προβολή εικόνων. Στην συνέχεια κατέβασα από το διαδίκτυο μια εικόνα της αρεσκείας μου και για να την προβάλω στην επιφάνεια του i3, χρειάστηκε να ανοίξω το αρχείο `.config/i3/config` και να προσθέσω μια νέα κατηγορία με όνομα `DISPLAY`, στην οποία τρέχω την εντολή `exec_always feh --bg-fill /home/Axileas/Downloads/Arch.jpg`.
@@ -68,6 +68,6 @@
 Για `status-bar` επέλεξα ένα έτοιμο theme ένα repository στο github. Πιο συγκεκριμένα, επισκέφτηκα το repository με [όνομα](https://github.com/tobi-wan-kenobi/bumblebee-status), έκανα `git clone` στον δίσκο μου το αποθετήριο με τα διαθέσιμα themes. Στην συνέχεια, άνοιξα το αρχέιο `.config/i3/config` και δημιούργησα ένα block κώδικα, στο οποίο αντέγραψα τον έτοιμο κώδικα που είχε το repository και τον προσάρμοσα στις δικές μου απαιτήσεις(αλλαγή θέσης του bar, προβολή δικών μου δεδομένων).
 ![status-bar](https://github.com/Axileaszervos/iv/assets/115211756/f507c068-6ae1-4be3-9192-c8f02fc9dcb3)
 
-## Notification
+### Notification
 Για notification manager επέλεξα τον dunst, με την εντολή `sudo pacman -S dunst` τον εγκατέστησα και με την εντολή `notify-send` μπορώ να γράψω κάτι και να το λάβω σαν ειδοποίηση. Όπως φαίνεται και στην εικόνα, όταν ενεργοποιώ τον dunst, μου εμφανίζει την κατάσταση της σύνδεσης μου.
 ![dunst](https://github.com/Axileaszervos/iv/assets/115211756/e7abde6b-2ebd-4d75-a871-5869f94240f7)
