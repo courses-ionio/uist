@@ -14,7 +14,7 @@ GitHub organisation url: [OMADA11](https://github.com/OMADA10)
 | 1 | <ul><li> [x] Η αναφορά μου + προσθήκη πίνακα περιεχομένων  </li></ul><ul><li> [x] <a href="#introduction"> Συγγραφή της εισαγωγής </a> </li></ul>  <ul><li> [x] Ανοιχτή ομάδα στις συζητήσεις με όνομα <br> `OMADA10` </li></ul>| [Ανέβασμα στο σχολιασμό της συζήτησης το Παραδοτέο 1 ](https://github.com/courses-ionio/iv/discussions/18) | `Βαθμός:10/10` Δίοτι πραγματοποιήθηκαν όλα τα ζητούμενα εμπρόθεσμα. <br><a href="#aks1">Aναλυτική αυταξιολόγηση εδώ</a> |
 | 2 | <ul><li> [x] <a href="#arch_wm"> Άσκηση γραμμής εντολών (archlinux+wm) </a></li></ul>| [Ανέβασμα στο σχολιασμό της συζήτησης το Παραδοτέο 2](https://github.com/courses-ionio/iv/discussions/22) | |
 | 3 | <ul><li> [x] <a href="#fantasyconsoles1">Εναλλακτικό σύστημα 1 </a></li></ul> | |  |
-| 4 | <a href="#wm"> Άσκηση γραμμής εντολών (custom wm) </a></li></ul>| | |
+| 4 | <ul><li> [x] <a href="#wm"> Άσκηση γραμμής εντολών (custom wm) </a></li></ul>| | |
 | 5 |  <ul><li> [x] <a href="#pull_request1">Αίτημα ενσωμάτωσης 1 </a></li></ul>| | |
 | 6 | <ul><li> [x] <a href="#cli_data_analysis1">Άσκηση γραμμής εντολών (cli data analysis) </a></li></ul>|  | |
 | 7 | <ul><li> [x] <a href="#fantasyconsoles2">Εναλλακτικό σύστημα </a></li></ul>|  | |
@@ -67,6 +67,32 @@ GitHub organisation url: [OMADA11](https://github.com/OMADA10)
 ```startx```
 και ξεκίνησα ένα terminal πατώντας τα κουμπί των windows πάνω στο πληκτρολόγιό μου και enter.
 
+# <h1 id="fantasyconsoles1">Εναλλακτικό σύστημα 1</h1>
+## UXN/Varvara:
+Για το συγκεκριμένο παραδοτέο, χρειάστηκε να χρησιμοποιήσουμε το [uxn/varvara], το οποίο είναι emulator υπολογιστών που δημιουργήθηκε ως για να τρέχει συγκεκριμένα παιχνίδια και εφαρμογές με την κατάληξη `.rom`, τα οποία μπορούν να προγραμματιστούν στην δική του μοναδική γλώσσα assembly. Το Uxn επικεντρώνεται στην απλότητα και την ευελιξία, επιτρέποντας στους χρήστες να αναπτύσσουν και να εκτελούν τα δικά τους εργαλεία και παιχνίδια μέσα σε αυτό το περιβάλλον. 
+
+# Εγκατάσταση ειδικού terminal msys2/CLANG64:
+Η εγκατάσταση του, πραγματοποιήθηκε στα windows, όπου αφότου έγινε η πλήρης εγκατάσταση του αρχείου `msys2-x86_64-20231026.exe` από την ιστοσελίδα [msys2](https://www.msys2.org/) και έγινε launch το ειδικό `msys2 terminal`.
+
+![msys](https://github.com/nkanagno/iv/assets/103074273/e159b7d5-2177-4ccf-9e12-3c97fcebf1af)
+
+### Εγκατάσταση sdl2 και uxn/Varvara:
+Έπειτα, έγινε η εγκατάσταση της βιβλιοθήκης sdl2 με την εντολή `pacman -S git mingw-w64-x86_64-gcc mingw64/mingw-w64-x86_64-SDL2` και για την εγκατάσταση του 
+`uxn/varvara` έγιναν οι ακόλουθες εντολές:
+```
+export PATH="${PATH}:/mingw64/bin"
+git clone https://git.sr.ht/~rabbits/uxn
+
+```
+## Εκτέλεση Αρχείων `.rom`
+Για την εκτέλεση οποιασδήποτε εφαρμογής `.rom` χρειάστηκε μέσα σε αυτό το ειδικό terminal `msys2/CLANG64`,
+αφότου βρισκόμουν ήδη μέσα στο directory `/bin/` μέσω της εντολής `cd ./uxn/bin`, να εκτελέσω την εντολή `./uxnemu ./αρχείο.rom`.
+Στη συγκεκρίμενη περίπτωση δοκίμασα της ήδη έτοιμες εφαρμογές `catclock.rom` και 
+
+### catclock.rom:
+![image](https://github.com/nkanagno/iv/assets/103074273/0304532c-2772-45c3-ae00-85fe2af849d3)
+
+### 
 # <h1 id="wm"> 4ο ΠΑΡΑΔΟΤΕΟ - Άσκηση γραμμής εντολών (custom wm) (cli data analysis) </h1>
 Αφότου πραγματοποιήθηκε επιτυχώς η εγκατάσταση του window manager i3,
 
