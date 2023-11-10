@@ -97,7 +97,11 @@ git clone https://git.sr.ht/~rabbits/uxn
 
 ### 
 # <h1 id="wm"> 4ο ΠΑΡΑΔΟΤΕΟ - Άσκηση γραμμής εντολών (custom wm) (cli data analysis) </h1>
-Αφότου πραγματοποιήθηκε επιτυχώς η εγκατάσταση του window manager i3,
+Αφότου πραγματοποιήθηκε επιτυχώς η εγκατάσταση του window manager i3, δοκίμασα να τον κάνω customized με αρκετούς τρόπους.
+### Πρόσθεση Wallpaper στο workspace μου:
+Προκειμένου να εγκαταστήσω ένα Wallpaper, χρειάστηκε πρώτα να ανοίξω το firefox πατώντας τα κουμπιά `$mod+d`, γράφωντας firefox στη μπάρα αναζήτησης και πατώντας enter. Στο firefox εγκατέστησα την εικόνα `arch.jpg` και αποθηκεύτηκε στα `Downloads/`. Έπειτα, εγκατέστησα το `feh`, με `sudo pacman -S feh`, και μπήκα μέσα στο αρχείο `/config/i3/config` με την εντολή `vim /config/i3/config` πρόσθεσα την εντολή `exec_always feh --bg-fill /home/nikolas/Downloads/Arch.jpg`. Τέλος, έκανα restart τον i3 με την εντολή `i3-msg restart` και αλλάζοντας workspace πατώντας τα κουμπιά `$mod+2` έχοντας το παρακάτω αποτέλεσμα:
+![arch_bg](https://github.com/nkanagno/iv/assets/103074273/e17daeae-5f3e-40d3-9d8a-138f3a026bab)
+
 
 # <h1 id="pull_request1"> 5ο ΠΑΡΑΔΟΤΕΟ - Αίτημα ενσωμάτωσης 1 </h1>
 ο συγκεκριμένο παραδοτέο χρειάστηκε να συνεισφέρουμε στην κεντρική ιστοσελίδα του τμήματος πληροροφορικής στο [netlify](https://epic-hamilton-da9ac8.netlify.app/) μέσω του github αποθετηρίου [sitegr](https://github.com/ioniodi/sitegr), έτσι ώστε να μην διαφέρει τόσο πολύ με την [κύρια ιστοσελίδα του τμήματος πληροφορικής](https://di.ionio.gr/). 
