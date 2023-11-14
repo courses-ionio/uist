@@ -114,10 +114,12 @@ git clone https://git.sr.ht/~rabbits/uxn
 
 # <h1 id="pull_request1"> 5ο ΠΑΡΑΔΟΤΕΟ - Αίτημα ενσωμάτωσης 1 </h1>
 Στο συγκεκριμένο παραδοτέο χρειάστηκε να συνεργαστούμε προκειμένουν να αναπτύξουμε τον όδηγο σπουδών που βρίσκεται σε repository του github με όνομα
-[guide](https://github.com/ioniodi/guide), κάνοντας το fork έχοντας ο καθένας το δικό του [προσωπίκο repository](https://github.com/nkanagno/guide/tree/master) για να κάνει έπειτα pull request και με την χρήση εργαλειών όπως lua,pandoc,latex να το μετατρέψουμε σε μορφή pdf ώστε να αναπαριστά το κύριο βιβλίο του τμήματος, [οδηγός σπουδών](https://di.ionio.gr/gr/students/student-prospectus/).
+[guide](https://github.com/ioniodi/guide), κάνοντας το fork έχοντας ο καθένας το δικό του [προσωπίκο repository](https://github.com/nkanagno/guide/tree/master) για να κάνει έπειτα pull request και με την χρήση εργαλειών όπως lua,pandoc,latex να το μετατρέψουμε σε μορφή pdf ώστε να αναπαριστά το κύριο βιβλίο του τμήματος, [οδηγός σπουδών](https://di.ionio.gr/gr/students/student-prospectus/). Σε πρώτο στάδιο χρειάστηκε να γίνει απλό copy paste text περιεχομένου, διότι το repository έιχε μόνο τα κεφάλαια του οδηγού σπουδών χωρίς περιεχόμενο, δηλώνοντας ο καθένας το κεφάλαιο στο οποίο θα πραγματοποιήσει την συνεισφορά του δημιουργώντας issue στην κεντρικό repository [ionio/guide](https://github.com/ioniodi/guide).
 
-## Αντιγραφή Περιεχομένο
-Σε πρώτο στάδιο χρειάστηκε να γίνει απλό copy paste text περιεχομένου, διότι το repository έιχε μόνο τα κεφάλαια του οδηγού σπουδών χωρίς περιεχόμενο. Συγκεκριμένα, επέλεξα να αναπτύξω το κεφάλαιο Προπτυχιακές Σπουδές, ch03.txt ([ioniodi/guide](https://github.com/ioniodi/guide/blob/master/text/ch03.txt) -> [πρωσοπικό αποθετήριο](https://github.com/nkanagno/guide/blob/master/text/ch03.txt)), όπου μετέφερα το περιεχόμενο των υποκεφαλαίων: 
+## issue:
+
+## Επιλογή κεφαλαίου:
+Συγκεκριμένα, επέλεξα να αναπτύξω το κεφάλαιο Προπτυχιακές Σπουδές, ch03.txt ([ioniodi/guide](https://github.com/ioniodi/guide/blob/master/text/ch03.txt) -> [πρωσοπικό αποθετήριο](https://github.com/nkanagno/guide/blob/master/text/ch03.txt)), όπου μετέφερα το περιεχόμενο των υποκεφαλαίων: 
 
  - Εισαγωγή
  - Ομάδες Μαθημάτων (κατευθύνσεις) 
