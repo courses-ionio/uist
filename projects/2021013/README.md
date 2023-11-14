@@ -113,12 +113,34 @@ git clone https://git.sr.ht/~rabbits/uxn
 
 
 # <h1 id="pull_request1"> 5ο ΠΑΡΑΔΟΤΕΟ - Αίτημα ενσωμάτωσης 1 </h1>
-ο συγκεκριμένο παραδοτέο χρειάστηκε να συνεισφέρουμε στην κεντρική ιστοσελίδα του τμήματος πληροροφορικής στο [netlify](https://epic-hamilton-da9ac8.netlify.app/) μέσω του github αποθετηρίου [sitegr](https://github.com/ioniodi/sitegr), έτσι ώστε να μην διαφέρει τόσο πολύ με την [κύρια ιστοσελίδα του τμήματος πληροφορικής](https://di.ionio.gr/). 
-## Δήλωση θέματος - issue#431:
-Αρχικά, δημιούργησα ένα [issue#431](https://github.com/ioniodi/sitegr/issues/431) στο αποθετήριο [sitegr](https://github.com/ioniodi/sitegr) του github δηλώνοντας το θέμα μου και περιμένοντας το `green light` από κάποιο καθηγητή, προκειμένου να μην καταλήξω να έχω το ίδιο με κάποιον άλλο συμφοιτητή μου. Πιο συγκεκριμένα, προσωπικά επέλεξα να κάνω την εξής αλλαγή:
+Στο συγκεκριμένο παραδοτέο χρειάστηκε να συνεργαστούμε προκειμένουν να αναπτύξουμε τον όδηγο σπουδών που βρίσκεται σε repository του github με όνομα
+[guide](https://github.com/ioniodi/guide), κάνοντας το fork έχοντας ο καθένας το δικό του [προσωπίκο repository](https://github.com/nkanagno/guide/tree/master) για να κάνει έπειτα pull request και με την χρήση εργαλειών όπως lua,pandoc,latex να το μετατρέψουμε σε μορφή pdf ώστε να αναπαριστά το κύριο βιβλίο του τμήματος, [οδηγός σπουδών](https://di.ionio.gr/gr/students/student-prospectus/).
 
-    Αλλαγή κατήγορίας του καθηγητή Mάρκο Αυλωνίτη από Αναπληρωτής Καθηγητής σε Καθηγητής.
+## Αντιγραφή Περιεχομένο
+Σε πρώτο στάδιο χρειάστηκε να γίνει απλό copy paste text περιεχομένου, διότι το repository έιχε μόνο τα κεφάλαια του οδηγού σπουδών χωρίς περιεχόμενο. Συγκεκριμένα, επέλεξα να αναπτύξω το κεφάλαιο Προπτυχιακές Σπουδές, ch03.txt ([ioniodi/guide](https://github.com/ioniodi/guide/blob/master/text/ch03.txt) -> [πρωσοπικό αποθετήριο](https://github.com/nkanagno/guide/blob/master/text/ch03.txt)), όπου μετέφερα το περιεχόμενο των υποκεφαλαίων: 
 
+ - Εισαγωγή
+ - Ομάδες Μαθημάτων (κατευθύνσεις) 
+ - Κανονισμός Προπτυχιακών Σπουδών
+
+Από το βιβίο [οδηγός σπουδών](https://di.ionio.gr/gr/students/student-prospectus/) του τμήματος προς το ch03.txt.
+
+## Μετατροπή σε pdf με χρήση pandoc:
+Για την μετατροπή του σε pdf, έφτιαξα ένα shell script με όνομα [make-latex.sh](https://github.com/nkanagno/guide/blob/master/make-latex.sh) με περιεχόμενο:
+
+```
+#!/bin/sh
+#assemble and preprocess all the sources files
+
+for filename in text/ch*.txt; do
+   [ -e "$filename" ] || continue
+   pandoc --lua-filter=lua/extras.lua "$filename" --to markdown | pandoc --lua-filter=lua/extras.lua --to markdown | pandoc --lua-filter=lua/course_core.lua --to markdown | pandoc --lua-filter=lua/course_IS.lua --to markdown | pandoc --lua-filter=lua/course_elective.lua --to markdown | pandoc --lua-filter=lua/course_IHSS.lua --to markdown | pandoc --filter pandoc-fignos --to markdown | pandoc --top-level-division=chapter --citeproc  --to latex  > latex/"$(basename "$filename" .txt).tex"
+done
+
+pandoc -s latex/*.tex -o book.tex
+pandoc -N --quiet --variable "geometry=margin=1.2in" --variable mainfont="Noto Sans Regular" --variable sansfont="Noto Sans Regular" --variable monofont="Noto Sans Regular" --variable fontsize=12pt --variable version=2.0 book.tex --pdf-engine=xelatex --toc -o book.pdf
+```
+Όπου αρχικά κάνει loop through το κάθε αρχείο ch0*.txt που βρισκεται μέσα στο directory [text](https://github.com/nkanagno/guide/tree/master/text) με την χρήση του εργαλείου pandoc, μετατρέπει το κάθε txt σε markdown χρησιμοποιώντας το φιλτρο [extras.lua](https://github.com/nkanagno/guide/blob/master/lua/extras.lua). Επειτά, μετατρέπει το κάθε .lua αρχείο, που χρειάστηκε να χρησιμοποιήσω σε αργότερο παραδοτέο, σε αρχείο markdown και από markdown όλα αυτά μετατρέπονται σε ένα αρχείο latex (ch0*.text). Αφότου τελειώσει η loopα, ενώνονται όλα αυτά τα ch0*.tex αρχεία σε ένα κοινό latex με όνομα book.tex και αυτό τελος, μέσω μιας τελευταίας εντολής pandoc, μετατρέπεται σε μορφή pdf.
 
 # <h1 id="cli_data_analysis1"> 6ο ΠΑΡΑΔΟΤΕΟ - Άσκηση γραμμής εντολών (cli data analysis) </h1>
 Δημιούργησα ένα shell script με το παρακάτω περιεχόμενο:
