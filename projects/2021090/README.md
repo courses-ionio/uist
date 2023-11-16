@@ -111,6 +111,111 @@ Pix64 by ZappedCow | no | 1-bit | yes|
 
 ## [Εβδομάδα Έκτη: cli data analysis]()
 
+[![asciicast](https://asciinema.org/a/MQLxuWC4iuAU69uRqUi2EANOk.svg)](https://asciinema.org/a/MQLxuWC4iuAU69uRqUi2EANOk)
+
+```bash
+#!/bin/bash
+
+if [ "$#" -ne 2 ]; then
+    echo "Usage: $0 column1 column2"
+    exit 1
+fi
+
+input_file="mm1-sim.csv"
+output_file="data.csv"
+
+column1="$1"
+column2="$2"
+
+awk -F, -v col1="$column1" -v col2="$column2" 'BEGIN {OFS=","} {print $col1, $col2}' "$input_file" > "$output_file"
+
+echo "CSV file '$output_file' created with columns $column1 and $column2 from '$input_file'."
+```
+```
+λ,Nq_th
+"0.10","0.00"
+"0.20","0.01"
+"0.30","0.03"
+"0.40","0.05"
+"0.50","0.08"
+ ... , ...
+```
+```gnuplot
+set terminal pngcairo
+set output 'mm1-simulation.png'
+
+set title "λ (Lambda) vs Nq Simulation"
+set ylabel "Nq_ex"
+set xlabel "λ (Lambda)"
+
+# Define line colors and styles
+set style line 1 lc rgb '#f7081d' lw 2 pointtype 7 pointsize 1.5 # red, thicker line, dots
+
+# delimiter
+set datafile separator ','
+
+# Plot
+plot 'data.csv' using (column("λ")):(column("Nq_ex")) with linespoints ls 1 title 'λ vs Nq_ex'
+```
+![mm1 ex](https://i.imgur.com/lG0jay8.png)
+
+```bash
+#!/bin/bash
+
+if [ "$#" -ne 3 ]; then
+    echo "Usage: $0 column1 column2 plot_title"
+    exit 1
+fi
+
+input_file="mm1-sim.csv"
+output_file="data.csv"
+
+column1="$1"
+column2="$2"
+plot_title="$3"
+
+# extract columns
+awk -F, -v col1="$column1" -v col2="$column2" 'BEGIN {OFS=","} {print $col1, $col2}' "$input_file" > "$output_file"
+
+echo "CSV file '$output_file' created with columns $column1 and $column2 from '$input_file'"
+
+# extract column names from the header of input CSV file
+column1_name=$(head -n 1 "$input_file" | awk -F',' '{print $1}')
+column2_name=$(head -n 1 "$input_file" | awk -F',' '{print $2}')
+
+# gnuplot script
+gnuplot << EOF
+set terminal pngcairo
+set output 'mm1-theory.png'
+
+# setet plot title and labels
+set title "$plot_title"
+set ylabel "$column2_name"
+set xlabel "$column1_name"
+
+# define line colors and styles
+set style line 1 lc rgb '#1f77b4' lw 2 pointtype 7 pointsize 1.5 # blue, thicker line, dots
+
+# delimiter
+set datafile separator ','
+
+# the plot
+plot 'data.csv' using 1:2 with linespoints ls 1 title '$column1_name vs $column2_name'
+EOF
+
+echo "Plot '$plot_title' created succesfully!"
+
+```
+![mm1 th](https://i.imgur.com/DIwBtau.png)
+
+[πίνακας περιεχομένων :arrow_up:](https://github.com/inf2021090/iv/tree/inf2021090/projects/2021090#%CF%80%CE%AF%CE%BD%CE%B1%CE%BA%CE%B1%CF%82-%CF%80%CE%B5%CF%81%CE%B9%CE%B5%CF%87%CE%BF%CE%BC%CE%AD%CE%BD%CF%89%CE%BD)
+
+<details>
+  <summary>βιβλιογραφία</summary>
+
+  ||
+</details>
+
 ## [Εβδομάδα Έβδομη: Εναλλακτικό Σύστημα]()
 
 ## [Εβδομάδα Όγδοη: cli data analysis]()
