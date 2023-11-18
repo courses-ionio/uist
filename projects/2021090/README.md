@@ -256,6 +256,31 @@ echo "Plot '$plot_title' created succesfully!"
 ```
 <details>
   <summary>code breakdown</summary>
+
+```
+column1_name=$(head -n 1 "$input_file" | awk -F',' '{print $1}')
+column2_name=$(head -n 1 "$input_file" | awk -F',' '{print $2}')
+```
+```
+gnuplot << EOF
+set terminal pngcairo
+set output 'mm1-theory.png'
+
+# set plot title and labels
+set title "$plot_title"
+set ylabel "$column2_name"
+set xlabel "$column1_name"
+
+# define line colors and styles
+set style line 1 lc rgb '#1f77b4' lw 2 pointtype 7 pointsize 1.5 # blue, thicker line, dots
+
+# delimiter
+set datafile separator ','
+
+# the plot
+plot 'data.csv' using 1:2 with linespoints ls 1 title '$column1_name vs $column2_name'
+EOF
+```
   
 </details>
 
