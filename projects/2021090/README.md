@@ -131,6 +131,30 @@ awk -F, -v col1="$column1" -v col2="$column2" 'BEGIN {OFS=","} {print $col1, $co
 
 echo "CSV file '$output_file' created with columns $column1 and $column2 from '$input_file'."
 ```
+<details>
+  <summary>code breakdown</summary>
+
+  ```
+  if [ "$#" -ne 2 ]; then
+   echo "Usage: $0 column1 column2"
+   exit 1
+  fi
+ ```
+
+```
+input_file="mm1-sim.csv"
+output_file="data.csv"
+```
+
+```
+column1="$1"
+column2="$2"
+```
+```
+awk -F, -v col1="$column1" -v col2="$column2" 'BEGIN {OFS=","} {print $col1, $col2}' "$input_file" > "$output_file"
+```
+</details>
+
 ```
 λ,Nq_th
 "0.10","0.00"
@@ -157,6 +181,14 @@ set datafile separator ','
 # Plot
 plot 'data.csv' using (column("λ")):(column("Nq_ex")) with linespoints ls 1 title 'λ vs Nq_ex'
 ```
+<details>
+  <summary>code breakdown</summary>
+
+```
+```
+  
+</details>
+
 ![mm1 ex](https://i.imgur.com/lG0jay8.png)
 
 ```bash
@@ -206,6 +238,11 @@ EOF
 echo "Plot '$plot_title' created succesfully!"
 
 ```
+<details>
+  <summary>code breakdown</summary>
+  
+</details>
+
 ![mm1 th](https://i.imgur.com/DIwBtau.png)
 
 [πίνακας περιεχομένων :arrow_up:](https://github.com/inf2021090/iv/tree/inf2021090/projects/2021090#%CF%80%CE%AF%CE%BD%CE%B1%CE%BA%CE%B1%CF%82-%CF%80%CE%B5%CF%81%CE%B9%CE%B5%CF%87%CE%BF%CE%BC%CE%AD%CE%BD%CF%89%CE%BD)
