@@ -13,7 +13,7 @@
 | 3 | [Εβδομάδα Τρίτη: Εναλλακτικό Σύστημα]() |[go!](https://github.com/courses-ionio/iv/discussions/21)|
 | 4 | [Εβδομάδα Τέταρτη: Arch + costum wm]() |[go!]()|
 | 5 | Αίτημα ενσωμάτωσης |[go!]()|
-| 6 | Άσκηση γραμμής εντολών (cli data analysis) |[go!]()|
+| 6 | Άσκηση γραμμής εντολών (cli data analysis) |[go!](https://github.com/courses-ionio/iv/discussions/28)|
 | 7 | Εναλλακτικό σύστημα |[go!]()|
 | 8 | Άσκηση γραμμής εντολών (cli data analysis) |[go!]()|
 | 9 | Αίτημα ενσωμάτωσης |[go!]()|
