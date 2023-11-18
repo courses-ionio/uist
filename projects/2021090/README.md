@@ -185,6 +185,22 @@ plot 'data.csv' using (column("λ")):(column("Nq_ex")) with linespoints ls 1 tit
   <summary>code breakdown</summary>
 
 ```
+set terminal pngcairo
+set output 'mm1-simulation.png'
+```
+```
+set title "λ (Lambda) vs Nq Simulation"
+set ylabel "Nq_ex"
+set xlabel "λ (Lambda)"
+```
+```
+set style line 1 lc rgb '#f7081d' lw 2 pointtype 7 pointsize 1.5
+```
+```
+set datafile separator ','
+```
+```
+plot 'data.csv' using (column("λ")):(column("Nq_ex")) with linespoints ls 1 title 'λ vs Nq_ex' now
 ```
   
 </details>
