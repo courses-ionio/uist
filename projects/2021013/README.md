@@ -215,6 +215,7 @@ https://asciinema.org/a/617841.
 Από το βιβίο [οδηγός σπουδών](https://di.ionio.gr/gr/students/student-prospectus/) του τμήματος προς το ch03.txt.
 
 ## Φίλτρα κατηγοριών μαθημάτων:
+### Περιεχόμενο κάθε φίτρου:
 Τα φίλτρα .lua χωρίζονται σε 4 διαφορετικές κατηγορίες που αντικατοπτρίζουν τις κατηγορίες όπου χωρίζονται και τα μαθήματα των Προπτυχιακών σπουδών. Συγκεκριμένα, δημιούργησα το φίλτρο [course_core.lua](https://github.com/nkanagno/guide/blob/master/lua/course_core.lua) που δείχνει ότι συγκεκριμένο μάθημα βρίσκεται στην κατηγορία μαθημάτων κορμού και μοιάζει κάπως έτσι:
 ```
 function Image(paragraph)
@@ -231,11 +232,16 @@ function Image(paragraph)
 end
 ```
 Εκεί που έχω γράψει την λέξη `κορμού`, δείχνω την κατηγορία του κάθε μαθήματος:
-      - για το αρχείο [course_core.lua](https://github.com/nkanagno/guide/blob/master/lua/course_core.lua) έχει την λέξη `Κορμού` 
-      - για το αρχείο [course_elective.lua](https://github.com/nkanagno/guide/blob/master/lua/course_elective.lua) έχει την λέξη `Επιλογής`
-      - για το αρχείο [course_IS.lua](https://github.com/nkanagno/guide/blob/master/lua/course_IS.lua) έχει την λέξη `κατεύθυνσης ΠΣ` (Πληροφοριακών Συστημάτων)
-      - για το αρχείο [course_IHSS.lua](https://github.com/nkanagno/guide/blob/master/lua/course_IHSS.lua) έχει την λέξη `Κατεύθυνσης ΠΑΚΕ` (Πληροφορική - Ανθρωπιστικές και Κοινωνικές Επιστήμες)
+  - για το αρχείο [course_core.lua](https://github.com/nkanagno/guide/blob/master/lua/course_core.lua) έχει την λέξη `Κορμού` 
+  - για το αρχείο [course_elective.lua](https://github.com/nkanagno/guide/blob/master/lua/course_elective.lua) έχει την λέξη `Επιλογής`
+  - για το αρχείο [course_IS.lua](https://github.com/nkanagno/guide/blob/master/lua/course_IS.lua) έχει την λέξη `κατεύθυνσης ΠΣ` (Πληροφοριακών Συστημάτων)
+  - για το αρχείο [course_IHSS.lua](https://github.com/nkanagno/guide/blob/master/lua/course_IHSS.lua) έχει την λέξη `Κατεύθυνσης ΠΑΚΕ` (Πληροφορική 
+Ανθρωπιστικές και Κοινωνικές Επιστήμες)
+
+### Eπεξηγηση φίτρλου: 
 Συγκεκριμένα, το κάθε φίλτρο ουσιαστικά, μπαίνοντας στον φάκελο `all_collections/_courses/`, διαβάζει το περιεχόμενο του κάθε md αρχείο που έχουμε δώσει ως παράμετρο. Έπειτα, το περιεχόμενο της κατηγορίας excerpt, μετατρέποντας το σε string, το εισάγει σε μία μεταβλητή caption οπού περιγράφει το κάθε μάθημα με λίγα λόγια, εισάγει επίσης και το περιεχόμενο της κατηγορίας title σε μία μεταβλητή title οπού είναι ο τίτλος του κάθε μαθήματος. Τέλος, επιστρέφει στο txt αρχείο σε μορφή markdown, με περιεχόμενο το title σε header 4 ('####') με δίπλα του να έχει σε παρένθεση την κατηγορία του μαθήματος, αλλάζει γραμμή και εμφανίζει το caption περιεχόμενο του μαθήματος.
+
+### Εμφάνηση στο βιβλίο pdf:
 Στο txt τα χώρισα σε εξάμηνα και τα εμφάνησα ως εξής (παράδειγμα Εξάμηνο Α):
 ```
 ### Εξάμηνο Α
