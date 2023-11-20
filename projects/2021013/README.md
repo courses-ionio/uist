@@ -256,9 +256,9 @@ end
 ![](humanistic-informatics.md){.course_core}
 ```
 
-Εμφανίζοντας στο pdf ως εξής:
-![Screenshot 2023-11-20 191849](https://github.com/nkanagno/iv/assets/103074273/a74f71f0-a662-45b4-adac-9870e7d09818)
+Εμφανίζοντας τα στο pdf ως εξής:
 
+![Screenshot 2023-11-20 191849](https://github.com/nkanagno/iv/assets/103074273/a74f71f0-a662-45b4-adac-9870e7d09818)
 
 ## Demo link (pdf) και Pull request:
 Το Demo προσωπικό μου pdf που δημιούργησα και το πρόσθεσα σε προσωπικό [issue#2](https://github.com/nkanagno/guide/issues/2) στο αποθετήριο [nkanagno/guide](https://github.com/nkanagno/guide) και τo [pull request που έκανα στο ionio/guide]().
