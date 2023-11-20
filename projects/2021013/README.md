@@ -205,12 +205,12 @@ https://asciinema.org/a/617841.
 [guide](https://github.com/ioniodi/guide), έχοντας το ήδη κάνει fork από το 5ο παραδοτέο, κατέχοντας ήδη ο καθένας το δικό του [προσωπίκο repository](https://github.com/nkanagno/guide/tree/master) για να κάνει έπειτα ξανά pull request και με την χρήση εργαλειών όπως lua,pandoc,latex να το μετατρέψουμε σε μορφή pdf ώστε να αναπαριστά το κύριο βιβλίο του τμήματος, [οδηγός σπουδών](https://di.ionio.gr/gr/students/student-prospectus/). Ως δεύτερο στάδιο χρειάστηκε να δημιουργήσουμε ειδικά `.lua` φίλτρα επεξεργάζοντας τα έτοιμα δεδομένα του αποθετηρίου submodule [all_collections](https://github.com/ioniodi/all_collections/), δηλώνοντας ο καθένας τα φίλτρα που θα δημιουργήσει και τα δεδομένα τα οποία θα επεξεργαστεί (πχ Μαθήματα, Καθηγητές, Εργαστήρια κλπ) και το κεφάλαιο στο οποίο θα πραγματοποιήσει αυτή την συνεισφορά του δημιουργώντας issue στην κεντρικό repository [ionio/guide](https://github.com/ioniodi/guide).
 
 ## Δήλωση θέματος - issue#4:
-Αρχικά, δημιούργησα ένα [issue#4](https://github.com/ioniodi/guide/issues/3) στο αποθετήριο [sitegr](https://github.com/ioniodi/guide) του github δηλώνοντας το θέμα μου και περιμένοντας το `green light` από κάποιο καθηγητή, προκειμένου να μην καταλήξω να έχω το ίδιο με κάποιον άλλο συμφοιτητή μου. Πιο συγκεκριμένα, προσωπικά επέλεξα να δημιουργήσω 4 φίλτρα `.lua` αρχείων που να παιρνουν ως παράμετρο το μάθημα σε μορφή `.md` που θα παίρνει από το [all_collections](https://github.com/ioniodi/all_collections/) και θα εμφανίζει στο βιβλίο τον τίτλο (σε μορφή header 4 ('####')) και το περιεχόμενό του, χωρισμένα στο txt ανά εξάμηνο στο υποκεφάλαιο Περιεχόμενο Μαθημάτων της Ενότητας ΠΡΟΠΤΥΧΙΑΚΕΣ ΣΠΟΥΔΕΣ του ch03.txt ([ioniodi/guide](https://github.com/ioniodi/guide/blob/master/text/ch03.txt) -> [πρωσοπικό αποθετήριο](https://github.com/nkanagno/guide/blob/master/text/ch03.txt)). Τα 4 διαφορετικά φίλτρα θα χωρίζονται σε 4 κατηγορίες: 
+Αρχικά, δημιούργησα ένα [issue#4](https://github.com/ioniodi/guide/issues/4) στο αποθετήριο [sitegr](https://github.com/ioniodi/guide) του github δηλώνοντας το θέμα μου και περιμένοντας το `green light` από κάποιο καθηγητή, προκειμένου να μην καταλήξω να έχω το ίδιο με κάποιον άλλο συμφοιτητή μου. Πιο συγκεκριμένα, προσωπικά επέλεξα να δημιουργήσω 4 φίλτρα `.lua` αρχείων που να παιρνουν ως παράμετρο το μάθημα σε μορφή `.md` που θα παίρνει από το [all_collections](https://github.com/ioniodi/all_collections/) και θα εμφανίζει στο βιβλίο τον τίτλο (σε μορφή header 4 ('####')) και το περιεχόμενό του, χωρισμένα στο txt ανά εξάμηνο στο υποκεφάλαιο Περιεχόμενο Μαθημάτων της Ενότητας ΠΡΟΠΤΥΧΙΑΚΕΣ ΣΠΟΥΔΕΣ του ch03.txt ([ioniodi/guide](https://github.com/ioniodi/guide/blob/master/text/ch03.txt) -> [πρωσοπικό αποθετήριο](https://github.com/nkanagno/guide/blob/master/text/ch03.txt)). Τα 4 διαφορετικά φίλτρα θα χωρίζονται σε 4 κατηγορίες: 
 
-      - Κορμού
-      - Επιλογής
-      - Κατεύθυνσης Πληροφοριακών Συστημάτων
-      - Κατεύθυνσης Πληροφορική - Ανθρωπιστικές και Κοινωνικές Επιστήμες
+   - Κορμού
+   - Επιλογής
+   - Κατεύθυνσης Πληροφοριακών Συστημάτων
+   - Κατεύθυνσης Πληροφορική - Ανθρωπιστικές και Κοινωνικές Επιστήμες
 
 Από το βιβίο [οδηγός σπουδών](https://di.ionio.gr/gr/students/student-prospectus/) του τμήματος προς το ch03.txt.
 
@@ -231,19 +231,19 @@ function Image(paragraph)
     end
 end
 ```
-Εκεί που έχω γράψει την λέξη `κορμού`, δείχνω την κατηγορία του κάθε μαθήματος:
-  - για το αρχείο [course_core.lua](https://github.com/nkanagno/guide/blob/master/lua/course_core.lua) έχει την λέξη `Κορμού` 
-  - για το αρχείο [course_elective.lua](https://github.com/nkanagno/guide/blob/master/lua/course_elective.lua) έχει την λέξη `Επιλογής`
-  - για το αρχείο [course_IS.lua](https://github.com/nkanagno/guide/blob/master/lua/course_IS.lua) έχει την λέξη `κατεύθυνσης ΠΣ` (Πληροφοριακών Συστημάτων)
-  - για το αρχείο [course_IHSS.lua](https://github.com/nkanagno/guide/blob/master/lua/course_IHSS.lua) έχει την λέξη `Κατεύθυνσης ΠΑΚΕ` (Πληροφορική 
-Ανθρωπιστικές και Κοινωνικές Επιστήμες)
+Εκεί που έχω γράψει την λέξη `κορμού`, δείχνω την κατηγορία του κάθε μαθήματος, για το αρχείο:
+  -  [course_core.lua](https://github.com/nkanagno/guide/blob/master/lua/course_core.lua) έχει την λέξη `Κορμού` 
+  -  [course_elective.lua](https://github.com/nkanagno/guide/blob/master/lua/course_elective.lua) έχει την λέξη `Επιλογής`
+  -  [course_IS.lua](https://github.com/nkanagno/guide/blob/master/lua/course_IS.lua) έχει την λέξη `κατεύθυνσης ΠΣ` (Πληροφοριακών Συστημάτων)
+  -  [course_IHSS.lua](https://github.com/nkanagno/guide/blob/master/lua/course_IHSS.lua) έχει την λέξη `Κατεύθυνσης ΠΑΚΕ` (Πληροφορική Ανθρωπιστικές και Κοινωνικές Επιστήμες)
 
-### Eπεξηγηση φίτρλου: 
+### Eπεξήγηση φίλτρου: 
 Συγκεκριμένα, το κάθε φίλτρο ουσιαστικά, μπαίνοντας στον φάκελο `all_collections/_courses/`, διαβάζει το περιεχόμενο του κάθε md αρχείο που έχουμε δώσει ως παράμετρο. Έπειτα, το περιεχόμενο της κατηγορίας excerpt, μετατρέποντας το σε string, το εισάγει σε μία μεταβλητή caption οπού περιγράφει το κάθε μάθημα με λίγα λόγια, εισάγει επίσης και το περιεχόμενο της κατηγορίας title σε μία μεταβλητή title οπού είναι ο τίτλος του κάθε μαθήματος. Τέλος, επιστρέφει στο txt αρχείο σε μορφή markdown, με περιεχόμενο το title σε header 4 ('####') με δίπλα του να έχει σε παρένθεση την κατηγορία του μαθήματος, αλλάζει γραμμή και εμφανίζει το caption περιεχόμενο του μαθήματος.
 
 ### Εμφάνηση στο βιβλίο pdf:
 Στο txt τα χώρισα σε εξάμηνα και τα εμφάνησα ως εξής (παράδειγμα Εξάμηνο Α):
 ```
+## Περιεχόμενο Μαθημάτων
 ### Εξάμηνο Α
 ![](introduction-computer-science.md){.course_core}
 
@@ -255,8 +255,10 @@ end
 
 ![](humanistic-informatics.md){.course_core}
 ```
-και εμφανίζονται ως εξής στο pdf:
+
+Εμφανίζοντας στο pdf ως εξής:
+![Screenshot 2023-11-20 191849](https://github.com/nkanagno/iv/assets/103074273/a74f71f0-a662-45b4-adac-9870e7d09818)
 
 
 ## Demo link (pdf) και Pull request:
-Το Demo προσωπικό μου pdf που δημιούργησα και το πρόσθεσα σε προσωπικό [issue#1](https://github.com/nkanagno/guide/issues/1) στο αποθετήριο [nkanagno/guide](https://github.com/nkanagno/guide) και τo [pull request που έκανα στο ionio/guide]().
+Το Demo προσωπικό μου pdf που δημιούργησα και το πρόσθεσα σε προσωπικό [issue#2](https://github.com/nkanagno/guide/issues/2) στο αποθετήριο [nkanagno/guide](https://github.com/nkanagno/guide) και τo [pull request που έκανα στο ionio/guide]().
