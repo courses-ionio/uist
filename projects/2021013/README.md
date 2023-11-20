@@ -116,10 +116,8 @@ git clone https://git.sr.ht/~rabbits/uxn
 Στο συγκεκριμένο παραδοτέο χρειάστηκε να συνεργαστούμε προκειμένουν να αναπτύξουμε τον όδηγο σπουδών που βρίσκεται σε repository του github με όνομα
 [guide](https://github.com/ioniodi/guide), κάνοντας το fork έχοντας ο καθένας το δικό του [προσωπίκο repository](https://github.com/nkanagno/guide/tree/master) για να κάνει έπειτα pull request και με την χρήση εργαλειών όπως lua,pandoc,latex να το μετατρέψουμε σε μορφή pdf ώστε να αναπαριστά το κύριο βιβλίο του τμήματος, [οδηγός σπουδών](https://di.ionio.gr/gr/students/student-prospectus/). Σε πρώτο στάδιο χρειάστηκε να γίνει απλό copy paste text περιεχομένου, διότι το repository έιχε μόνο τα κεφάλαια του οδηγού σπουδών χωρίς περιεχόμενο, δηλώνοντας ο καθένας το κεφάλαιο στο οποίο θα πραγματοποιήσει την συνεισφορά του δημιουργώντας issue στην κεντρικό repository [ionio/guide](https://github.com/ioniodi/guide).
 
-## issue:
-
-## Επιλογή κεφαλαίου:
-Συγκεκριμένα, επέλεξα να αναπτύξω το κεφάλαιο Προπτυχιακές Σπουδές, ch03.txt ([ioniodi/guide](https://github.com/ioniodi/guide/blob/master/text/ch03.txt) -> [πρωσοπικό αποθετήριο](https://github.com/nkanagno/guide/blob/master/text/ch03.txt)), όπου μετέφερα το περιεχόμενο των υποκεφαλαίων: 
+## Δήλωση θέματος - issue#3:
+Αρχικά, δημιούργησα ένα [issue#3](https://github.com/ioniodi/guide/issues/3) στο αποθετήριο [sitegr](https://github.com/ioniodi/guide) του github δηλώνοντας το θέμα μου και περιμένοντας το `green light` από κάποιο καθηγητή, προκειμένου να μην καταλήξω να έχω το ίδιο με κάποιον άλλο συμφοιτητή μου. Πιο συγκεκριμένα, προσωπικά επέλεξα να αναπτύξω το κεφάλαιο Προπτυχιακές Σπουδές, ch03.txt ([ioniodi/guide](https://github.com/ioniodi/guide/blob/master/text/ch03.txt) -> [πρωσοπικό αποθετήριο](https://github.com/nkanagno/guide/blob/master/text/ch03.txt)), όπου μετέφερα το περιεχόμενο των υποκεφαλαίων: 
 
  - Εισαγωγή
  - Ομάδες Μαθημάτων (κατευθύνσεις) 
@@ -143,6 +141,9 @@ pandoc -s latex/*.tex -o book.tex
 pandoc -N --quiet --variable "geometry=margin=1.2in" --variable mainfont="Noto Sans Regular" --variable sansfont="Noto Sans Regular" --variable monofont="Noto Sans Regular" --variable fontsize=12pt --variable version=2.0 book.tex --pdf-engine=xelatex --toc -o book.pdf
 ```
 Όπου αρχικά κάνει loop through το κάθε αρχείο ch0*.txt που βρισκεται μέσα στο directory [text](https://github.com/nkanagno/guide/tree/master/text) με την χρήση του εργαλείου pandoc, μετατρέπει το κάθε txt σε markdown χρησιμοποιώντας το φιλτρο [extras.lua](https://github.com/nkanagno/guide/blob/master/lua/extras.lua). Επειτά, μετατρέπει το κάθε .lua αρχείο, που χρειάστηκε να χρησιμοποιήσω σε αργότερο παραδοτέο, σε αρχείο markdown και από markdown όλα αυτά μετατρέπονται σε ένα αρχείο latex (ch0*.text). Αφότου τελειώσει η loopα, ενώνονται όλα αυτά τα ch0*.tex αρχεία σε ένα κοινό latex με όνομα book.tex και αυτό τελος, μέσω μιας τελευταίας εντολής pandoc, μετατρέπεται σε μορφή pdf.
+
+## Demo link (pdf) και Pull request:
+Το Demo προσωπικό μου pdf που δημιούργησα και το πρόσθεσα σε προσωπικό [issue#1](https://github.com/nkanagno/guide/issues/1) στο αποθετήριο [nkanagno/guide](https://github.com/nkanagno/guide) και τo [pull request που έκανα στο ionio/guide]().
 
 # <h1 id="cli_data_analysis1"> 6ο ΠΑΡΑΔΟΤΕΟ - Άσκηση γραμμής εντολών (cli data analysis) </h1>
 Δημιούργησα ένα shell script με το παρακάτω περιεχόμενο:
