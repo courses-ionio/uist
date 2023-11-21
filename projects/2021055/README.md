@@ -75,7 +75,39 @@
 # ΠΑΡΑΔΟΤΕΟ 5 - Αίτημα ενσωμάτωσης
 
 # ΠΑΡΑΔΟΤΕΟ 6 - Άσκηση γραμμής εντολών (cli data analysis)
-Για το 6ο παραδοτέο, επέλεξα να ασχοληθώ με το [pastel}(https://github.com/sharkdp/pastel), το οποίο επιλέχθηκε μέσα από την πληθώρα επιλογών που είχε ο πίνακας [visualization](https://github.com/epidrome/dokey#:~:text=OpenSSH%20Cloud%20Stack-,visualization,-assignments). Το pastel είναι ένα εργαλείο για τον χρωματισμό κειμένου και δεδομένων στο τερματικό, προσφέρoντας διάφορες δυνατότητες χρωματισμού στον χρήστη, όσον αναφορά το κείμενο.
+Για το 6ο παραδοτέο, επέλεξα να ασχοληθώ με το [pastel](https://github.com/sharkdp/pastel), το οποίο επιλέχθηκε μέσα από την πληθώρα επιλογών που είχε ο πίνακας [visualization](https://github.com/epidrome/dokey#:~:text=OpenSSH%20Cloud%20Stack-,visualization,-assignments). Το pastel είναι ένα εργαλείο για τον χρωματισμό κειμένου και δεδομένων στο τερματικό, προσφέρoντας διάφορες δυνατότητες χρωματισμού στον χρήστη, όσον αναφορά το κείμενο.
+
+Δημιούργησα αυτό το `shell script`:
+
+    !/bin/bash
+
+    # Χρώματα
+    GREEN=$(tput setaf 2)
+    CYAN=$(tput setaf 6)
+    RESET=$(tput sgr0)
+
+    # Συνάρτηση για εκτύπωση κειμένου με χρώμα
+    print_color_text() {
+    local color="$1"
+    local message="$2"
+    echo "${color}${message}${RESET}"
+    }
+
+    # Εμφάνιση καλωσορίσματος
+    print_color_text "$CYAN" "-----------------------------------------"
+    print_color_text "$CYAN" "        Welcome to My Awesome Script     "
+    print_color_text "$CYAN" "-----------------------------------------"
+
+    # Κάποιο άλλο χρήσιμο μήνυμα
+    print_color_text "$GREEN" "The script is starting now..."
+
+    # Κώδικας του script...
+
+    # Μήνυμα ολοκλήρωσης
+    print_color_text "$CYAN" "-----------------------------------------"
+    print_color_text "$CYAN" "          Script Completed!              "
+    print_color_text "$CYAN" "-----------------------------------------"
+Στο οποίο αρχικά, δηλώνω τα χρώματα που θέλω να χρησιμοποιήσω 
 
 # ΠΑΡΑΔΟΤΕΟ 8 - Αίτημα ενσωμάτωσης
 
