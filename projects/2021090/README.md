@@ -199,20 +199,27 @@ plot 'data.csv' using (column("λ")):(column("Nq_ex")) with linespoints ls 1 tit
 set terminal pngcairo
 set output 'mm1-simulation.png'
 ```
+ Ορίζει το format της εικόνας ως PNG και θέτει την ονομασία του αρχείου εξόδου ως mm1-simulation.png
 ```
 set title "λ (Lambda) vs Nq Simulation"
 set ylabel "Nq_ex"
 set xlabel "λ (Lambda)"
 ```
+- Ορισμός του τίτλου του γραφήματος
+- Ορισμός της ετικέτας του κατακερματισμού Nq_ex
+- Ορισμός της ετικέτας του άξονα λ (Lambda)
 ```
 set style line 1 lc rgb '#f7081d' lw 2 pointtype 7 pointsize 1.5
 ```
+ Ορισμός των χρωμάτων και των στυλ γραμμών χρώμα κόκκινο, πιο παχιά γραμμή, τύπος σημείου 7, μέγεθος σημείου 1.5
 ```
 set datafile separator ','
 ```
+Ορισμός του διαχωριστικού χαρακτήρα στο αρχείο δεδομένων ως ','
 ```
 plot 'data.csv' using (column("λ")):(column("Nq_ex")) with linespoints ls 1 title 'λ vs Nq_ex' now
 ```
+Σχεδιασμός γραφήματος από το αρχείο data.csv, με τη χρήση στηλών "λ" και "Nq_ex" ,περιέχοντας σημεία-τελείες, με το προηγουμένως ορισμένο στυλ 1 και τίτλο 'λ vs Nq_ex'
   
 </details>
 
