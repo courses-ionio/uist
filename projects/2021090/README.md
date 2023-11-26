@@ -111,8 +111,11 @@ Pix64 by ZappedCow | no | 1-bit | yes|
 
 ## [Εβδομάδα Έκτη: cli data analysis]()
 
+Ως άσκηση γραμμής εντολών επέλεξα να δημιουργήσω μερικά διαγράμματα. Ως data set χρησιμοποίησα ένα csv αρχείο που είχα από το μάθημα των δικτύων στο οποίο αποφάσισα να οπτικοποιήσω για άλλη μια φορά τα θεωρητικά και τα πειραματικά δεδομένα που υπήρχαν σε αυτο χρησιμοποιώντας αποκλειστικά εργαλεία γραμμής εντολών. Συγκεκριμένα χρησιμοποίησα το gnuplot και shell scripting. Δημιούργησα ένα μικρό shell script που να μου επιτρέπει να φτιάξω ένα αρχείο csv μονο με τις στήλες που θέλω και μετά να το χρηsιμοποιήσω με το script του gnuplot και για να το βελτιώσω ώστε να επιλέγω εγώ στήλες και όνομα διαγράμματος τα συνδύασα σε ένα κοινό shell script.
+
 [![asciicast](https://asciinema.org/a/MQLxuWC4iuAU69uRqUi2EANOk.svg)](https://asciinema.org/a/MQLxuWC4iuAU69uRqUi2EANOk)
 
+Το script που δέχεται ως όρισμα τις στήλες για να δημιουργήσει το data.csv
 ```bash
 #!/bin/bash
 
@@ -166,6 +169,7 @@ awk -F, -v col1="$column1" -v col2="$column2" 'BEGIN {OFS=","} {print $col1, $co
 Αυτή η εντολή θα επεξεργαστεί το αρχείο CSV (input_file) με βάση τις στήλες που καθορίζονται από τη στήλη1 και τη στήλη2, δημιουργώντας ένα νέο αρχείο CSV (output_file) με τις επιλεγμένες στήλες.
 </details>
 
+ Το αρχείο data.csv που δημιουργέιται μοιάζει κάπως έτσι
 ```
 λ,Nq_th
 "0.10","0.00"
@@ -175,6 +179,7 @@ awk -F, -v col1="$column1" -v col2="$column2" 'BEGIN {OFS=","} {print $col1, $co
 "0.50","0.08"
  ... , ...
 ```
+To gnuplot script που δημιουργεί το διάγραμμα
 ```gnuplot
 set terminal pngcairo
 set output 'mm1-simulation.png'
@@ -223,8 +228,11 @@ plot 'data.csv' using (column("λ")):(column("Nq_ex")) with linespoints ls 1 tit
   
 </details>
 
+Το πρώτο διάγραμμα που δημιουργήθηκε χάρη σε αυτά τα script
+
 ![mm1 ex](https://i.imgur.com/lG0jay8.png)
 
+To script σνδιασμός των δύο παραπάνω
 ```bash
 #!/bin/bash
 
@@ -275,10 +283,14 @@ echo "Plot '$plot_title' created succesfully!"
 <details>
   <summary>code breakdown</summary>
 
+Το συνδιασμένο script είνια σχεδόν ίδιο με το αρχικό
 ```
 column1_name=$(head -n 1 "$input_file" | awk -F',' '{print $1}')
 column2_name=$(head -n 1 "$input_file" | awk -F',' '{print $2}')
 ```
+Η διαφορά έγγυται στο ότι το παραπάνω σύνολο εντολών  χρησιμοποιείται για την εξαγωγή των ονομάτων των δύο πρώτων στηλών από ένα αρχείο δεδομένων:
+η πρώτη γραμμή κώδικα παίρνει την πρώτη γραμμή του αρχείου $input_file και με τη χρήση του εργαλείου awk χωρίζει τα δεδομένα με διαχωριστικό το ,. Στη συνέχεια, εκτυπώνει το περιεχόμενο της πρώτης στήλης. Το αποτέλεσμα αποθηκεύεται στη μεταβλητή column1_name.
+
 ```
 gnuplot << EOF
 set terminal pngcairo
@@ -299,8 +311,11 @@ set datafile separator ','
 plot 'data.csv' using 1:2 with linespoints ls 1 title '$column1_name vs $column2_name'
 EOF
 ```
+Εδώ ξεκινά τη χρήση του Gnuplot και εκτελεί τις εντολές που ακολουθούν, χρησιμοποιώντας τα δεδομένα που του δίνονται ως είσοδο
   
 </details>
+
+Το δεύτερο διάγραμμα από το συνδιασμένο script
 
 ![mm1 th](https://i.imgur.com/DIwBtau.png)
 
