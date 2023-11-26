@@ -319,10 +319,10 @@ pandoc_output="pandoc_output.txt"
 output_file="book.txt"
 stop_words_file="stop_words.txt"
 
-# Pandoc Conversion to plain text
+# use pandoc to convert to plain text/remove html elements
 pandoc -f html -t plain "$input_file" -o "$pandoc_output"
 
-# Pre-processing pipeline
+# pre-processing pipeline
 echo -e "\e[34mCleaning HTML tags and converting to plain text...\e[0m"
 cat "$pandoc_output" \
   | tr -d '[:punct:][:digit:]' \
@@ -356,11 +356,11 @@ image_array = np.array(sharp_image)
 # generate wordcloud
 wc = WordCloud(width=800,
                height=400,
-               background_color='#010904',  # Set background color to blue
+               background_color='#010904',
                mask=image_array,
-               contour_color='white',# Add an outline
+               contour_color='white',# outline
                contour_width=2,
-               colormap='inferno')  # Use inferno colormap for warm colors
+               colormap='inferno')
 
 output_dir = '../images'
 os.makedirs(output_dir, exist_ok=True)
