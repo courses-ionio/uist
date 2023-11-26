@@ -309,6 +309,8 @@ EOF
 
 ## [Εβδομάδα Όγδοη: cli data analysis]()
 
+[![asciicast](https://asciinema.org/a/idt5BlJpCW3Lb9WkLsQlUN0iL.svg)](https://asciinema.org/a/idt5BlJpCW3Lb9WkLsQlUN0iL)
+
 ![mobydick](https://i.imgur.com/rsGO4sK.jpg)
 
 ## [Εβδομάδα ´Ενατη: Αίτημα Ενσωμάτωσης]()
