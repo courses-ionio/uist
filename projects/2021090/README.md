@@ -377,6 +377,13 @@ wordcloud_image.to_file(output_file)
 ```
 ![mobydick](https://i.imgur.com/rsGO4sK.jpg)
 
+[πίνακας περιεχομένων :arrow_up:](https://github.com/inf2021090/iv/tree/inf2021090/projects/2021090#%CF%80%CE%AF%CE%BD%CE%B1%CE%BA%CE%B1%CF%82-%CF%80%CE%B5%CF%81%CE%B9%CE%B5%CF%87%CE%BF%CE%BC%CE%AD%CE%BD%CF%89%CE%BD)
+<details>
+  <summary>βιβλιογραφία</summary>
+
+  ||
+</details>
+
 ## [Εβδομάδα ´Ενατη: Αίτημα Ενσωμάτωσης]()
 
 ## [Εβδομάδα Δέκατη: Τελική Αναφορά]()
