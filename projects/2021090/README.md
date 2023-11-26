@@ -311,6 +311,70 @@ EOF
 
 [![asciicast](https://asciinema.org/a/idt5BlJpCW3Lb9WkLsQlUN0iL.svg)](https://asciinema.org/a/idt5BlJpCW3Lb9WkLsQlUN0iL)
 
+```bash
+#!/bin/bash
+
+input_file="mobydick.html"
+pandoc_output="pandoc_output.txt"
+output_file="book.txt"
+stop_words_file="stop_words.txt"
+
+# Pandoc Conversion to plain text
+pandoc -f html -t plain "$input_file" -o "$pandoc_output"
+
+# Pre-processing pipeline
+echo -e "\e[34mCleaning HTML tags and converting to plain text...\e[0m"
+cat "$pandoc_output" \
+  | tr -d '[:punct:][:digit:]' \
+  | tr '[:upper:]' '[:lower:]' \
+  | grep -v -iw -f "$stop_words_file" \
+  > "$output_file"
+
+echo -e "\e[32mText preprocessing completed. Output saved to $output_file\e[0m"
+```
+
+```python
+from wordcloud import WordCloud
+from PIL import Image, ImageFilter
+import matplotlib.pyplot as plt
+import os
+import numpy as np
+from tqdm import tqdm
+import time
+
+with open('book.txt', 'r', encoding='utf-8') as file:
+    text = file.read()
+
+image_dir = '../images'
+image_path = os.path.join(image_dir, 'fish.jpg')
+
+# image processing
+image = Image.open(image_path)
+sharp_image = image.filter(ImageFilter.SHARPEN)
+image_array = np.array(sharp_image)
+
+# generate wordcloud
+wc = WordCloud(width=800,
+               height=400,
+               background_color='#010904',  # Set background color to blue
+               mask=image_array,
+               contour_color='white',# Add an outline
+               contour_width=2,
+               colormap='inferno')  # Use inferno colormap for warm colors
+
+output_dir = '../images'
+os.makedirs(output_dir, exist_ok=True)
+
+output_file = os.path.join(output_dir, 'wordcloud.jpg')
+
+# simulate progress with tqdm
+for _ in tqdm(range(200), colour="#00ffff", desc="Processing word cloud"):
+    time.sleep(0.1)
+
+# save wordcloud as image
+wordcloud_image = wc.generate(text)
+wordcloud_image.to_file(output_file)
+```
 ![mobydick](https://i.imgur.com/rsGO4sK.jpg)
 
 ## [Εβδομάδα ´Ενατη: Αίτημα Ενσωμάτωσης]()
