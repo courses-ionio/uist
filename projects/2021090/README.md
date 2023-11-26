@@ -324,7 +324,7 @@ EOF
 <details>
   <summary>βιβλιογραφία</summary>
 
-  ||
+  |http://www.gnuplot.info/ | https://www.tutorialspoint.com/unix/shell_scripting.html | https://www.freecodecamp.org/news/bash-scripting-tutorial-linux-shell-script-and-command-line-for-beginners/ | https://www.youtube.com/watch?v=9QUtcfyBFhE&list=PLaYBfUc8SG7W4cTZprVWjbtwrottWuk8c |
 </details>
 
 ## [Εβδομάδα Έβδομη: Εναλλακτικό Σύστημα]()
