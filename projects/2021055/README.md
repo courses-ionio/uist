@@ -132,5 +132,33 @@
 
 
 # ΠΑΡΑΔΟΤΕΟ 8 - Άσκηση γραμμής εντολών (cli data analysis)
+Στα πλαίσια του όγδοου παραδοτέου, επιλέχθηκε απο τον πίνακα με τα διαθέσιμα shellscripts η δημιουργία ένος script το οποίο θα εμφανίζει όλα τα commits που έχουν πραγματοποιηθεί σε ένα αποθετήριο.
+Πιο συγκεκρινένα, δημιούργησα αυτο το `shell script`
+
+     #!/bin/bash
+
+    # Set the folder path
+    folder_path="/home/axileas/Desktop/iv"
+
+    # Define the name of the file to store the results
+    output_file="git_bars_output.txt"
+
+    # Check if the folder exists
+    if [ -d "$folder_path" ]; then
+    echo "Folder found: $folder_path"
+    
+    # Change to the folder
+    cd "$folder_path"
+    
+    # Execute git-bars and save the results to a file
+    if git-bars | tee "$output_file"; then
+        echo "Successful execution of git-bars."
+        cat "$output_file"
+    else
+        echo "Error during the execution of git-bars"
+      fi
+    else
+       echo "Folder does not exist: $folder_path"
+    fi
 
 # ΠΑΡΑΔΟΤΕΟ 9 - Αίτημα ενσωμάτωσης
