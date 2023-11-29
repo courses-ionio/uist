@@ -87,37 +87,47 @@
 # ΠΑΡΑΔΟΤΕΟ 6 - Άσκηση γραμμής εντολών (cli data analysis)
 Για το 6ο παραδοτέο, επέλεξα να ασχοληθώ με το [pastel](https://github.com/sharkdp/pastel), το οποίο επιλέχθηκε μέσα από την πληθώρα επιλογών που είχε ο πίνακας [visualization](https://github.com/epidrome/dokey#:~:text=OpenSSH%20Cloud%20Stack-,visualization,-assignments). Το pastel είναι ένα εργαλείο για τον χρωματισμό κειμένου και δεδομένων στο τερματικό, προσφέρoντας διάφορες δυνατότητες χρωματισμού στον χρήστη, όσον αναφορά το κείμενο.
 
-Δημιούργησα αυτό το `shell script`:
+Δημιούργησα αυτό το `shell script`
 
-    !/bin/bash
 
-    # Χρώματα
+    #!/bin/bash
+
+    # define colors
     GREEN=$(tput setaf 2)
     CYAN=$(tput setaf 6)
     RESET=$(tput sgr0)
 
-    # Συνάρτηση για εκτύπωση κειμένου με χρώμα
+    #function print_color_message
+    
     print_color_text() {
-    local color="$1"
+    local color="$1"       # define variables
     local message="$2"
-    echo "${color}${message}${RESET}"
+    echo "${color}${message}${RESET}" # print the color message and reset the colors
     }
 
-    # Εμφάνιση καλωσορίσματος
+    # print the welcome message
+    
     print_color_text "$CYAN" "-----------------------------------------"
     print_color_text "$CYAN" "        Welcome to My Awesome Script     "
     print_color_text "$CYAN" "-----------------------------------------"
 
-    # Κάποιο άλλο χρήσιμο μήνυμα
+    # print the starting messsage
     print_color_text "$GREEN" "The script is starting now..."
 
-    # Κώδικας του script...
+    sleep 3 # freeze time for 3 seconds
 
-    # Μήνυμα ολοκλήρωσης
+    echo "Hello World!"
+
+    # print the final color message
+    
     print_color_text "$CYAN" "-----------------------------------------"
     print_color_text "$CYAN" "          Script Completed!              "
     print_color_text "$CYAN" "-----------------------------------------"
-Στο οποίο αρχικά, δηλώνω τα χρώματα που θέλω να χρησιμοποιήσω με την εντολή tput setaf colorname. Το `tput` είναι ένα εργαλείο του Unix που χρησιμοποιείται για τη διαχείριση γραφικών ρυθμίσεων στο τερματικό, όπου σε συνδυασμό με την εντολή `setaf` και την επιλογή του αριθμού χρώματος που επιλέγει ο χρήστης, δημιουργείται το εκάστωτε χρώμα. Στην συνέχεια, δημιουργείται μια συνάρτηση `print_color_text()` στην οποία δηλώνονται δύο μεταβλητές(χρώματος και κειμένου) και έπειτα, εκτυπώνονται. Σκοπός του `shell script` είναι να παρουσιάζει την εκτέλεση ενός `script`.
+    
+Στο οποίο αρχικά, δηλώνω τα χρώματα που θέλω να χρησιμοποιήσω με την εντολή tput setaf colorname. Το `tput` είναι ένα εργαλείο του Unix που χρησιμοποιείται για τη διαχείριση γραφικών ρυθμίσεων στο τερματικό, όπου σε συνδυασμό με την εντολή `setaf` και την επιλογή του αριθμού χρώματος που επιλέγει ο χρήστης, δημιουργείται το εκάστοτε χρώμα. Στην συνέχεια, δημιουργείται μια συνάρτηση `print_color_text()` στην οποία δηλώνονται δύο μεταβλητές(χρώματος και κειμένου) και έπειτα, εκτυπώνονται με την εντολή `echo` και με την μεταβλητή `Reset` τα χρώματα στο τερματικό επαναφέρονται στην αρχική τους κατάσταση. Τέλος, με την εντολή `sleep`  το shellscript παγώνει για 3 δευτερόλεπτα, με σκοπό να δείχνει το script ότι κάτι φορτώνεται σε αυτό και έπειτα εκτυπώνεται το τελικό αποτέλεσμα μαζί με ένα χρωματιστό μήνυμα ολοκλήρωσης του shellscript.
+
+* [ASCIINEMA_VIDEO]()
+
 
 
 
