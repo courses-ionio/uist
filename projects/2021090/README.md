@@ -109,6 +109,8 @@ Pix64 by ZappedCow | no | 1-bit | yes|
 
 ## [Εβδομάδα Πέμπτη: Αίτημα Ενσωμάτωσης]()
 
+[issue](https://github.com/ioniodi/guide/issues/2)
+
 ## [Εβδομάδα Έκτη: cli data analysis]()
 
 Ως άσκηση γραμμής εντολών επέλεξα να δημιουργήσω μερικά διαγράμματα. Ως data set χρησιμοποίησα ένα csv αρχείο που είχα από το μάθημα των δικτύων στο οποίο αποφάσισα να οπτικοποιήσω για άλλη μια φορά τα θεωρητικά και τα πειραματικά δεδομένα που υπήρχαν σε αυτο χρησιμοποιώντας αποκλειστικά εργαλεία γραμμής εντολών. Συγκεκριμένα χρησιμοποίησα το gnuplot και shell scripting. Δημιούργησα ένα μικρό shell script που να μου επιτρέπει να φτιάξω ένα αρχείο csv μονο με τις στήλες που θέλω και μετά να το χρηsιμοποιήσω με το script του gnuplot και για να το βελτιώσω ώστε να επιλέγω εγώ στήλες και όνομα διαγράμματος τα συνδύασα σε ένα κοινό shell script.
@@ -349,7 +351,7 @@ echo -e "\e[34mCleaning HTML tags and converting to plain text...\e[0m"
 cat "$pandoc_output" \
   | tr -d '[:punct:][:digit:]' \
   | tr '[:upper:]' '[:lower:]' \
-  | grep -v -iw -f "$stop_words_file" \
+  | grep -v -w -f "$stop_words_file" \
   > "$output_file"
 
 echo -e "\e[32mText preprocessing completed. Output saved to $output_file\e[0m"
@@ -408,4 +410,38 @@ wordcloud_image.to_file(output_file)
 
 ## [Εβδομάδα ´Ενατη: Αίτημα Ενσωμάτωσης]()
 
+```lua
+function Image(paragraph)
+	local to_string = pandoc.utils.stringify
+	if paragraph.classes:find("labs", 1) then
+		local file = io.open("all_collections/_groups/" .. paragraph.src, "r")
+		local content = file:read("*a")
+		file:close()
+
+		local doc = pandoc.read(content)
+
+		-- Metadata
+		local meta = doc.meta
+		local link = to_string(meta.link)
+		local title = to_string(meta.title)
+
+		-- process content after metadata
+		local body = doc.blocks
+
+		local md = "#### " .. title .. "\n\n" .. link .. "\n\n"
+
+		-- process content blocks
+		for _, block in ipairs(body) do
+			if block.t == "Para" then
+				md = md .. to_string(block)
+			elseif block.t == "BulletList" then
+				for _, item in ipairs(block.content) do
+					md = md .. "- " .. to_string(item) .. "\n\n"
+				end
+			end
+		end
+		return pandoc.RawInline("markdown", md)
+	end
+end
+```
 ## [Εβδομάδα Δέκατη: Τελική Αναφορά]()
