@@ -155,7 +155,7 @@ output_file="data.csv"
 column1="$1"
 column2="$2"
 ```
-Αυτές οι γραμμές αντιστοιχίζουν το πρώτο και το δεύτερο ορίσματα γραμμής εντολών που μεταβιβάστηκαν στο σενάριο ($1 και $2, αντίστοιχα) σε μεταβλητές που ονομάζονται στήλη1 και στήλη2.
+Αυτές οι γραμμές αντιστοιχίζουν το πρώτο και το δεύτερο ορίσματα γραμμής εντολών που ορίστηκαν ($1 και $2, αντίστοιχα) σε μεταβλητές που ονομάζονται στήλη1 και στήλη2.
 
 ```
 awk -F, -v col1="$column1" -v col2="$column2" 'BEGIN {OFS=","} {print $col1, $col2}' "$input_file" > "$output_file"
@@ -254,8 +254,8 @@ awk -F, -v col1="$column1" -v col2="$column2" 'BEGIN {OFS=","} {print $col1, $co
 echo "CSV file '$output_file' created with columns $column1 and $column2 from '$input_file'"
 
 # extract column names from the header of input CSV file
-column1_name=$(head -n 1 "$input_file" | awk -F',' '{print $1}')
-column2_name=$(head -n 1 "$input_file" | awk -F',' '{print $2}')
+column1_name=$(head -n 1 "$output_file" | awk -F',' '{print $1}')
+column2_name=$(head -n 1 "$output_file" | awk -F',' '{print $2}')
 
 # gnuplot script
 gnuplot << EOF
@@ -285,8 +285,8 @@ echo "Plot '$plot_title' created succesfully!"
 
 Το συνδιασμένο script είνια σχεδόν ίδιο με το αρχικό
 ```
-column1_name=$(head -n 1 "$input_file" | awk -F',' '{print $1}')
-column2_name=$(head -n 1 "$input_file" | awk -F',' '{print $2}')
+column1_name=$(head -n 1 "$output_file" | awk -F',' '{print $1}')
+column2_name=$(head -n 1 "$output_file" | awk -F',' '{print $2}')
 ```
 Η διαφορά έγγυται στο ότι το παραπάνω σύνολο εντολών  χρησιμοποιείται για την εξαγωγή των ονομάτων των δύο πρώτων στηλών από ένα αρχείο δεδομένων:
 η πρώτη γραμμή κώδικα παίρνει την πρώτη γραμμή του αρχείου $input_file και με τη χρήση του εργαλείου awk χωρίζει τα δεδομένα με διαχωριστικό το ,. Στη συνέχεια, εκτυπώνει το περιεχόμενο της πρώτης στήλης. Το αποτέλεσμα αποθηκεύεται στη μεταβλητή column1_name.
