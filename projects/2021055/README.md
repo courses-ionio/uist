@@ -12,7 +12,7 @@
 | 2 | Άσκηση γραμμής εντολών (archlinux+wm) | https://github.com/courses-ionio/iv/discussions/24
 | 3 | Εναλλακτικό σύστημα | https://github.com/courses-ionio/iv/discussions/25
 | 4 | Άσκηση γραμμής εντολών (custom wm) | https://github.com/courses-ionio/iv/discussions/26
-| 5 | Αίτημα ενσωμάτωσης |
+| 5 | Αίτημα ενσωμάτωσης | https://github.com/courses-ionio/iv/discussions/31
 | 6 | Άσκηση γραμμής εντολών (cli data analysis) |
 | 7 | Εναλλακτικό σύστημα |
 | 8 | Άσκηση γραμμής εντολών (cli data analysis) |
