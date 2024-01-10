@@ -13,7 +13,7 @@
 | 3 | Εναλλακτικό σύστημα | https://github.com/courses-ionio/iv/discussions/25
 | 4 | Άσκηση γραμμής εντολών (custom wm) | https://github.com/courses-ionio/iv/discussions/26
 | 5 | Αίτημα ενσωμάτωσης | https://github.com/courses-ionio/iv/discussions/31
-| 6 | Άσκηση γραμμής εντολών (cli data analysis) |
+| 6 | Άσκηση γραμμής εντολών (cli data analysis) | https://github.com/courses-ionio/iv/discussions/32
 | 7 | Εναλλακτικό σύστημα |
 | 8 | Άσκηση γραμμής εντολών (cli data analysis) |
 | 9 | Αίτημα ενσωμάτωσης |
