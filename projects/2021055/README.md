@@ -16,7 +16,7 @@
 | 6 | Άσκηση γραμμής εντολών (cli data analysis) | https://github.com/courses-ionio/iv/discussions/32
 | 7 | Εναλλακτικό σύστημα | https://github.com/courses-ionio/iv/discussions/33 
 | 8 | Άσκηση γραμμής εντολών (cli data analysis) | https://github.com/courses-ionio/iv/discussions/34
-| 9 | Αίτημα ενσωμάτωσης |
+| 9 | Αίτημα ενσωμάτωσης | https://github.com/courses-ionio/iv/discussions/35
 | 10 | Τελική αναφορά |
 
 # ΠΑΡΑΔΟΤΕΟ 1 - Εισαγωγή
