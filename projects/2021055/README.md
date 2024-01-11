@@ -79,7 +79,7 @@
 ![wallpaper](https://github.com/Axileaszervos/iv/assets/115211756/13989031-3a7c-44de-8fe2-8b56cce4b555)
 
 ### Bar
-Για `status-bar` επέλεξα ένα έτοιμο theme απο ένα repository στο github. Πιο συγκεκριμένα, επισκέφτηκα το repository με [όνομα](https://github.com/tobi-wan-kenobi/bumblebee-status), έκανα `git clone` στον δίσκο μου το αποθετήριο με τα διαθέσιμα themes. Στην συνέχεια, άνοιξα το αρχείο `.config/i3/config` και δημιούργησα ένα block κώδικα, στο οποίο αντέγραψα τον έτοιμο κώδικα που είχε το repository και τον προσάρμοσα στις δικές μου απαιτήσεις(αλλαγή θέσης του bar, προβολή δικών μου δεδομένων).
+Για `status-bar` επέλεξα ένα έτοιμο theme απο ένα repository στο github. Πιο συγκεκριμένα, επισκέφτηκα το repository με όνομα [bumblebee-status](https://github.com/tobi-wan-kenobi/bumblebee-status), έκανα `git clone` στον δίσκο μου το αποθετήριο με τα διαθέσιμα themes. Στην συνέχεια, άνοιξα το αρχείο `.config/i3/config` και δημιούργησα ένα block κώδικα, στο οποίο αντέγραψα τον έτοιμο κώδικα που είχε το repository και τον προσάρμοσα στις δικές μου απαιτήσεις(αλλαγή θέσης του bar, προβολή δικών μου δεδομένων).
 ![status-bar](https://github.com/Axileaszervos/iv/assets/115211756/f507c068-6ae1-4be3-9192-c8f02fc9dcb3)
 
 ### Notification
