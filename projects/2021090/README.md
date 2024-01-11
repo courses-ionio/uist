@@ -410,6 +410,8 @@ wordcloud_image.to_file(output_file)
 
 ## [Εβδομάδα ´Ενατη: Αίτημα Ενσωμάτωσης]()
 
+[ISSUE](https://github.com/ioniodi/guide/issues/2)
+
 ```lua
 function Image(paragraph)
 	local to_string = pandoc.utils.stringify
