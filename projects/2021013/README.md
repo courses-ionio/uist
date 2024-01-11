@@ -288,6 +288,20 @@ To διστημόπλοιο και την laser σφάιρα τα σχεδίασ
 ```
 @laserbeam     0000 00ff ff00 0000
 ```
+![image](https://github.com/nkanagno/iv/assets/103074273/1aec09cb-2243-402c-8ccb-e7900fed0b84)
+
+### Παρουσίαση εφαρμογής
+Με του που εκτελεστεί στο termanal με την παρακάτω εντολή
+```
+./uxnasm shooting.tal shooting.rom && ./uxnemu shooting.rom
+```
+Τότε αρχικά εμφανίζει το διαστημόπλοιο στην άκρη της οθόνης
+![image](https://github.com/nkanagno/iv/assets/103074273/9244656b-320e-4560-ba2c-f0177a3e2046)
+Αφότου ο χρήστης πατήσει οποιοδήποτε κουμπι τότε η laser σφαίρα μεταφέρεται από την μία πλευρά της οθόνης στην άλλη:
+
+
+
+
 # <h1 id="cli_data_analysis1"> 8ο ΠΑΡΑΔΟΤΕΟ - Άσκηση γραμμής εντολών (cli data analysis) </h1>
 
 
