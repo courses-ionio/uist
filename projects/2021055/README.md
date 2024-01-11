@@ -199,7 +199,6 @@ https://github.com/Axileaszervos/iv/assets/115211756/a2ae1e86-b3df-4803-83f0-a27
     # Execute git-bars and save the results to a file
     if git-bars | tee "$output_file"; then
         echo "Successful execution of git-bars."
-        cat "$output_file"
     else
         echo "Error during the execution of git-bars"
       fi
