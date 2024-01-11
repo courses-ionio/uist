@@ -295,12 +295,18 @@ To διστημόπλοιο και την laser σφάιρα τα σχεδίασ
 ```
 ./uxnasm shooting.tal shooting.rom && ./uxnemu shooting.rom
 ```
+
 Τότε αρχικά εμφανίζει το διαστημόπλοιο στην άκρη της οθόνης
+
 ![image](https://github.com/nkanagno/iv/assets/103074273/9244656b-320e-4560-ba2c-f0177a3e2046)
-Αφότου ο χρήστης πατήσει οποιοδήποτε κουμπι τότε η laser σφαίρα μεταφέρεται από την μία πλευρά της οθόνης στην άλλη:
 
+Αφότου ο χρήστης πατήσει οποιοδήποτε κουμπι τότε η laser σφαίρα μεταφέρεται από την μία πλευρά της οθόνης στην άλλη.
+#### Αναπαράσταση σε βίντεο mp4
 
+https://github.com/nkanagno/iv/assets/103074273/a3d46fe5-ca9f-44f2-b5fe-4f1d604a7f4f
 
+#### Github repository
+Τέλος, ανέβασα ολοκληρώμενο τον κώδικα της εφαρμογής σε προσωπικό repository σε μορφή ανοιχτού κώδικα, [shooting.tal](https://github.com/nkanagno/uxn-shooting/blob/main/shooting.tal)
 
 # <h1 id="cli_data_analysis1"> 8ο ΠΑΡΑΔΟΤΕΟ - Άσκηση γραμμής εντολών (cli data analysis) </h1>
 
