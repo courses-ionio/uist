@@ -448,4 +448,7 @@ function Image(paragraph)
 	end
 end
 ```
+
+![guide](https://github.com/inf2021090/telechroma-site/blob/main/guide.png)
+
 ## [Εβδομάδα Δέκατη: Τελική Αναφορά]()
