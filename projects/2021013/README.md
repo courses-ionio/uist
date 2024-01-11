@@ -197,6 +197,102 @@ All time git commits of the git repository nkanagno/site shown in spark below:
 ```
 Πιο συγκεκριμένα, φαίνονται τα παραπάνω στο παρακάτω asciinema video:
 https://asciinema.org/a/617841.
+
+# <h1 id="fantasyconsoles2"> 7ο ΠΑΡΑΔΟΤΕΟ - Εναλλακτικό σύστημα </h1>
+Στο συγκεκριμένο παραδοτέο χρειάστηκε να επεξεργστούμε την γλώσσα του [uxn/varvara] είτε επεξεργάζοντας έτοιμα projects είτε ατομικά είτε ομαδικά από το διαδίκτυο δημιουργώντας κάτι δικό μας, με σκοπό απλώς να πάρουμε μία γεύση για το πως λειτουργεί και το τι μπορεί κάποιος ν δημιουργήσει αν αφιερώσει τον απαραίτητο χρόνο. 
+
+## Varvara/uxn shooting demonstration:
+### Με λίγα λόγια
+Στη συγκριμένη περίπτωση, δημιούργησα ένα αρχείο `.tal` το οποίο παρουσιάζει, περιέχοντας κώδικα που μπορεί να χρησιμοποιήσει οποιοσδήποτε και να το προσθέσει σε προσωπικό του project, με ένα διαστημόπλοιο που πατώντας ένα οποιοδήποτε κουμπί ενεργοποιεί μία laser ακτίνα και εκείνη μεταφέρεται προχωρόντας ασταμάτητα σε μία ευθεία από το διαστημόπλοιο μέχρι να βγει εκτός οθόνης. 
+### Επεξήγηση κώδικα:
+#### Δήλωση Συσκευών
+Αρχικά δήλωσα τις απαραίτητες μηχανές που χρησιμοποιώ με το `@System` να είναι για το χρώμα του background, `@Screen` να είναι για την εμφάνιση sprites και της θέσεις τους στην οθόνη και το `@controller` για την ενεργοποίηση του shooting πατώντας οποιοδήποτε κουμπί. 
+```
+( devices )
+|00 @System  [ &vector $2 &pad $6  &r $2 &g $2 &b $2 ]
+|20 @Screen  [ &vector $2 &width $2 &height $2 &pad $2 &x $2 &y $2 &addr $2 &pixel $1 &sprite $1 ]
+|80 @Controller [ &vector $2 &button $1 &key $1 ]
+```
+#### Δήλωση μεταβλητών
+Οι μεταβλητές τις οποίες χρησιμοποίσα είναι το `@Sprite` δίνοντας του x και y positions ως pos-x και pos-y. Έπειτα η `%HALF2` δηλώνει ότι δαιρεί δια 2, η `%color-clear` εμφανίζει το sprite με χρώμα ίδιο με το background για να δώσει την ψευδαίσθηση ότι εξαφανίζεται και τέλος η `%color-2` εμφανίζει το sprite με το χρώμα 2 και με background color αυτό της οθόνης για να φαίνεται ότι έχει transparency.
+```
+( zero page )
+|0000
+@sprite [ &pos-x $2 &pos-y $2 ]
+( macros/constants )
+%HALF2 { #01 SFT2 } ( shift one bit to the right ) ( short -- short/2 )
+%color-clear { #40 } ( clear 1bpp sprite from fg )
+%color-2 { #4a } ( draw 1bpp sprite with color 2 and transparency )
+
+```
+
+#### MAIN
+Στην main που τρέχει στη θέση `0100` και κλείνει με `BRK`, αρχικά θέτω τα χρώματα του background σε rgb με συνδυασμό να εμφανίζουν το χρώμα μωβ, έθεσα την αρχική θέση y του πρώτου spite ίσο με το ύψος της οθόνης δια 2 μείον 4 pixels, έθεσα ως αρχικό sprite το διαστημόπλοιο που δημιούργησα και το εμφάνισα την θέση y που ανέφερα και τέλος ξεκίνησα την συνάρτηση `@on-controller` για το τι κάνει σε περιπτωση πατήματος κάποιου κουμπιού.
+```
+|0100
+( set system colors )
+      #2ce9 .System/r DEO2
+      #01c0 .System/g DEO2
+      #2ce5 .System/b DEO2
+
+    ( set screen/y to half of screen minus 4 )
+      .Screen/height DEI2 HALF2 #0004 SUB2 .Screen/y DEO2
+
+    ( set sprite address )
+    ;spaceship .Screen/addr DEO2
+    #01 .Screen/sprite DEO
+    ( assign controller vector )
+    ;on-controller .Controller/vector DEO2
+BRK
+```
+
+#### Συνάρτηση on-controller
+Η συνάρτηση `@on-controller` όταν εκτελείται αλλάζει το sprite που χρησιμοποιούμε στη σφάιρα laser και εκτελεί την συνάρτηση `@on-frame` που ελέγχει την μεταφορά της σφαίρας από το διαστημόπλοιο μέχρι και την διαπέραση της οθόνης.
+```
+@on-controller ( -> )
+    ( set sprite address )
+    ;laserbeam .Screen/addr DEO2
+    
+    ( set screen vector )
+    ;on-frame .Screen/vector DEO2
+BRK
+```
+#### Συνάρτηση on-frame
+Η συνάρτηση `on-frame` όταν εκτελείται εξαφανίζει το προηγούμενο sprite-frame της σφαίρας με τη μεταβλητή color-clear, αυξάνει ανα 4 pixels συνεχώς το x position του sprite laser σφαίρας και εμφανίζει το sprite (laser-beam) στην οθόνη στα κατάλληλο x και y positions με transparency και δεύτερο χρώμα του background (rgb). 
+```
+@on-frame ( -> )
+    ( 1: clear sprite )
+    ( clear sprite from the fg )
+    color-clear .Screen/sprite DEO
+
+    ( 2: change position )
+    ( increment sprite/pos-x )
+    .sprite/pos-x LDZ2 #0004 ADD2 .sprite/pos-x STZ2
+
+    ( 3 : draw sprite )
+    ( load x coordinate from zero page and send to screen )
+    .sprite/pos-x LDZ2 .Screen/x DEO2
+
+    ( draw sprite in fg with color 2 and transparency )
+    color-2 .Screen/sprite DEO  
+
+BRK
+```
+#### Σχεδιασμός των sprite
+To διστημόπλοιο και την laser σφάιρα τα σχεδίασα με 16δικό έχοντας τα παρακάτω αποτελέσματα:
+```
+@spaceship       3c24 2424 7edb 7e3c
+```
+![image](https://github.com/nkanagno/iv/assets/103074273/40f6bd89-998c-4f38-b27a-ae77cbbc5ed1)
+
+```
+@laserbeam     0000 00ff ff00 0000
+```
+# <h1 id="cli_data_analysis1"> 8ο ΠΑΡΑΔΟΤΕΟ - Άσκηση γραμμής εντολών (cli data analysis) </h1>
+
+
+
+
 # <h1 id="pull_request2"> 9ο ΠΑΡΑΔΟΤΕΟ - Αίτημα ενσωμάτωσης 2 </h1>
 Στο συγκεκριμένο παραδοτέο χρειάστηκε να συνεργαστούμε ξανα ώστε συνεχίσουμε την ανάπτυξη του οδηγου σπουδών που βρίσκεται σε repository του github με όνομα
 [guide](https://github.com/ioniodi/guide), έχοντας το ήδη κάνει fork από το 5ο παραδοτέο, κατέχοντας ήδη ο καθένας το δικό του [προσωπίκο repository](https://github.com/nkanagno/guide/tree/master) για να κάνει έπειτα ξανά pull request και με την χρήση εργαλειών όπως lua,pandoc,latex να το μετατρέψουμε σε μορφή pdf ώστε να αναπαριστά το κύριο βιβλίο του τμήματος, [οδηγός σπουδών](https://di.ionio.gr/gr/students/student-prospectus/). Ως δεύτερο στάδιο χρειάστηκε να δημιουργήσουμε ειδικά `.lua` φίλτρα επεξεργάζοντας τα έτοιμα δεδομένα του αποθετηρίου submodule [all_collections](https://github.com/ioniodi/all_collections/), δηλώνοντας ο καθένας τα φίλτρα που θα δημιουργήσει και τα δεδομένα τα οποία θα επεξεργαστεί (πχ Μαθήματα, Καθηγητές, Εργαστήρια κλπ) και το κεφάλαιο στο οποίο θα πραγματοποιήσει αυτή την συνεισφορά του δημιουργώντας issue στην κεντρικό repository [ionio/guide](https://github.com/ioniodi/guide).
