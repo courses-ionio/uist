@@ -236,11 +236,14 @@ https://github.com/Axileaszervos/iv/assets/115211756/a2ae1e86-b3df-4803-83f0-a27
 ## Lua filters
 Για φίλτρο lua χρησιμοποίησα το ίδιο φίλτρο που είχα δημιουργήσει στο μάθημα Επικοινωνία Ανθρώπου - Υπολογιστή με κάποιες παραμετροποιήσεις. Αρχικά, για να μπορέσω να εμφανίσω τις 4 διαφορετικές κατηγορίες των καθηγητών, δημιούργησα 4 διαφορετικά αρχεία lua τα οποία χρησιμοποιούν την ίδια λογική για να εμφανίσουν τα αρχεία, με την μόνη τους διαφορά να είναι το όνομα του τίτλου του κάθε καθηγητή που εμφανίζεται και το εκάστοτε φίλτρο. Στην συνέχεια, η συνάρτηση ονομάζεται Image και παίρνει ένα όρισμα με το όνομα paragraph, χρησιμοποιείται η συνάρτηση pandoc.utils.stringify για τη μετατροπή ενός αντικειμένου σε συμβολοσειρά. Έπειτα, γίνεται έλεγχος αν οι κλάσεις του paragraph περιέχουν τη λέξη 'AssiPro' στη θέση 1. Αν ναι, τότε συνεχίζεται η εκτέλεση του κώδικα, ειδάλλως το script σταματάει. Εάν ο έλεγχος είναι true, τότε ανοίγει ένα αρχείο με όνομα που ορίζεται από τον συνδυασμό της συμβολοσειράς all_collections/_people/ και του paragraph.src. Στη συνέχεια, διαβάζει το περιεχόμενο του αρχείου, το μετατρέπει σε μορφή Pandoc και το αρχείο κλείνει. Ακόμη, δημιουργείται μια συμβολοσειρά σε μια μεταβλητή με όνομα md, η οποία περιλαμβάνει τα δεδομένα του doc και τα δομεί ως markdown. Τέλος, επιστρέφει μια νέα αναπαράσταση του κειμένου ως Pandoc RawInline, χρησιμοποιώντας τη συμβολοσειρά md.
 
+* [pdf-issue](https://github.com/Axileaszervos/iv/issues/1)
+
 * [AssiPro.lua](https://github.com/Axileaszervos/LUA-FILTERS---MAKE-LATEX/blob/main/AssiPro.lua)
 * [AssoPro.lua](https://github.com/Axileaszervos/LUA-FILTERS---MAKE-LATEX/blob/main/AssoPro.lua)
 * [Pro.lua](https://github.com/Axileaszervos/LUA-FILTERS---MAKE-LATEX/blob/main/Pro.lua)
 * [Medip.lua](https://github.com/Axileaszervos/LUA-FILTERS---MAKE-LATEX/blob/main/Medip.lua)
-
+* [make-latex.sh](https://github.com/Axileaszervos/LUA-FILTERS---MAKE-LATEX/blob/main/make-latex.sh)
+* 
 ## Φωτογραφίες
 ![1](https://github.com/Axileaszervos/iv/assets/115211756/055e44c9-798a-41bd-9c12-0605d36468ee)
 ![2](https://github.com/Axileaszervos/iv/assets/115211756/a4e4ce5d-094e-448b-bb09-3acefc18c579)
