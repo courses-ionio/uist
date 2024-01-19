@@ -309,9 +309,125 @@ https://github.com/nkanagno/iv/assets/103074273/a3d46fe5-ca9f-44f2-b5fe-4f1d604a
 Τέλος, ανέβασα ολοκληρώμενο τον κώδικα της εφαρμογής σε προσωπικό repository σε μορφή ανοιχτού κώδικα, [shooting.tal](https://github.com/nkanagno/uxn-shooting/blob/main/shooting.tal)
 
 # <h1 id="cli_data_analysis1"> 8ο ΠΑΡΑΔΟΤΕΟ - Άσκηση γραμμής εντολών (cli data analysis) </h1>
+## Shell Script
+Με την χρήση του εργαλείου [pastel](https://github.com/sharkdp/pastel) το οποίο χρησιμοποιείτε για την δημιουργία, την ανάλυση και την επεξεργασία χρωμάτων που υποστηρίζει μορφές χρωμάτων όπως RGB (sRGB), HSL, CIELAB, CIELCh κλπ, δημιούργησα το παρακάτω shell script:
+```
 
+#!/bin/bash
 
+if [ "$#" -ne 1 ]; then
+    echo "Usage: $0 <filename>"
+    exit 1
+fi
 
+filename="$1"
+
+echo "You have this color list from $filename file"
+awk -F ',' '{print $1}' "$filename"
+
+echo ""
+echo "Choose a number (1 - 4) to turn the colors from Names to:"
+echo "1) RGB   2) HEX   3) HSL   4) CMYK"
+
+# Read user input
+read -p "" number
+
+case $number in
+    1)
+        # Name -> RGB
+        echo ""
+        echo "Turning color from Name to RGB..."
+        sleep 2
+        echo "Name -> RGB"
+        awk -F ',' '{print $1}' "$filename" | pastel color | pastel format rgb
+        echo ""
+        ;;
+    2)
+        # Name -> HEX
+        echo ""
+        echo "Turning color from Name to HEX..."
+        sleep 2
+        echo "Name -> HEX"
+        awk -F ',' '{print $1}' "$filename" | pastel color | pastel format hex
+        echo ""
+        ;;
+    3)
+        # Name -> HSL
+        echo ""
+        echo "Turning color from Name to HSL..."
+        sleep 2
+        echo "Name -> HSL"
+        awk -F ',' '{print $1}' "$filename" | pastel color | pastel format hsl
+        echo ""
+        ;;
+    4)
+        # Name -> CMYK
+        echo ""
+        echo "Turning color from Name to CMYK..."
+        sleep 2
+        echo "Name -> CMYK"
+        awk -F ',' '{print $1}' "$filename" | pastel color | pastel format cmyk
+        echo ""
+        ;;
+    *)
+        echo "Invalid choice. Please enter a number between 1 and 4."
+        ;;
+esac
+
+```
+Αρχικά, δέχεται ως 2 παραμέτρους, το εκτελέσιμο αρχείο `./script.sh` και έπειτα ένα αρχείο `.csv` που η πρώτη στήλη περιέχει ονόματα χρωμάτων. 
+Έπειτα, εισάγει αυτό το όνομα αρχείου σε μία μεταβλητή `filename` και παρουσιάζει τα χρώματα που βρίσκονται μέσα στο `.csv` αρχείο. Στη συνέχεια, ζητάει από τον χρήστη να γράψει έναν αριθμό από το `1 εώς το 4`, παρουσιάζοντας του τις επιλογές που έχει για να μετατρέψει το αρχείο αυτό σε μία από τις παρακάτω μορφές:
+```
+
+1) RGB   2) HEX   3) HSL   4) CMYK
+
+```
+Με το που επιλέξει ο χρήστης κάποιον αριθμό γίνεται έλεγχος ορθότητας αριθμού (1 - 4), αν δεν υπάρχει σφάλμα τότε με την χρήση του pastel
+μετατρέπει τα χρώματα του αρχείου στη μορφή που επέλεξε.
+## Παράδειγματα Αποτελεσμάτων
+### Όνομα Αρχείου `colors1.csv`
+Εντολή εκτέλεσης:
+```
+./script.sh colors1.csv
+```
+Στη συγκεκριμένη περίπτωση, χρησιμοποίησα αρχικά ένα αρχείο με όνομα `colors1.csv` με τα παρακάτω χρώματα ως δεδομένα:
+```
+Orange
+Green
+Pink
+Cyan
+Brown
+Purple
+Red
+Blue
+Yellow
+Magenta
+```
+Επέλεξα την επιλογή `1) RGB` και μου έδωσε το παρακάτω αποτέλεσματα:
+![image](https://github.com/nkanagno/iv/assets/103074273/98564a04-23e4-4c37-ad85-da9aa6ba95a5)
+
+### Όνομα Αρχείου `colors2.csv`
+Εντολή εκτέλεσης:
+```
+./script.sh colors2.csv
+```
+Στη συγκεκριμένη περίπτωση, χρησιμοποίησα αρχικά ένα αρχείο με όνομα `colors2.csv` με τα παρακάτω χρώματα ως δεδομένα:
+```
+Salmon
+Coral
+Chartreuse
+Plum
+Khaki
+Turquoise
+Orchid
+Olive
+Maroon
+```
+Επέλεξα την επιλογή `3) HCL` και μου έδωσε το παρακάτω αποτέλεσματα:
+![image](https://github.com/nkanagno/iv/assets/103074273/497bfaf4-462b-4d7e-99c4-2900d49e528c)
+
+## Asciinema link
+[Testing pastel shell scipt](https://asciinema.org/a/U1cqc4Y5TX5xSJ31aqWtj6llf)
 
 # <h1 id="pull_request2"> 9ο ΠΑΡΑΔΟΤΕΟ - Αίτημα ενσωμάτωσης 2 </h1>
 Στο συγκεκριμένο παραδοτέο χρειάστηκε να συνεργαστούμε ξανα ώστε συνεχίσουμε την ανάπτυξη του οδηγου σπουδών που βρίσκεται σε repository του github με όνομα
