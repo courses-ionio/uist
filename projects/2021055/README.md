@@ -100,48 +100,63 @@
 Έπειτα απο το `green light`, προχώρησα σε [pull request](https://github.com/ioniodi/all_collections/pull/74), το οποίο περιείχε την αλλαγή που είχα πραγματοποιήσει.
 
 # ΠΑΡΑΔΟΤΕΟ 6 - Άσκηση γραμμής εντολών (cli data analysis)
-Για το 6ο παραδοτέο, επέλεξα να ασχοληθώ με το [pastel](https://github.com/sharkdp/pastel), το οποίο επιλέχθηκε μέσα από την πληθώρα επιλογών που είχε ο πίνακας [visualization](https://github.com/epidrome/dokey#:~:text=OpenSSH%20Cloud%20Stack-,visualization,-assignments). Το pastel είναι ένα εργαλείο για τον χρωματισμό κειμένου και δεδομένων στο τερματικό, προσφέρoντας διάφορες δυνατότητες χρωματισμού στον χρήστη, όσον αναφορά το κείμενο.
+Για το 6ο παραδοτέο, επέλεξα να ασχοληθώ με το [spark](https://github.com/holman/spark), το οποίο επιλέχθηκε μέσα από την πληθώρα επιλογών που είχε ο πίνακας [visualization](https://github.com/epidrome/dokey#:~:text=OpenSSH%20Cloud%20Stack-,visualization,-assignments). Το spark είναι ένα εργαλείο γραμμής εντολών, που επιτρέπει την δημιουργία γραφημάτων από τα δεδομένα που του παρέχονται.
 
-Δημιούργησα αυτό το `shell script`
-
+Δημιούργησα αυτό το `shell script`:
 
     #!/bin/bash
 
-    # define colors
-    GREEN=$(tput setaf 2)
-    CYAN=$(tput setaf 6)
-    RESET=$(tput sgr0)
+    # Navigate to the directory where your git repository is located
+    cd /Desktop/iv
 
-    #function print_color_message
-    
-    print_color_text() {
-    local color="$1"       # define variables
-    local message="$2"
-    echo "${color}${message}${RESET}" # print the color message and reset the colors
-    }
+    # Get the commit history using git shortlog and count the commits
+    commits=$(git shortlog -s | cut -f1)
 
-    # print the welcome message
-    
-    print_color_text "$CYAN" "-----------------------------------------"
-    print_color_text "$CYAN" "        Welcome to My Awesome Script     "
-    print_color_text "$CYAN" "-----------------------------------------"
+    # Display the commit history using spark
+    echo "Commits history:"
+    ./../spark/spark $commits
 
-    # print the starting messsage
-    print_color_text "$GREEN" "The script is starting now..."
+    # Display Memory Usage
+    echo "Memory Usage:"
 
-    sleep 3 # freeze time for 3 seconds
+    # Use free to get memory information, extract total memory, and display using spark
+    free -m | awk 'NR==1 {print $2}' | spark
 
-    echo "Hello World!"
+    # Display CPU information
+    echo "CPU information:"
 
-    # print the final color message
-    
-    print_color_text "$CYAN" "-----------------------------------------"
-    print_color_text "$CYAN" "          Script Completed!              "
-    print_color_text "$CYAN" "-----------------------------------------"
-    
-Στο οποίο αρχικά, δηλώνω τα χρώματα που θέλω να χρησιμοποιήσω με την εντολή tput setaf colorname. Το `tput` είναι ένα εργαλείο του Unix που χρησιμοποιείται για τη διαχείριση γραφικών ρυθμίσεων στο τερματικό, όπου σε συνδυασμό με την εντολή `setaf` και την επιλογή του αριθμού χρώματος που επιλέγει ο χρήστης, δημιουργείται το εκάστοτε χρώμα. Στην συνέχεια, δημιουργείται μια συνάρτηση `print_color_text()` στην οποία δηλώνονται δύο μεταβλητές(χρώματος και κειμένου) και έπειτα, εκτυπώνονται με την εντολή `echo` και με την μεταβλητή `Reset` τα χρώματα στο τερματικό επαναφέρονται στην αρχική τους κατάσταση. Τέλος, με την εντολή `sleep`  το shellscript παγώνει για 3 δευτερόλεπτα, με σκοπό να δείχνει το script ότι κάτι φορτώνεται σε αυτό και έπειτα εκτυπώνεται το τελικό αποτέλεσμα μαζί με ένα χρωματιστό μήνυμα ολοκλήρωσης του shellscript.
+    # Use top to get CPU information, skip the headers, and save to a CSV file
+    top -b -n 1 -o %CPU | tail -n +9 | awk '{print $1,$9}' > cpu_stats.csv
 
-* [ASCIINEMA_VIDEO](https://asciinema.org/a/624210)
+    # Display the CPU information using spark from the CSV file
+    cat cpu_stats.csv | ./../spark/spark
+
+* `cd ~/Desktop/iv`: Αυτή η εντολή αλλάζει τον τρέχοντα κατάλογο. Το, cd σημαίνει "change directory," και ~/Desktop/iv είναι η διαδρομή προς τον κατάλογο που πρέπει να μεταβεί.
+
+* `commits=$(git shortlog -s | cut -f1)`: Αυτή η εντολή χρησιμοποιεί το git για να ανακτήσει το ιστορικό των commits στον τρέχοντα κατάλογο και στη συνέχεια χρησιμοποιεί τα εργαλεία Unix shortlog και cut για να πάρει τον αριθμό των commit που έχουν πραγματοποιεί στον φάκελο `iv`. Τα αποτελέσματα αποθηκεύονται στη μεταβλητή commits.
+
+* `echo "Commits history:"`: Αυτή η εντολή εκτυπώνει ένα μήνυμα στην οθόνη που λέει "Commits history:".
+
+* `./../spark/spark $commits`: . Αρχικά, κρατάει το ίδιο directory με το `./` και με το `../` πάει πίσω ένα directory, στην συνέχεια μπαίνει στον φάκελο spark και τέλος εκτελεί στο εκτελέσιμο αρχείο  spark την μεταβλητή commits, που έχει τον αριθμό των commits που έχουν πραγματοποιηθεί.
+
+* `echo "Memory Usage:"`: Αυτή η εντολή εκτυπώνει ένα μήνυμα στην οθόνη που λέει "Memory Usage:".
+
+* `free -m | awk 'NR==1 {print $2}' | spark`: Εκτελεί την εντολή free με την επιλογή -m, η οποία εμφανίζει τα αποτελέσματα σε megabytes, έπειτα χρησιμοποιεί το awk για να επεξεργαστεί την πρώτη       γραμμή (NR==1) της εξόδου της εντολής free. Τέλος, επιλέγει δεύτερη στήλη της πρώτης γραμμής (print $2) και κρατάει τα αποτελέσματα της προηγούμενης εντολής (awk) και τα περνάει ως είσοδο στο     spark μέσω pipe(|).
+
+* `echo "CPU information:"`:  Αυτή η εντολή εκτυπώνει ένα μήνυμα στην οθόνη που λέει "CPU information:".
+
+* `top -b -n 1 -o %CPU | tail -n +9 | awk '{print $1,$9}' > cpu_stats.csv`: Εκτελεί την εντολή top με τις εξής επιλογές:
+        * -b: Σε λειτουργία batch (χωρίς γραφική διεπαφή, για χρήση σε σενάρια).
+        * -n 1: Εκτελεί το top μόνο μια φορά για να λάβει στατικές πληροφορίες.
+        * -o %CPU: Ταξινομεί τα αποτελέσματα του ποσοστού χρήσης της CPU σε φθίνουσα σειρά.
+   Στην συνέχεια, με την εντολή tail εμφανίζει όλες τις γραμμές από την 9η και μετά, παραλείποντας τις πρώτες 8 γραμμές επειδή δεν χρειάζονται οι πληροφορίες που παρέχουν. Έπειτα, η εντολή awk         χρησιμοποιείται για να επιλέξει τις στήλες 1 και 9, όπου:
+        *$1: Είναι ο αριθμός PID (Process ID).
+        *$9: Είναι το ποσοστό χρήσης της CPU.
+   Τέλος, το σύμβολο > χρησιμοποιείται για να κατευθύνει τα αποτελέσματα της προηγούμενης εντολής σε ένα αρχείο με το όνομα cpu_stats.csv.
+  
+* `cat cpu_stats.csv | spark`: η εντολή cat χρησιμοποιείται για να εμφανίσει το περιεχόμενο του αρχείου cpu_stats.csv στο τερματικό και με το σύμβολο | συνδέει την έξοδο της προηγούμενης εντολής με την είσοδο της επόμενης εντολής, που είναι το spark και σκοπός του είναι να εμφανίσει τα δεδομένα με γράφημα στο τερματικό.
+
+* [ASCIINEMA_VIDEO](https://asciinema.org/a/632203)
 
 # ΠΑΡΑΔΟΤΕΟ 7 - Εναλλακτικό σύστημα 
 
