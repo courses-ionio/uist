@@ -96,10 +96,11 @@ git clone https://git.sr.ht/~rabbits/uxn
 ## Εκτέλεση Αρχείων `.rom`
 Για την εκτέλεση οποιασδήποτε εφαρμογής `.rom` χρειάστηκε μέσα σε αυτό το ειδικό terminal `msys2/CLANG64`,
 αφότου βρισκόμουν ήδη μέσα στο directory `/bin/` μέσω της εντολής `cd ./uxn/bin`, να εκτελέσω την εντολή `./uxnemu ./αρχείο.rom`.
-Στη συγκεκρίμενη περίπτωση δοκίμασα της ήδη έτοιμη εφαρμογή [`bunny.rom`]().
+Στη συγκεκρίμενη περίπτωση δοκίμασα την ήδη έτοιμη εφαρμογή [`bunnymark.tal`](https://codeberg.org/kira/uxn-demos/src/branch/master/bunnymark.tal).
 
-### catclock.rom:
-![image](https://github.com/nkanagno/iv/assets/103074273/0304532c-2772-45c3-ae00-85fe2af849d3)
+### bunnymark.rom:
+
+![image](https://github.com/nkanagno/iv/assets/103074273/c243057f-2296-4b51-90ef-ce585e0810db)
 
 ### Δημιουργία Αρχείων `.rom`
 Για την δημιουργία νέων αρχείων `.rom`, χρείαζεται πρώτα να δημιουργήθει ένα αρχείο `.tal` όπου θα περιέχει τον κατάλληλο κώδικα assembly και θα μετατρέπεται αυτόματα σε εκτελέσιμο αρχείο `.rom` με την παρακάτω εντολή:
@@ -108,9 +109,22 @@ git clone https://git.sr.ht/~rabbits/uxn
  ./uxnasm αρχείο.tal αρχείο.rom && ./uxnemu αρχείο.rom
 ```
 
-## Μικρή Αλλαγή
+## Μικρή Αλλαγή (background color)
+### Επιλογή project
+Βρήκα έτοιμα uxn projects στο συγκεκριμένο [codeberg repository](https://codeberg.org/kira/uxn-demos), και επέλεξα να κάνω μία μικρή αλλαγή στο [`bunnymark.tal`](https://codeberg.org/kira/uxn-demos/src/branch/master/bunnymark.tal) project. Πιο συγκεκριμένα, αυτό το project όταν εκτελείτε, εμφανίζεται η παρακάτω οθόνη: 
 
+![image](https://github.com/nkanagno/iv/assets/103074273/7802ffb1-e4d6-4e53-b8b8-21e5cd7ed302)
 
+και ζητάει από τον χρήστη να κάνει κλικ στην οθόνη για να προσθέσει bunnies στην οθόνη, τα οποια κατευθύνονται σε τυχαίες θέσεις ασταμάτητα.
+### Αλλαγή
+Αυτό που επέλεξα να αλλάξω είναι το background color από παραλλαγή του χρώματος μωβ σε παραλλαγή του χρώματος πορτοκαλί:
+
+```
+  ( set system colors )       ( set system colors )
+  #2ce9 .System/r DEO2        #ff44 .System/r DEO2
+  #01c0 .System/g DEO2   ->   #7733 .System/g DEO2   
+  #2ce5 .System/b DEO2        #11ff .System/b DEO2
+```
 
 ### Πριν την αλλαγή
 
