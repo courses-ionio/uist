@@ -111,9 +111,15 @@ git clone https://git.sr.ht/~rabbits/uxn
 ## Μικρή Αλλαγή
 ### Πριν την αλλαγή
 
-https://github.com/nkanagno/iv/assets/103074273/fc032a8d-47e8-4516-8865-e4e451ae8b5d
+
+
+
 
 ### Μετά την αλλαγή
+
+
+
+https://github.com/nkanagno/iv/assets/103074273/7bd19e86-2b84-4a40-af6e-e044cb373c5a
 
 
 
