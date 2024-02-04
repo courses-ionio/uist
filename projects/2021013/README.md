@@ -14,7 +14,7 @@ GitHub organisation url: [OMADA11](https://github.com/OMADA11)
 | 1 | <ul><li> [x] Η αναφορά μου + προσθήκη πίνακα περιεχομένων  </li></ul><ul><li> [x] <a href="#introduction"> Συγγραφή της εισαγωγής </a> </li></ul>  <ul><li> [x] Ανοιχτή ομάδα στις συζητήσεις με όνομα <br> `OMADA11` </li></ul>| [Ανέβασμα στο σχολιασμό της συζήτησης το Παραδοτέο 1 ](https://github.com/courses-ionio/iv/discussions/18) | `Βαθμός:10/10` Δίοτι πραγματοποιήθηκαν όλα τα ζητούμενα εμπρόθεσμα. <br><a href="#aks1">Aναλυτική αυταξιολόγηση εδώ</a> |
 | 2 | <ul><li> [x] <a href="#arch_wm"> Άσκηση γραμμής εντολών (archlinux+wm) </a></li></ul>| [Ανέβασμα στο σχολιασμό της συζήτησης το Παραδοτέο 2](https://github.com/courses-ionio/iv/discussions/22) | `Βαθμός:10/10` Δίοτι πραγματοποιήθηκαν όλα τα ζητούμενα εμπρόθεσμα. <br><a href="#aks2">Aναλυτική αυταξιολόγηση εδώ</a> |
 | 3 | <ul><li> [x] <a href="#fantasyconsoles1">Εναλλακτικό σύστημα 1 </a></li></ul> | [Ανέβασμα στο σχολιασμό της συζήτησης το Παραδοτέο 3](https://github.com/courses-ionio/iv/discussions/37) | `Βαθμός:10/10` Δίοτι πραγματοποιήθηκαν όλα τα ζητούμενα εμπρόθεσμα. <br><a href="#aks3">Aναλυτική αυταξιολόγηση εδώ</a> |
-| 4 | <ul><li> [x] <a href="#wm"> Άσκηση γραμμής εντολών (custom wm) </a></li></ul>| | |
+| 4 | <ul><li> [x] <a href="#wm"> Άσκηση γραμμής εντολών (custom wm) </a></li></ul>| [Ανέβασμα στο σχολιασμό της συζήτησης το Παραδοτέο 4](https://github.com/courses-ionio/iv/discussions/38) | `Βαθμός:10/10` Δίοτι πραγματοποιήθηκαν όλα τα ζητούμενα εμπρόθεσμα. <br><a href="#aks4">Aναλυτική αυταξιολόγηση εδώ</a> |
 | 5 |  <ul><li> [x] <a href="#pull_request1">Αίτημα ενσωμάτωσης 1 </a></li></ul>| | |
 | 6 | <ul><li> [x] <a href="#cli_data_analysis1">Άσκηση γραμμής εντολών (cli data analysis) </a></li></ul>|  | |
 | 7 | <ul><li> [x] <a href="#fantasyconsoles2">Εναλλακτικό σύστημα </a></li></ul>|  | |
@@ -139,13 +139,17 @@ https://github.com/nkanagno/iv/assets/103074273/7bd19e86-2b84-4a40-af6e-e044cb37
 ## <h2 id="aks3"> Αυταξιολόγηση: `βαθμός 10/10`</h2>
 Στο παραδοτέο αυτό πραγματοποιήθηκαν όλα τα ζητούμενα εμπρόθεσμα. Δηλαδή, έγινε μια μικρή αλλαγή σε κάποιο εξωτερικό έτοιμο project της φαντασιακής κονσόλας uxn. Τέλος, ανέβασα εμπρόθεσμα το παραδοτέο 3 στη συζητήση [#37](https://github.com/courses-ionio/iv/discussions/37). 
 
-# <h1 id="wm"> 4ο ΠΑΡΑΔΟΤΕΟ - Άσκηση γραμμής εντολών (custom wm) (cli data analysis) </h1>
+# <h1 id="wm"> 4ο ΠΑΡΑΔΟΤΕΟ - Άσκηση γραμμής εντολών (custom wm) </h1>
 Αφότου πραγματοποιήθηκε επιτυχώς η εγκατάσταση του window manager i3, δοκίμασα να τον κάνω customized με αρκετούς τρόπους.
 ### Πρόσθεση Wallpaper στο workspace μου:
 Προκειμένου να εγκαταστήσω ένα Wallpaper, χρειάστηκε πρώτα να ανοίξω το firefox πατώντας τα κουμπιά `$mod+d`, γράφωντας firefox στη μπάρα αναζήτησης και πατώντας enter. Στο firefox εγκατέστησα την εικόνα `arch.jpg` και αποθηκεύτηκε στα `Downloads/`. Έπειτα, εγκατέστησα το `feh`, με `sudo pacman -S feh`, και μπήκα μέσα στο αρχείο `/config/i3/config` με την εντολή `vim /config/i3/config` πρόσθεσα την εντολή `exec_always feh --bg-fill /home/nikolas/Downloads/Arch.jpg`. Τέλος, έκανα restart τον i3 με την εντολή `i3-msg restart` και αλλάζοντας workspace πατώντας τα κουμπιά `$mod+2` έχοντας το παρακάτω αποτέλεσμα:
 
 
 ![arch_bg (1)](https://github.com/nkanagno/iv/assets/103074273/cb432d86-3e71-4570-9c11-00054e930c8f)
+
+
+## <h2 id="aks4"> Αυταξιολόγηση: `βαθμός 10/10`</h2>
+Στο παραδοτέο αυτό πραγματοποιήθηκαν όλα τα ζητούμενα εμπρόθεσμα. Δηλαδή, έγινε customized ο window manager i3 αλλάζοντας του το background χρησιμοποιώντας το command line του. Τέλος, ανέβασα εμπρόθεσμα το παραδοτέο 4 στη συζητήση [#38](https://github.com/courses-ionio/iv/discussions/38). 
 
 
 # <h1 id="pull_request1"> 5ο ΠΑΡΑΔΟΤΕΟ - Αίτημα ενσωμάτωσης 1 </h1>
