@@ -111,10 +111,7 @@ git clone https://git.sr.ht/~rabbits/uxn
 ## Μικρή Αλλαγή
 ### Πριν την αλλαγή
 
-
-Uploading before_change.mp4…
-
-
+https://github.com/nkanagno/iv/assets/103074273/fc032a8d-47e8-4516-8865-e4e451ae8b5d
 
 ### Μετά την αλλαγή
 
