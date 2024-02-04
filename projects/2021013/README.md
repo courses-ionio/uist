@@ -96,7 +96,7 @@ git clone https://git.sr.ht/~rabbits/uxn
 ## Εκτέλεση Αρχείων `.rom`
 Για την εκτέλεση οποιασδήποτε εφαρμογής `.rom` χρειάστηκε μέσα σε αυτό το ειδικό terminal `msys2/CLANG64`,
 αφότου βρισκόμουν ήδη μέσα στο directory `/bin/` μέσω της εντολής `cd ./uxn/bin`, να εκτελέσω την εντολή `./uxnemu ./αρχείο.rom`.
-Στη συγκεκρίμενη περίπτωση δοκίμασα της ήδη έτοιμη εφαρμογή `catclock.rom`.
+Στη συγκεκρίμενη περίπτωση δοκίμασα της ήδη έτοιμη εφαρμογή [`bunny.rom`]().
 
 ### catclock.rom:
 ![image](https://github.com/nkanagno/iv/assets/103074273/0304532c-2772-45c3-ae00-85fe2af849d3)
@@ -109,18 +109,16 @@ git clone https://git.sr.ht/~rabbits/uxn
 ```
 
 ## Μικρή Αλλαγή
+
+
+
 ### Πριν την αλλαγή
 
-
-
-
+https://github.com/nkanagno/iv/assets/103074273/1e66c0dd-17f6-43c0-a19b-5387b19601e8
 
 ### Μετά την αλλαγή
 
-
-
 https://github.com/nkanagno/iv/assets/103074273/7bd19e86-2b84-4a40-af6e-e044cb373c5a
-
 
 
 # <h1 id="wm"> 4ο ΠΑΡΑΔΟΤΕΟ - Άσκηση γραμμής εντολών (custom wm) (cli data analysis) </h1>
