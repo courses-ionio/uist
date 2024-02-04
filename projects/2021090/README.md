@@ -333,6 +333,10 @@ EOF
 
 ## [Εβδομάδα Έβδομη: Εναλλακτικό Σύστημα]()
 
+![ornament](https://github.com/inf2021090/varvara-projects/blob/main/Tree-card/ornament.png)
+
+![gift](https://github.com/inf2021090/varvara-projects/blob/main/Tree-card/gifts.png)
+
 ## [Εβδομάδα Όγδοη: cli data analysis]()
 
 [![asciicast](https://asciinema.org/a/idt5BlJpCW3Lb9WkLsQlUN0iL.svg)](https://asciinema.org/a/idt5BlJpCW3Lb9WkLsQlUN0iL)
