@@ -16,7 +16,7 @@ GitHub organisation url: [OMADA11](https://github.com/OMADA11)
 | 3 | <ul><li> [x] <a href="#fantasyconsoles1">Εναλλακτικό σύστημα 1 </a></li></ul> | [Ανέβασμα στο σχολιασμό της συζήτησης το Παραδοτέο 3](https://github.com/courses-ionio/iv/discussions/37) | `Βαθμός:10/10` Δίοτι πραγματοποιήθηκαν όλα τα ζητούμενα εμπρόθεσμα. <br><a href="#aks3">Aναλυτική αυταξιολόγηση εδώ</a> |
 | 4 | <ul><li> [x] <a href="#wm"> Άσκηση γραμμής εντολών (custom wm) </a></li></ul>| [Ανέβασμα στο σχολιασμό της συζήτησης το Παραδοτέο 4](https://github.com/courses-ionio/iv/discussions/38) | `Βαθμός:10/10` Δίοτι πραγματοποιήθηκαν όλα τα ζητούμενα εμπρόθεσμα. <br><a href="#aks4">Aναλυτική αυταξιολόγηση εδώ</a> |
 | 5 |  <ul><li> [x] <a href="#pull_request1">Αίτημα ενσωμάτωσης 1 </a></li></ul>| | |
-| 6 | <ul><li> [x] <a href="#cli_data_analysis1">Άσκηση γραμμής εντολών (cli data analysis) </a></li></ul>|  | |
+| 6 | <ul><li> [x] <a href="#cli_data_analysis1">Άσκηση γραμμής εντολών (cli data analysis) </a></li></ul>|[Ανέβασμα στο σχολιασμό της συζήτησης το Παραδοτέο 6](https://github.com/courses-ionio/iv/discussions/39) | `Βαθμός:10/10` Δίοτι πραγματοποιήθηκαν όλα τα ζητούμενα εμπρόθεσμα. <br><a href="#aks6">Aναλυτική αυταξιολόγηση εδώ</a> |
 | 7 | <ul><li> [x] <a href="#fantasyconsoles2">Εναλλακτικό σύστημα </a></li></ul>|  | |
 | 8 | <ul><li> [x] <a href="#cli_data_analysis1">Άσκηση γραμμής εντολών (cli data analysis) </a></li></ul>| | |
 | 9 | <ul><li> [x] <a href="#pull_request2">Αίτημα ενσωμάτωσης 2 </a></li></ul>| | |
@@ -237,6 +237,8 @@ All time git commits of the git repository nkanagno/site shown in spark below:
 ```
 Πιο συγκεκριμένα, φαίνονται τα παραπάνω στο παρακάτω asciinema video:
 https://asciinema.org/a/617841.
+
+
 
 # <h1 id="fantasyconsoles2"> 7ο ΠΑΡΑΔΟΤΕΟ - Εναλλακτικό σύστημα </h1>
 Στο συγκεκριμένο παραδοτέο χρειάστηκε να επεξεργστούμε την γλώσσα του [uxn/varvara] είτε επεξεργάζοντας έτοιμα projects είτε ατομικά είτε ομαδικά από το διαδίκτυο δημιουργώντας κάτι δικό μας, με σκοπό απλώς να πάρουμε μία γεύση για το πως λειτουργεί και το τι μπορεί κάποιος ν δημιουργήσει αν αφιερώσει τον απαραίτητο χρόνο. 
