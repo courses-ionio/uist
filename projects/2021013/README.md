@@ -238,6 +238,8 @@ All time git commits of the git repository nkanagno/site shown in spark below:
 Πιο συγκεκριμένα, φαίνονται τα παραπάνω στο παρακάτω asciinema video:
 https://asciinema.org/a/617841.
 
+## <h2 id="aks6"> Αυταξιολόγηση: `βαθμός 10/10`</h2>
+Στο παραδοτέο αυτό πραγματοποιήθηκαν όλα τα ζητούμενα εμπρόθεσμα. Δηλαδή, εφτιαξα ένα shellscript που περιλαμβάνει τις εντολές `spark` και `git-bars`, οπου κάνω git clone ένα git repository μου, κάνω track πόσα commits έχουν γίνει σε αυτό, τα αποθηκέυω σε ένα csv file και τα εμφανίζω στο terminal μέσω της εντολής spark. Τέλος, ανέβασα εμπρόθεσμα το παραδοτέο 6 στη συζητήση [#39](https://github.com/courses-ionio/iv/discussions/39). 
 
 
 # <h1 id="fantasyconsoles2"> 7ο ΠΑΡΑΔΟΤΕΟ - Εναλλακτικό σύστημα </h1>
