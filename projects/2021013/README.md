@@ -96,13 +96,10 @@ git clone https://git.sr.ht/~rabbits/uxn
 ## Εκτέλεση Αρχείων `.rom`
 Για την εκτέλεση οποιασδήποτε εφαρμογής `.rom` χρειάστηκε μέσα σε αυτό το ειδικό terminal `msys2/CLANG64`,
 αφότου βρισκόμουν ήδη μέσα στο directory `/bin/` μέσω της εντολής `cd ./uxn/bin`, να εκτελέσω την εντολή `./uxnemu ./αρχείο.rom`.
-Στη συγκεκρίμενη περίπτωση δοκίμασα της ήδη έτοιμες εφαρμογές `catclock.rom` και `noodle.rom`
+Στη συγκεκρίμενη περίπτωση δοκίμασα της ήδη έτοιμη εφαρμογή `catclock.rom`.
 
 ### catclock.rom:
 ![image](https://github.com/nkanagno/iv/assets/103074273/0304532c-2772-45c3-ae00-85fe2af849d3)
-
-### noodle.rom:
-![image](https://github.com/nkanagno/iv/assets/103074273/2f368fc0-a24f-4ff8-8330-9933f78186d6)
 
 ### Δημιουργία Αρχείων `.rom`
 Για την δημιουργία νέων αρχείων `.rom`, χρείαζεται πρώτα να δημιουργήθει ένα αρχείο `.tal` όπου θα περιέχει τον κατάλληλο κώδικα assembly και θα μετατρέπεται αυτόματα σε εκτελέσιμο αρχείο `.rom` με την παρακάτω εντολή:
@@ -110,6 +107,17 @@ git clone https://git.sr.ht/~rabbits/uxn
 ```
  ./uxnasm αρχείο.tal αρχείο.rom && ./uxnemu αρχείο.rom
 ```
+
+## Μικρή Αλλαγή
+### Πριν την αλλαγή
+
+
+Uploading before_change.mp4…
+
+
+
+### Μετά την αλλαγή
+
 
 
 # <h1 id="wm"> 4ο ΠΑΡΑΔΟΤΕΟ - Άσκηση γραμμής εντολών (custom wm) (cli data analysis) </h1>
