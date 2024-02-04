@@ -18,7 +18,7 @@ GitHub organisation url: [OMADA11](https://github.com/OMADA11)
 | 5 |  <ul><li> [x] <a href="#pull_request1">Αίτημα ενσωμάτωσης 1 </a></li></ul>| | |
 | 6 | <ul><li> [x] <a href="#cli_data_analysis1">Άσκηση γραμμής εντολών (cli data analysis) </a></li></ul>|[Ανέβασμα στο σχολιασμό της συζήτησης το Παραδοτέο 6](https://github.com/courses-ionio/iv/discussions/39) | `Βαθμός:10/10` Δίοτι πραγματοποιήθηκαν όλα τα ζητούμενα εμπρόθεσμα. <br><a href="#aks6">Aναλυτική αυταξιολόγηση εδώ</a> |
 | 7 | <ul><li> [x] <a href="#fantasyconsoles2">Εναλλακτικό σύστημα </a></li></ul>|[Ανέβασμα στο σχολιασμό της συζήτησης το Παραδοτέο 7](https://github.com/courses-ionio/iv/discussions/40) | `Βαθμός:10/10` Δίοτι πραγματοποιήθηκαν όλα τα ζητούμενα εμπρόθεσμα. <br><a href="#aks7">Aναλυτική αυταξιολόγηση εδώ</a> |
-| 8 | <ul><li> [x] <a href="#cli_data_analysis1">Άσκηση γραμμής εντολών (cli data analysis) </a></li></ul>|[Ανέβασμα στο σχολιασμό της συζήτησης το Παραδοτέο 8](https://github.com/courses-ionio/iv/discussions/41) | `Βαθμός:8/10` Δίοτι πραγματοποιήθηκαν όλα τα ζητούμενα αλλά εκπρόθεσμα. <br><a href="#aks8">Aναλυτική αυταξιολόγηση εδώ</a> |
+| 8 | <ul><li> [x] <a href="#cli_data_analysis2">Άσκηση γραμμής εντολών (cli data analysis) </a></li></ul>|[Ανέβασμα στο σχολιασμό της συζήτησης το Παραδοτέο 8](https://github.com/courses-ionio/iv/discussions/41) | `Βαθμός:8/10` Δίοτι πραγματοποιήθηκαν όλα τα ζητούμενα αλλά εκπρόθεσμα. <br><a href="#aks8">Aναλυτική αυταξιολόγηση εδώ</a> |
 | 9 | <ul><li> [x] <a href="#pull_request2">Αίτημα ενσωμάτωσης 2 </a></li></ul>| | |
 | 10 | <ul><li> [x] <a href="#FINAL">Τελική αναφορά </a></li></ul>|  | |
 
@@ -354,7 +354,7 @@ https://github.com/nkanagno/iv/assets/103074273/a3d46fe5-ca9f-44f2-b5fe-4f1d604a
 ## <h2 id="aks7"> Αυταξιολόγηση: `βαθμός 10/10`</h2>
 Στο παραδοτέο αυτό πραγματοποιήθηκαν όλα τα ζητούμενα εμπρόθεσμα. Δηλαδή, μέσω της γλώσσας varvara uxn-tal έφτιαξα ένα ανοιχτού κώδικα project, που μπορεί να χρησιμοποιήσει οποιοσδήποτε για να τον βοηθήσει να αναπτύξει το δικό του προσωπικό `project-uxn`, συγκεκριμένα έφτιαξα μία προσωμοίωση ενός διαστημοπλοίου να πυροβολάει μία laser σφαίρα την στιγμή που πατηθεί το κουμπί `space`. Τέλος, ανέβασα εμπρόθεσμα το παραδοτέο 7 στη συζήτηση [#40](https://github.com/courses-ionio/iv/discussions/40). 
 
-# <h1 id="cli_data_analysis1"> 8ο ΠΑΡΑΔΟΤΕΟ - Άσκηση γραμμής εντολών (cli data analysis) </h1>
+# <h1 id="cli_data_analysis2"> 8ο ΠΑΡΑΔΟΤΕΟ - Άσκηση γραμμής εντολών (cli data analysis) </h1>
 ## Shell Script
 Με την χρήση του εργαλείου [pastel](https://github.com/sharkdp/pastel) το οποίο χρησιμοποιείτε για την δημιουργία, την ανάλυση και την επεξεργασία χρωμάτων που υποστηρίζει μορφές χρωμάτων όπως RGB (sRGB), HSL, CIELAB, CIELCh κλπ, δημιούργησα το παρακάτω shell script:
 ```
