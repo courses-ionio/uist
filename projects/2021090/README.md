@@ -337,6 +337,8 @@ EOF
 
 ![gift](https://github.com/inf2021090/varvara-projects/blob/main/Tree-card/gifts.png)
 
+![treegif](https://github.com/inf2021090/varvara-projects/blob/main/Tree-card/treegif.gif)
+
 ## [Εβδομάδα Όγδοη: cli data analysis]()
 
 [![asciicast](https://asciinema.org/a/idt5BlJpCW3Lb9WkLsQlUN0iL.svg)](https://asciinema.org/a/idt5BlJpCW3Lb9WkLsQlUN0iL)
