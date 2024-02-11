@@ -15,7 +15,7 @@ GitHub organisation url: [OMADA11](https://github.com/OMADA11)
 | 2 | <ul><li> [x] <a href="#arch_wm"> Άσκηση γραμμής εντολών (archlinux+wm) </a></li></ul>| [Ανέβασμα στο σχολιασμό της συζήτησης το Παραδοτέο 2](https://github.com/courses-ionio/iv/discussions/22) | `Βαθμός:10/10` Δίοτι πραγματοποιήθηκαν όλα τα ζητούμενα εμπρόθεσμα. <br><a href="#aks2">Aναλυτική αυταξιολόγηση εδώ</a> |
 | 3 | <ul><li> [x] <a href="#fantasyconsoles1">Εναλλακτικό σύστημα 1 </a></li></ul> | [Ανέβασμα στο σχολιασμό της συζήτησης το Παραδοτέο 3](https://github.com/courses-ionio/iv/discussions/37) | `Βαθμός:10/10` Δίοτι πραγματοποιήθηκαν όλα τα ζητούμενα εμπρόθεσμα. <br><a href="#aks3">Aναλυτική αυταξιολόγηση εδώ</a> |
 | 4 | <ul><li> [x] <a href="#wm"> Άσκηση γραμμής εντολών (custom wm) </a></li></ul>| [Ανέβασμα στο σχολιασμό της συζήτησης το Παραδοτέο 4](https://github.com/courses-ionio/iv/discussions/38) | `Βαθμός:10/10` Δίοτι πραγματοποιήθηκαν όλα τα ζητούμενα εμπρόθεσμα. <br><a href="#aks4">Aναλυτική αυταξιολόγηση εδώ</a> |
-| 5 |  <ul><li> [x] <a href="#pull_request1">Αίτημα ενσωμάτωσης 1 </a></li></ul>| | |
+| 5 |  <ul><li> [x] <a href="#pull_request1">Αίτημα ενσωμάτωσης 1 </a></li></ul>|[Ανέβασμα στο σχολιασμό της συζήτησης το Παραδοτέο 5](https://github.com/courses-ionio/iv/discussions/42) | `Βαθμός:8/10` Δίοτι πραγματοποιήθηκαν όλα τα ζητούμενα αλλά εκπρόθεσμα. <br><a href="#aks5">Aναλυτική αυταξιολόγηση εδώ</a> |
 | 6 | <ul><li> [x] <a href="#cli_data_analysis1">Άσκηση γραμμής εντολών (cli data analysis) </a></li></ul>|[Ανέβασμα στο σχολιασμό της συζήτησης το Παραδοτέο 6](https://github.com/courses-ionio/iv/discussions/39) | `Βαθμός:10/10` Δίοτι πραγματοποιήθηκαν όλα τα ζητούμενα εμπρόθεσμα. <br><a href="#aks6">Aναλυτική αυταξιολόγηση εδώ</a> |
 | 7 | <ul><li> [x] <a href="#fantasyconsoles2">Εναλλακτικό σύστημα </a></li></ul>|[Ανέβασμα στο σχολιασμό της συζήτησης το Παραδοτέο 7](https://github.com/courses-ionio/iv/discussions/40) | `Βαθμός:10/10` Δίοτι πραγματοποιήθηκαν όλα τα ζητούμενα εμπρόθεσμα. <br><a href="#aks7">Aναλυτική αυταξιολόγηση εδώ</a> |
 | 8 | <ul><li> [x] <a href="#cli_data_analysis2">Άσκηση γραμμής εντολών (cli data analysis) </a></li></ul>|[Ανέβασμα στο σχολιασμό της συζήτησης το Παραδοτέο 8](https://github.com/courses-ionio/iv/discussions/41) | `Βαθμός:8/10` Δίοτι πραγματοποιήθηκαν όλα τα ζητούμενα αλλά εκπρόθεσμα. <br><a href="#aks8">Aναλυτική αυταξιολόγηση εδώ</a> |
@@ -152,8 +152,9 @@ https://github.com/nkanagno/iv/assets/103074273/7bd19e86-2b84-4a40-af6e-e044cb37
 
 
 # <h1 id="pull_request1"> 5ο ΠΑΡΑΔΟΤΕΟ - Αίτημα ενσωμάτωσης 1 </h1>
-Στο συγκεκριμένο παραδοτέο χρειάστηκε να συνεργαστούμε προκειμένουν να αναπτύξουμε τον όδηγο σπουδών που βρίσκεται σε repository του github με όνομα
-[guide](https://github.com/ioniodi/guide), κάνοντας το fork έχοντας ο καθένας το δικό του [προσωπίκο repository](https://github.com/nkanagno/guide/tree/master) για να κάνει έπειτα pull request και με την χρήση εργαλειών όπως lua,pandoc,latex να το μετατρέψουμε σε μορφή pdf ώστε να αναπαριστά το κύριο βιβλίο του τμήματος, [οδηγός σπουδών](https://di.ionio.gr/gr/students/student-prospectus/). Σε πρώτο στάδιο χρειάστηκε να αλλάξουμε ορισμένα αρχεία στο [all_collections](https://github.com/ioniodi/all_collections) προκειμένου να μην προκαλέσουν κάποιο πρόβλημα κατά την δημιουργία του guide, επιλέγοντας και δηλώνοντας ο καθένας την αλλαγή που θα πραγματοποιήσει στο [all_collections](https://github.com/ioniodi/all_collections) δημιουργώντας issue στo κεντρικό repository [ionio/guide](https://github.com/ioniodi/guide).
+Στο συγκεκριμένο παραδοτέο χρειάστηκε να συνεργαστούμε προκειμένουν να αναπτύξουμε τον οδηγό σπουδών που βρίσκεται σε repository του github με όνομα [guide](https://github.com/ioniodi/guide), κάνοντας το fork έχοντας ο καθένας το δικό του [προσωπίκο repository](https://github.com/nkanagno/guide/tree/master) για να κάνει έπειτα pull request και με την χρήση εργαλειών όπως lua, pandoc, latex να το μετατρέψουμε σε μορφή pdf ώστε να αναπαριστά το κύριο βιβλίο του τμήματος, [οδηγός σπουδών](https://di.ionio.gr/gr/students/student-prospectus/). 
+
+Σε πρώτο στάδιο χρειάστηκε να αλλάξουμε ορισμένα αρχεία στο [all_collections](https://github.com/ioniodi/all_collections) προκειμένου να μην προκαλέσουν κάποιο πρόβλημα κατά την δημιουργία του guide, επιλέγοντας και δηλώνοντας ο καθένας την αλλαγή που θα πραγματοποιήσει στο [all_collections](https://github.com/ioniodi/all_collections) δημιουργώντας issue στo κεντρικό repository [ionio/guide](https://github.com/ioniodi/guide).
 
 ## Δήλωση θέματος - issue#3:
 Αρχικά, δημιούργησα ένα [issue#3](https://github.com/ioniodi/guide/issues/3) στο αποθετήριο [guide](https://github.com/ioniodi/guide) του github δηλώνοντας το θέμα μου και περιμένοντας το `green light` από κάποιο καθηγητή, προκειμένου να μην καταλήξω να έχω το ίδιο με κάποιον άλλο συμφοιτητή μου. Πιο συγκεκριμένα, προσωπικά βάζωντας την κατηγορία excerpt επέλεξα διορθώσω τα παρακάτω αρχεία : 
@@ -165,11 +166,54 @@ https://github.com/nkanagno/iv/assets/103074273/7bd19e86-2b84-4a40-af6e-e044cb37
   - [Ερώτημα που γνωστοποίησε το πρόβλημα ](https://github.com/courses-ionio/iv/discussions/30) από τον [Axileaszervos](https://github.com/Axileaszervos/)
   - [Επίσημος Οδηγός Σπουδών](https://di.ionio.gr/gr/students/student-prospectus/)
 
+## Παράδειγμα Αλλαγής (katomeris.md)
+### Πριν:
+```
+---
+ref: katomeris
+title: "Γιώργος Κατωμέρης"
+bio: "Εργαστηριακό Διδακτικό Προσωπικό (Ε.ΔΙ.Π.) ΠΕ Τμήματος Πληροφορικής"
+rank: 5
+author: katomeris  
+Αντικείμενο:
+ - "Εφαρμοσμένα μαθηματικά μοντέλα στην Πληροφορική"
+---
+```
+### Μετά:
+```
+---
+ref: katomeris
+title: "Γιώργος Κατωμέρης"
+excerpt: "Εργαστηριακό Διδακτικό Προσωπικό (Ε.ΔΙ.Π.) ΠΕ Τμήματος Πληροφορικής"
+rank: 5
+author: katomeris  
+Αντικείμενο:
+ - "Εφαρμοσμένα μαθηματικά μοντέλα στην Πληροφορική"
+---
+```
+
+### Επεξήγηση Αλλαγής:
+Στο παραπάνω αρχείο η αλλαγή που πραγματοποιήθηκε είναι η λέξη `bio` μεταονομάστηκε σε `excerpt` προκειμένου να λειτουργήσει το παρακάτω φίλτρο [Medip.lua](https://github.com/Axileaszervos/guide/blob/master/Medip.lua) του συμφοιτητή μου [Axileaszervos](https://github.com/Axileaszervos/), κατά την κατασκευή του [ionio/guide](https://github.com/ioniodi/guide):
+```
+function Image(paragraph)
+    local string = pandoc.utils.stringify
+    if paragraph.classes:find('Medip',1) then
+        local file = io.open("all_collections/_people/" .. paragraph.src, 'r')
+        local doc = pandoc.read(file:read('*a')).meta
+        file:close()
+        local caption = string(doc.caption) or "caption has not been set"
+        local title = string(doc.title) or "title has not been set"
+        local md = '### ' .. title .. ' (Μέλη ΕΔΙΠ)'..'\n_' .. caption .. '_  \n '
+        return pandoc.RawInline('markdown',md)
+    end
+end
+```
+
 ## Pull request:
 To [pull request που έκανα στο ionio/all_collections](https://github.com/ioniodi/all_collections/pull/76).
 
-## <h2 id="aks5"> Αυταξιολόγηση: `βαθμός 10/10`</h2>
-Στο παραδοτέο αυτό πραγματοποιήθηκαν όλα τα ζητούμενα εμπρόθεσμα. Δηλαδή, έγιναν οι αλλάγες στα προβληματικά αρχεία του [all_collections](https://github.com/ioniodi/all_collections), το απαιτούμενο  [issue#3](https://github.com/ioniodi/guide/issues/3) για την δήλωση του θέματος και το τελικό [pull request](https://github.com/ioniodi/all_collections/pull/76) για την ολοκλήρωση της συνεισφοράς μου. Τέλος, ανέβασα εμπρόθεσμα το παραδοτέο 5 στη συζητήση [#39](https://github.com/courses-ionio/iv/discussions/39).
+## <h2 id="aks5"> Αυταξιολόγηση: `βαθμός 8/10`</h2>
+Στο παραδοτέο αυτό πραγματοποιήθηκαν όλα τα ζητούμενα αλλά εκπρόθεσμα. Δηλαδή, έγιναν οι αλλάγες στα προβληματικά αρχεία του [all_collections](https://github.com/ioniodi/all_collections), το απαιτούμενο [issue#3](https://github.com/ioniodi/guide/issues/3) για την δήλωση του θέματος και το τελικό [pull request](https://github.com/ioniodi/all_collections/pull/76) για την ολοκλήρωση της συνεισφοράς μου. Τέλος, ανέβασα εκπρόθεσμα το παραδοτέο 5 στη συζητήση [#42](https://github.com/courses-ionio/iv/discussions/42).
 
 # <h1 id="cli_data_analysis1"> 6ο ΠΑΡΑΔΟΤΕΟ - Άσκηση γραμμής εντολών (cli data analysis) </h1>
 Δημιούργησα ένα shell script με το παρακάτω περιεχόμενο:
