@@ -532,7 +532,7 @@ Maroon
 
 ## Φίλτρα κατηγοριών μαθημάτων:
 ### Περιεχόμενο κάθε φίλτρου:
-Τα φίλτρα .lua χωρίζονται σε 4 διαφορετικές κατηγορίες που αντικατοπτρίζουν τις κατηγορίες όπου χωρίζονται και τα μαθήματα των Προπτυχιακών σπουδών. Συγκεκριμένα, δημιούργησα το φίλτρο [course_core.lua](https://github.com/nkanagno/guide/blob/master/lua/course_core.lua) που δείχνει ότι συγκεκριμένο μάθημα βρίσκεται στην κατηγορία μαθημάτων κορμού και μοιάζει κάπως έτσι:
+Τα φίλτρα .lua χωρίζονται σε 4 διαφορετικές κατηγορίες που αντικατοπτρίζουν τις κατηγορίες όπου χωρίζονται και τα μαθήματα των Προπτυχιακών σπουδών. Συγκεκριμένα, δημιούργησα το φίλτρο [course_core.lua](https://github.com/nkanagno/guide/blob/master/course_core.lua) που δείχνει ότι συγκεκριμένο μάθημα βρίσκεται στην κατηγορία μαθημάτων κορμού και μοιάζει κάπως έτσι:
 ```
 function Image(paragraph)
     local to_string = pandoc.utils.stringify
@@ -548,10 +548,10 @@ function Image(paragraph)
 end
 ```
 Εκεί που έχω γράψει την λέξη `κορμού`, δείχνω την κατηγορία του κάθε μαθήματος, για το αρχείο:
-  -  [course_core.lua](https://github.com/nkanagno/guide/blob/master/lua/course_core.lua) έχει την λέξη `Κορμού` 
-  -  [course_elective.lua](https://github.com/nkanagno/guide/blob/master/lua/course_elective.lua) έχει την λέξη `Επιλογής`
-  -  [course_IS.lua](https://github.com/nkanagno/guide/blob/master/lua/course_IS.lua) έχει την λέξη `κατεύθυνσης ΠΣ` (Πληροφοριακών Συστημάτων)
-  -  [course_IHSS.lua](https://github.com/nkanagno/guide/blob/master/lua/course_IHSS.lua) έχει την λέξη `Κατεύθυνσης ΠΑΚΕ` (Πληροφορική Ανθρωπιστικές και Κοινωνικές Επιστήμες)
+  -  [course_core.lua](https://github.com/nkanagno/guide/blob/master/course_core.lua) έχει την λέξη `Κορμού` 
+  -  [course_elective.lua](https://github.com/nkanagno/guide/blob/master/course_elective.lua) έχει την λέξη `Επιλογής`
+  -  [course_IS.lua](https://github.com/nkanagno/guide/blob/master/course_IS.lua) έχει την λέξη `κατεύθυνσης ΠΣ` (Πληροφοριακών Συστημάτων)
+  -  [course_IHSS.lua](https://github.com/nkanagno/guide/blob/master/course_IHSS.lua) έχει την λέξη `Κατεύθυνσης ΠΑΚΕ` (Πληροφορική Ανθρωπιστικές και Κοινωνικές Επιστήμες)
 
 ### Eπεξήγηση φίλτρου: 
 Συγκεκριμένα, το κάθε φίλτρο ουσιαστικά, μπαίνοντας στον φάκελο `all_collections/_courses/`, διαβάζει το περιεχόμενο του κάθε md αρχείο που έχουμε δώσει ως παράμετρο. Έπειτα, το περιεχόμενο της κατηγορίας excerpt, μετατρέποντας το σε string, το εισάγει σε μία μεταβλητή caption οπού περιγράφει το κάθε μάθημα με λίγα λόγια, εισάγει επίσης και το περιεχόμενο της κατηγορίας title σε μία μεταβλητή title οπού είναι ο τίτλος του κάθε μαθήματος. Τέλος, επιστρέφει στο txt αρχείο σε μορφή markdown, με περιεχόμενο το title σε header 4 ('####') με δίπλα του να έχει σε παρένθεση την κατηγορία του μαθήματος, αλλάζει γραμμή και εμφανίζει το caption περιεχόμενο του μαθήματος.
