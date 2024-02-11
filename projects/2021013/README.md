@@ -516,10 +516,12 @@ Maroon
 
 # <h1 id="pull_request2"> 9ο ΠΑΡΑΔΟΤΕΟ - Αίτημα ενσωμάτωσης 2 </h1>
 Στο συγκεκριμένο παραδοτέο χρειάστηκε να συνεργαστούμε ξανα ώστε συνεχίσουμε την ανάπτυξη του οδηγου σπουδών που βρίσκεται σε repository του github με όνομα
-[guide](https://github.com/ioniodi/guide), έχοντας το ήδη κάνει fork από το 5ο παραδοτέο, κατέχοντας ήδη ο καθένας το δικό του [προσωπίκο repository](https://github.com/nkanagno/guide/tree/master) για να κάνει έπειτα ξανά pull request και με την χρήση εργαλειών όπως lua,pandoc,latex να το μετατρέψουμε σε μορφή pdf ώστε να αναπαριστά το κύριο βιβλίο του τμήματος, [οδηγός σπουδών](https://di.ionio.gr/gr/students/student-prospectus/). Ως δεύτερο στάδιο χρειάστηκε να δημιουργήσουμε ειδικά `.lua` φίλτρα επεξεργάζοντας τα έτοιμα δεδομένα του αποθετηρίου submodule [all_collections](https://github.com/ioniodi/all_collections/), δηλώνοντας ο καθένας τα φίλτρα που θα δημιουργήσει και τα δεδομένα τα οποία θα επεξεργαστεί (πχ Μαθήματα, Καθηγητές, Εργαστήρια κλπ) και το κεφάλαιο στο οποίο θα πραγματοποιήσει αυτή την συνεισφορά του δημιουργώντας issue στην κεντρικό repository [ionio/guide](https://github.com/ioniodi/guide).
+[guide](https://github.com/ioniodi/guide), έχοντας το ήδη κάνει fork από το 5ο παραδοτέο, κατέχοντας ήδη ο καθένας το δικό του [προσωπίκο repository](https://github.com/nkanagno/guide/tree/master) για να κάνει έπειτα ξανά pull request και με την χρήση εργαλειών όπως lua, pandoc, latex να το μετατρέψουμε σε μορφή pdf ώστε να αναπαριστά το κύριο βιβλίο του τμήματος, [οδηγός σπουδών](https://di.ionio.gr/gr/students/student-prospectus/).
+
+Ως δεύτερο στάδιο χρειάστηκε να δημιουργήσουμε ειδικά `.lua` φίλτρα επεξεργάζοντας τα έτοιμα δεδομένα του αποθετηρίου submodule [all_collections](https://github.com/ioniodi/all_collections/), δηλώνοντας ο καθένας τα φίλτρα που θα δημιουργήσει και τα δεδομένα τα οποία θα επεξεργαστεί (πχ Μαθήματα, Καθηγητές, Εργαστήρια κλπ) και το κεφάλαιο στο οποίο θα πραγματοποιήσει αυτή την συνεισφορά του δημιουργώντας issue στην κεντρικό repository [ionio/guide](https://github.com/ioniodi/guide).
 
 ## Δήλωση θέματος - issue#4:
-Αρχικά, δημιούργησα ένα [issue#4](https://github.com/ioniodi/guide/issues/4) στο αποθετήριο [sitegr](https://github.com/ioniodi/guide) του github δηλώνοντας το θέμα μου και περιμένοντας το `green light` από κάποιο καθηγητή, προκειμένου να μην καταλήξω να έχω το ίδιο με κάποιον άλλο συμφοιτητή μου. Πιο συγκεκριμένα, προσωπικά επέλεξα να δημιουργήσω 4 φίλτρα `.lua` αρχείων που να παιρνουν ως παράμετρο το μάθημα σε μορφή `.md` που θα παίρνει από το [all_collections](https://github.com/ioniodi/all_collections/) και θα εμφανίζει στο βιβλίο τον τίτλο (σε μορφή header 4 ('####')) και το περιεχόμενό του, χωρισμένα στο txt ανά εξάμηνο στο υποκεφάλαιο Περιεχόμενο Μαθημάτων της Ενότητας ΠΡΟΠΤΥΧΙΑΚΕΣ ΣΠΟΥΔΕΣ του ch03.txt ([ioniodi/guide](https://github.com/ioniodi/guide/blob/master/text/ch03.txt) -> [πρωσοπικό αποθετήριο](https://github.com/nkanagno/guide/blob/master/text/ch03.txt)). Τα 4 διαφορετικά φίλτρα θα χωρίζονται σε 4 κατηγορίες: 
+Αρχικά, δημιούργησα ένα [issue#4](https://github.com/ioniodi/guide/issues/4) στο αποθετήριο [sitegr](https://github.com/ioniodi/guide) του github δηλώνοντας το θέμα μου και περιμένοντας το `green light` από κάποιο καθηγητή, προκειμένου να μην καταλήξω να έχω το ίδιο με κάποιον άλλο συμφοιτητή μου. Πιο συγκεκριμένα, προσωπικά επέλεξα να δημιουργήσω 4 φίλτρα `.lua` αρχείων που να παιρνουν ως παράμετρο το μάθημα σε μορφή `.md` που θα παίρνει από το [all_collections](https://github.com/ioniodi/all_collections/) και θα εμφανίζει στο βιβλίο τον τίτλο (σε μορφή header 4 ('####')) και το περιεχόμενό του, χωρισμένα στο txt ανά εξάμηνο στο υποκεφάλαιο Περιεχόμενο Μαθημάτων της Ενότητας ΠΡΟΠΤΥΧΙΑΚΕΣ ΣΠΟΥΔΕΣ του ch03.txt ([ioniodi/guide](https://github.com/ioniodi/guide/blob/master/text/ch03.txt) -> [προσωπικό αποθετήριο](https://github.com/nkanagno/guide/blob/master/text/ch03.txt)). Τα 4 διαφορετικά φίλτρα θα χωρίζονται σε 4 κατηγορίες: 
 
    - Κορμού
    - Επιλογής
@@ -555,7 +557,7 @@ end
 Συγκεκριμένα, το κάθε φίλτρο ουσιαστικά, μπαίνοντας στον φάκελο `all_collections/_courses/`, διαβάζει το περιεχόμενο του κάθε md αρχείο που έχουμε δώσει ως παράμετρο. Έπειτα, το περιεχόμενο της κατηγορίας excerpt, μετατρέποντας το σε string, το εισάγει σε μία μεταβλητή caption οπού περιγράφει το κάθε μάθημα με λίγα λόγια, εισάγει επίσης και το περιεχόμενο της κατηγορίας title σε μία μεταβλητή title οπού είναι ο τίτλος του κάθε μαθήματος. Τέλος, επιστρέφει στο txt αρχείο σε μορφή markdown, με περιεχόμενο το title σε header 4 ('####') με δίπλα του να έχει σε παρένθεση την κατηγορία του μαθήματος, αλλάζει γραμμή και εμφανίζει το caption περιεχόμενο του μαθήματος.
 
 ## Μετατροπή σε pdf με χρήση pandoc:
-Για την μετατροπή του σε pdf, έφτιαξα ένα shell script με όνομα [make-latex.sh](https://github.com/nkanagno/guide/blob/master/make-latex.sh) με περιεχόμενο:
+Για την μετατροπή του σε pdf, έφτιαξα ένα shell script με όνομα make-latex.sh με περιεχόμενο:
 
 ```
 #!/bin/sh
@@ -563,13 +565,13 @@ end
 
 for filename in text/ch*.txt; do
    [ -e "$filename" ] || continue
-   pandoc --lua-filter=lua/extras.lua "$filename" --to markdown | pandoc --lua-filter=lua/extras.lua --to markdown | pandoc --lua-filter=lua/course_core.lua --to markdown | pandoc --lua-filter=lua/course_IS.lua --to markdown | pandoc --lua-filter=lua/course_elective.lua --to markdown | pandoc --lua-filter=lua/course_IHSS.lua --to markdown | pandoc --filter pandoc-fignos --to markdown | pandoc --top-level-division=chapter --citeproc  --to latex  > latex/"$(basename "$filename" .txt).tex"
+   pandoc --lua-filter=extras.lua "$filename" --to markdown | pandoc --lua-filter=extras.lua --to markdown | pandoc --lua-filter=course_core.lua --to markdown | pandoc --lua-filter=course_IS.lua --to markdown | pandoc --lua-filter=lua/course_elective.lua --to markdown | pandoc --lua-filter=course_IHSS.lua --to markdown | pandoc --filter pandoc-fignos --to markdown | pandoc --top-level-division=chapter --citeproc  --to latex  > latex/"$(basename "$filename" .txt).tex"
 done
 
 pandoc -s latex/*.tex -o book.tex
 pandoc -N --quiet --variable "geometry=margin=1.2in" --variable mainfont="Noto Sans Regular" --variable sansfont="Noto Sans Regular" --variable monofont="Noto Sans Regular" --variable fontsize=12pt --variable version=2.0 book.tex --pdf-engine=xelatex --toc -o book.pdf
 ```
-Όπου αρχικά κάνει loop through το κάθε αρχείο ch0*.txt που βρισκεται μέσα στο directory [text](https://github.com/nkanagno/guide/tree/master/text) με την χρήση του εργαλείου pandoc, μετατρέπει το κάθε txt σε markdown χρησιμοποιώντας το φιλτρο [extras.lua](https://github.com/nkanagno/guide/blob/master/lua/extras.lua). Επειτά, μετατρέπει το κάθε .lua αρχείο, που χρειάστηκε να χρησιμοποιήσω σε αργότερο παραδοτέο, σε αρχείο markdown και από markdown όλα αυτά μετατρέπονται σε ένα αρχείο latex (ch0*.text). Αφότου τελειώσει η loopα, ενώνονται όλα αυτά τα ch0*.tex αρχεία σε ένα κοινό latex με όνομα book.tex και αυτό τελος, μέσω μιας τελευταίας εντολής pandoc, μετατρέπεται σε μορφή pdf.
+Όπου αρχικά κάνει loop through το κάθε αρχείο ch0*.txt που βρισκεται μέσα στο directory [text](https://github.com/nkanagno/guide/tree/master/text) με την χρήση του εργαλείου pandoc, μετατρέπει το κάθε txt σε markdown χρησιμοποιώντας το φιλτρο [extras.lua](https://github.com/nkanagno/guide/blob/master/extras.lua). Επειτά, μετατρέπει το κάθε .lua αρχείο, που χρειάστηκε να χρησιμοποιήσω σε αργότερο παραδοτέο, σε αρχείο markdown και από markdown όλα αυτά μετατρέπονται σε ένα αρχείο latex (ch0*.text). Αφότου τελειώσει η loopα, ενώνονται όλα αυτά τα ch0*.tex αρχεία σε ένα κοινό latex με όνομα book.tex και αυτό τελος, μέσω μιας τελευταίας εντολής pandoc, μετατρέπεται σε μορφή pdf. Ωστόσο όμως, το συγκεκριμένο αρχείο make-latex.sh χρησιμοποίείτε μόνο για την δημιουργία του προσωπικού pdf και δεν θα μεταφερφεί μέσω του τελικού pull request.
 
 
 ### Εμφάνηση στο βιβλίο pdf:
@@ -593,4 +595,7 @@ pandoc -N --quiet --variable "geometry=margin=1.2in" --variable mainfont="Noto S
 ![Screenshot 2023-11-20 191849](https://github.com/nkanagno/iv/assets/103074273/a74f71f0-a662-45b4-adac-9870e7d09818)
 
 ## Demo link (pdf) και Pull request:
-Το Demo προσωπικό μου pdf που δημιούργησα και το πρόσθεσα σε προσωπικό [issue#2](https://github.com/nkanagno/guide/issues/2) στο αποθετήριο [nkanagno/guide](https://github.com/nkanagno/guide) και τo [pull request που έκανα στο ionio/guide]().
+Το Demo προσωπικό μου pdf που δημιούργησα και το πρόσθεσα σε προσωπικό [issue#1](https://github.com/nkanagno/guide/issues/1) στο αποθετήριο [nkanagno/guide](https://github.com/nkanagno/guide) και τo [pull request που έκανα στο ionio/guide]().
+
+
+
