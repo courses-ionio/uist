@@ -19,7 +19,7 @@ GitHub organisation url: [OMADA11](https://github.com/OMADA11)
 | 6 | <ul><li> [x] <a href="#cli_data_analysis1">Άσκηση γραμμής εντολών (cli data analysis) </a></li></ul>|[Ανέβασμα στο σχολιασμό της συζήτησης το Παραδοτέο 6](https://github.com/courses-ionio/iv/discussions/39) | `Βαθμός:10/10` Δίοτι πραγματοποιήθηκαν όλα τα ζητούμενα εμπρόθεσμα. <br><a href="#aks6">Aναλυτική αυταξιολόγηση εδώ</a> |
 | 7 | <ul><li> [x] <a href="#fantasyconsoles2">Εναλλακτικό σύστημα </a></li></ul>|[Ανέβασμα στο σχολιασμό της συζήτησης το Παραδοτέο 7](https://github.com/courses-ionio/iv/discussions/40) | `Βαθμός:10/10` Δίοτι πραγματοποιήθηκαν όλα τα ζητούμενα εμπρόθεσμα. <br><a href="#aks7">Aναλυτική αυταξιολόγηση εδώ</a> |
 | 8 | <ul><li> [x] <a href="#cli_data_analysis2">Άσκηση γραμμής εντολών (cli data analysis) </a></li></ul>|[Ανέβασμα στο σχολιασμό της συζήτησης το Παραδοτέο 8](https://github.com/courses-ionio/iv/discussions/41) | `Βαθμός:8/10` Δίοτι πραγματοποιήθηκαν όλα τα ζητούμενα αλλά εκπρόθεσμα. <br><a href="#aks8">Aναλυτική αυταξιολόγηση εδώ</a> |
-| 9 | <ul><li> [x] <a href="#pull_request2">Αίτημα ενσωμάτωσης 2 </a></li></ul>| | |
+| 9 | <ul><li> [x] <a href="#pull_request2">Αίτημα ενσωμάτωσης 2 </a></li></ul>|[Ανέβασμα στο σχολιασμό της συζήτησης το Παραδοτέο 9](https://github.com/courses-ionio/iv/discussions/43) | `Βαθμός:10/10` Δίοτι πραγματοποιήθηκαν όλα τα ζητούμενα εμπρόθεσμα. <br><a href="#aks9">Aναλυτική αυταξιολόγηση εδώ</a> |
 | 10 | <ul><li> [x] <a href="#FINAL">Τελική αναφορά </a></li></ul>|  | |
 
 
@@ -515,7 +515,7 @@ Maroon
 Στο παραδοτέο αυτό πραγματοποιήθηκαν όλα τα ζητούμενα αλλά εκπρόθεσμα. Δηλαδή, δημιουργήθηκε ένα shell script όπου γίνεται χρήση της εντολής `pastel`, όπου εκτελεί ο χρήστης το αρχείο `.sh` με παράμετρο ένα αρχείο csv που περιέχει μία λίστα με ονόματα χρωμάτων, ρωτάει τον χρήστη σε τι μορφή θέλει να τα μετατρέψει (rgb,hcl,hex,cmyk) και ανάλογα με την επιλογή του χρήστη διαβάζει τα ονόματα χρωμάτων από το αρχείο και τα μετατρέπει μέσω της εντολής pastel. Τέλος, ανέβασα εκπρόθεσμα το παραδοτέο 8 στη συζήτηση [#41](https://github.com/courses-ionio/iv/discussions/41). 
 
 # <h1 id="pull_request2"> 9ο ΠΑΡΑΔΟΤΕΟ - Αίτημα ενσωμάτωσης 2 </h1>
-Στο συγκεκριμένο παραδοτέο χρειάστηκε να συνεργαστούμε ξανα ώστε συνεχίσουμε την ανάπτυξη του οδηγου σπουδών που βρίσκεται σε repository του github με όνομα
+Στο συγκεκριμένο παραδοτέο χρειάστηκε να συνεργαστούμε ξανα ώστε συνεχίσουμε την ανάπτυξη του οδηγού σπουδών που βρίσκεται σε repository του github με όνομα
 [guide](https://github.com/ioniodi/guide), έχοντας το ήδη κάνει fork από το 5ο παραδοτέο, κατέχοντας ήδη ο καθένας το δικό του [προσωπίκο repository](https://github.com/nkanagno/guide/tree/master) για να κάνει έπειτα ξανά pull request και με την χρήση εργαλειών όπως lua, pandoc, latex να το μετατρέψουμε σε μορφή pdf ώστε να αναπαριστά το κύριο βιβλίο του τμήματος, [οδηγός σπουδών](https://di.ionio.gr/gr/students/student-prospectus/).
 
 Ως δεύτερο στάδιο χρειάστηκε να δημιουργήσουμε ειδικά `.lua` φίλτρα επεξεργάζοντας τα έτοιμα δεδομένα του αποθετηρίου submodule [all_collections](https://github.com/ioniodi/all_collections/), δηλώνοντας ο καθένας τα φίλτρα που θα δημιουργήσει και τα δεδομένα τα οποία θα επεξεργαστεί (πχ Μαθήματα, Καθηγητές, Εργαστήρια κλπ) και το κεφάλαιο στο οποίο θα πραγματοποιήσει αυτή την συνεισφορά του δημιουργώντας issue στην κεντρικό repository [ionio/guide](https://github.com/ioniodi/guide).
@@ -597,5 +597,6 @@ pandoc -N --quiet --variable "geometry=margin=1.2in" --variable mainfont="Noto S
 ## Demo link (pdf) και Pull request:
 Το Demo προσωπικό μου pdf που δημιούργησα και το πρόσθεσα σε προσωπικό [issue#1](https://github.com/nkanagno/guide/issues/1) στο αποθετήριο [nkanagno/guide](https://github.com/nkanagno/guide) και τo [pull request που έκανα στο ionio/guide]().
 
-
+## <h2 id="aks9"> Αυταξιολόγηση: `βαθμός 10/10`</h2>
+Στο παραδοτέο αυτό πραγματοποιήθηκαν όλα τα ζητούμενα εμπρόθεσμα. Δηλαδή, έγινε δήλωση του θέματος μου σε [issue#4](https://github.com/ioniodi/guide/issues/4) στο  [guide](https://github.com/ioniodi/guide), έπειτα δημιουργήθηκαν τα κατάλληλα lua φίλτρα για το περιεχόμενο προπτυχιακών μαθημάτων, έγινε μετατροπή από latex σε pdf με χρήση pandoc ο οδηγός σπουδών [guide](https://github.com/ioniodi/guide) όπου τοποθετήθηκε σε προσωπικό [issue#1](https://github.com/nkanagno/guide/issues/1) στο αποθετήριο [nkanagno/guide](https://github.com/nkanagno/guide) και έγινε και τo απαιτούμενο [pull request στο ionio/guide](). Τέλος, ανέβασα εμπρόθεσμα το παραδοτέο 9 στη συζήτηση [#43](https://github.com/courses-ionio/iv/discussions/43). 
 
