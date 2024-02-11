@@ -153,33 +153,23 @@ https://github.com/nkanagno/iv/assets/103074273/7bd19e86-2b84-4a40-af6e-e044cb37
 
 # <h1 id="pull_request1"> 5ο ΠΑΡΑΔΟΤΕΟ - Αίτημα ενσωμάτωσης 1 </h1>
 Στο συγκεκριμένο παραδοτέο χρειάστηκε να συνεργαστούμε προκειμένουν να αναπτύξουμε τον όδηγο σπουδών που βρίσκεται σε repository του github με όνομα
-[guide](https://github.com/ioniodi/guide), κάνοντας το fork έχοντας ο καθένας το δικό του [προσωπίκο repository](https://github.com/nkanagno/guide/tree/master) για να κάνει έπειτα pull request και με την χρήση εργαλειών όπως lua,pandoc,latex να το μετατρέψουμε σε μορφή pdf ώστε να αναπαριστά το κύριο βιβλίο του τμήματος, [οδηγός σπουδών](https://di.ionio.gr/gr/students/student-prospectus/). Σε πρώτο στάδιο χρειάστηκε να γίνει απλό copy paste text περιεχομένου, διότι το repository είχε μόνο τα κεφάλαια του οδηγού σπουδών χωρίς περιεχόμενο, δηλώνοντας ο καθένας το κεφάλαιο στο οποίο θα πραγματοποιήσει την συνεισφορά του δημιουργώντας issue στην κεντρικό repository [ionio/guide](https://github.com/ioniodi/guide).
+[guide](https://github.com/ioniodi/guide), κάνοντας το fork έχοντας ο καθένας το δικό του [προσωπίκο repository](https://github.com/nkanagno/guide/tree/master) για να κάνει έπειτα pull request και με την χρήση εργαλειών όπως lua,pandoc,latex να το μετατρέψουμε σε μορφή pdf ώστε να αναπαριστά το κύριο βιβλίο του τμήματος, [οδηγός σπουδών](https://di.ionio.gr/gr/students/student-prospectus/). Σε πρώτο στάδιο χρειάστηκε να αλλάξουμε ορισμένα αρχεία στο [all_collections](https://github.com/ioniodi/all_collections) προκειμένου να μην προκαλέσουν κάποιο πρόβλημα κατά την δημιουργία του guide, επιλέγοντας και δηλώνοντας ο καθένας την αλλαγή που θα πραγματοποιήσει στο [all_collections](https://github.com/ioniodi/all_collections) δημιουργώντας issue στo κεντρικό repository [ionio/guide](https://github.com/ioniodi/guide).
 
 ## Δήλωση θέματος - issue#3:
 Αρχικά, δημιούργησα ένα [issue#3](https://github.com/ioniodi/guide/issues/3) στο αποθετήριο [guide](https://github.com/ioniodi/guide) του github δηλώνοντας το θέμα μου και περιμένοντας το `green light` από κάποιο καθηγητή, προκειμένου να μην καταλήξω να έχω το ίδιο με κάποιον άλλο συμφοιτητή μου. Πιο συγκεκριμένα, προσωπικά βάζωντας την κατηγορία excerpt επέλεξα διορθώσω τα παρακάτω αρχεία : 
  
  - Στα αρχεία του Διδακτικού Προσωπικόυ katomeris.md, alex.md, riggas.md, hristope.md που λείπει η κατηγορία excerpt.
  - Στο αρχείο των Αναπληρωτών Καθηγητών mikalef.md.
+  
+ Σχετικά σύνδεσμοι:
+  - [Ερώτημα που γνωστοποίησε το πρόβλημα ](https://github.com/courses-ionio/iv/discussions/30) από τον [Axileaszervos](https://github.com/Axileaszervos/)
+  - [Επίσημος Οδηγός Σπουδών](https://di.ionio.gr/gr/students/student-prospectus/)
 
-## Μετατροπή σε pdf με χρήση pandoc:
-Για την μετατροπή του σε pdf, έφτιαξα ένα shell script με όνομα [make-latex.sh](https://github.com/nkanagno/guide/blob/master/make-latex.sh) με περιεχόμενο:
+## Pull request:
+To [pull request που έκανα στο ionio/all_collections](https://github.com/ioniodi/all_collections/pull/76).
 
-```
-#!/bin/sh
-#assemble and preprocess all the sources files
-
-for filename in text/ch*.txt; do
-   [ -e "$filename" ] || continue
-   pandoc --lua-filter=lua/extras.lua "$filename" --to markdown | pandoc --lua-filter=lua/extras.lua --to markdown | pandoc --lua-filter=lua/course_core.lua --to markdown | pandoc --lua-filter=lua/course_IS.lua --to markdown | pandoc --lua-filter=lua/course_elective.lua --to markdown | pandoc --lua-filter=lua/course_IHSS.lua --to markdown | pandoc --filter pandoc-fignos --to markdown | pandoc --top-level-division=chapter --citeproc  --to latex  > latex/"$(basename "$filename" .txt).tex"
-done
-
-pandoc -s latex/*.tex -o book.tex
-pandoc -N --quiet --variable "geometry=margin=1.2in" --variable mainfont="Noto Sans Regular" --variable sansfont="Noto Sans Regular" --variable monofont="Noto Sans Regular" --variable fontsize=12pt --variable version=2.0 book.tex --pdf-engine=xelatex --toc -o book.pdf
-```
-Όπου αρχικά κάνει loop through το κάθε αρχείο ch0*.txt που βρισκεται μέσα στο directory [text](https://github.com/nkanagno/guide/tree/master/text) με την χρήση του εργαλείου pandoc, μετατρέπει το κάθε txt σε markdown χρησιμοποιώντας το φιλτρο [extras.lua](https://github.com/nkanagno/guide/blob/master/lua/extras.lua). Επειτά, μετατρέπει το κάθε .lua αρχείο, που χρειάστηκε να χρησιμοποιήσω σε αργότερο παραδοτέο, σε αρχείο markdown και από markdown όλα αυτά μετατρέπονται σε ένα αρχείο latex (ch0*.text). Αφότου τελειώσει η loopα, ενώνονται όλα αυτά τα ch0*.tex αρχεία σε ένα κοινό latex με όνομα book.tex και αυτό τελος, μέσω μιας τελευταίας εντολής pandoc, μετατρέπεται σε μορφή pdf.
-
-## Demo link (pdf) και Pull request:
-Το Demo προσωπικό μου pdf που δημιούργησα και το πρόσθεσα σε προσωπικό [issue#1](https://github.com/nkanagno/guide/issues/1) στο αποθετήριο [nkanagno/all_col](https://github.com/nkanagno/guide) και τo [pull request που έκανα στο ionio/all_collections]().
+## <h2 id="aks5"> Αυταξιολόγηση: `βαθμός 10/10`</h2>
+Στο παραδοτέο αυτό πραγματοποιήθηκαν όλα τα ζητούμενα εμπρόθεσμα. Δηλαδή, έγιναν οι αλλάγες στα προβληματικά αρχεία του [all_collections](https://github.com/ioniodi/all_collections), το απαιτούμενο  [issue#3](https://github.com/ioniodi/guide/issues/3) για την δήλωση του θέματος και το τελικό [pull request](https://github.com/ioniodi/all_collections/pull/76) για την ολοκλήρωση της συνεισφοράς μου. Τέλος, ανέβασα εμπρόθεσμα το παραδοτέο 5 στη συζητήση [#39](https://github.com/courses-ionio/iv/discussions/39).
 
 # <h1 id="cli_data_analysis1"> 6ο ΠΑΡΑΔΟΤΕΟ - Άσκηση γραμμής εντολών (cli data analysis) </h1>
 Δημιούργησα ένα shell script με το παρακάτω περιεχόμενο:
@@ -519,6 +509,24 @@ end
 
 ### Eπεξήγηση φίλτρου: 
 Συγκεκριμένα, το κάθε φίλτρο ουσιαστικά, μπαίνοντας στον φάκελο `all_collections/_courses/`, διαβάζει το περιεχόμενο του κάθε md αρχείο που έχουμε δώσει ως παράμετρο. Έπειτα, το περιεχόμενο της κατηγορίας excerpt, μετατρέποντας το σε string, το εισάγει σε μία μεταβλητή caption οπού περιγράφει το κάθε μάθημα με λίγα λόγια, εισάγει επίσης και το περιεχόμενο της κατηγορίας title σε μία μεταβλητή title οπού είναι ο τίτλος του κάθε μαθήματος. Τέλος, επιστρέφει στο txt αρχείο σε μορφή markdown, με περιεχόμενο το title σε header 4 ('####') με δίπλα του να έχει σε παρένθεση την κατηγορία του μαθήματος, αλλάζει γραμμή και εμφανίζει το caption περιεχόμενο του μαθήματος.
+
+## Μετατροπή σε pdf με χρήση pandoc:
+Για την μετατροπή του σε pdf, έφτιαξα ένα shell script με όνομα [make-latex.sh](https://github.com/nkanagno/guide/blob/master/make-latex.sh) με περιεχόμενο:
+
+```
+#!/bin/sh
+#assemble and preprocess all the sources files
+
+for filename in text/ch*.txt; do
+   [ -e "$filename" ] || continue
+   pandoc --lua-filter=lua/extras.lua "$filename" --to markdown | pandoc --lua-filter=lua/extras.lua --to markdown | pandoc --lua-filter=lua/course_core.lua --to markdown | pandoc --lua-filter=lua/course_IS.lua --to markdown | pandoc --lua-filter=lua/course_elective.lua --to markdown | pandoc --lua-filter=lua/course_IHSS.lua --to markdown | pandoc --filter pandoc-fignos --to markdown | pandoc --top-level-division=chapter --citeproc  --to latex  > latex/"$(basename "$filename" .txt).tex"
+done
+
+pandoc -s latex/*.tex -o book.tex
+pandoc -N --quiet --variable "geometry=margin=1.2in" --variable mainfont="Noto Sans Regular" --variable sansfont="Noto Sans Regular" --variable monofont="Noto Sans Regular" --variable fontsize=12pt --variable version=2.0 book.tex --pdf-engine=xelatex --toc -o book.pdf
+```
+Όπου αρχικά κάνει loop through το κάθε αρχείο ch0*.txt που βρισκεται μέσα στο directory [text](https://github.com/nkanagno/guide/tree/master/text) με την χρήση του εργαλείου pandoc, μετατρέπει το κάθε txt σε markdown χρησιμοποιώντας το φιλτρο [extras.lua](https://github.com/nkanagno/guide/blob/master/lua/extras.lua). Επειτά, μετατρέπει το κάθε .lua αρχείο, που χρειάστηκε να χρησιμοποιήσω σε αργότερο παραδοτέο, σε αρχείο markdown και από markdown όλα αυτά μετατρέπονται σε ένα αρχείο latex (ch0*.text). Αφότου τελειώσει η loopα, ενώνονται όλα αυτά τα ch0*.tex αρχεία σε ένα κοινό latex με όνομα book.tex και αυτό τελος, μέσω μιας τελευταίας εντολής pandoc, μετατρέπεται σε μορφή pdf.
+
 
 ### Εμφάνηση στο βιβλίο pdf:
 Στο txt τα χώρισα σε εξάμηνα και τα εμφάνησα ως εξής (παράδειγμα Εξάμηνο Α):
