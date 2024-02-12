@@ -20,7 +20,7 @@ GitHub organisation url: [OMADA11](https://github.com/OMADA11)
 | 7 | <ul><li> [x] <a href="#fantasyconsoles2">Εναλλακτικό σύστημα </a></li></ul>|[Ανέβασμα στο σχολιασμό της συζήτησης το Παραδοτέο 7](https://github.com/courses-ionio/iv/discussions/40) | `Βαθμός:10/10` Δίοτι πραγματοποιήθηκαν όλα τα ζητούμενα εμπρόθεσμα. <br><a href="#aks7">Aναλυτική αυταξιολόγηση εδώ</a> |
 | 8 | <ul><li> [x] <a href="#cli_data_analysis2">Άσκηση γραμμής εντολών (cli data analysis) </a></li></ul>|[Ανέβασμα στο σχολιασμό της συζήτησης το Παραδοτέο 8](https://github.com/courses-ionio/iv/discussions/41) | `Βαθμός:8/10` Δίοτι πραγματοποιήθηκαν όλα τα ζητούμενα αλλά εκπρόθεσμα. <br><a href="#aks8">Aναλυτική αυταξιολόγηση εδώ</a> |
 | 9 | <ul><li> [x] <a href="#pull_request2">Αίτημα ενσωμάτωσης 2 </a></li></ul>|[Ανέβασμα στο σχολιασμό της συζήτησης το Παραδοτέο 9](https://github.com/courses-ionio/iv/discussions/43) | `Βαθμός:10/10` Δίοτι πραγματοποιήθηκαν όλα τα ζητούμενα εμπρόθεσμα. <br><a href="#aks9">Aναλυτική αυταξιολόγηση εδώ</a> |
-| 10 | <ul><li> [x] <a href="#FINAL">Τελική αναφορά </a></li></ul>|[Ανέβασμα στο σχολιασμό της συζήτησης το Παραδοτέο 10](https://github.com/courses-ionio/iv/discussions/44) | `Βαθμός:9.6/10` <a href="#aks10">Τελική αυταξιολόγηση</a> |
+| 10 | <ul><li> [x] <a href="#FINAL">Τελική αναφορά </a></li></ul>|[Ανέβασμα στο σχολιασμό της συζήτησης το Παραδοτέο 10](https://github.com/courses-ionio/iv/discussions/45) | `Βαθμός:9.6/10` <a href="#aks10">Τελική αυταξιολόγηση</a> |
 
 
 # <h1 id ="introduction">1ο ΠΑΡΑΔΟΤΕΟ - ΕΙΣΑΓΩΓΗ:</h1>
