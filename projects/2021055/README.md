@@ -8,10 +8,10 @@
 
 | Εβδομάδα | [Όλα τα παραδοτέα βρίσκονται στην ίδια σελίδα της τελικής αναφοράς](https://epidrome.github.io/teaching/deliverables/) με τα προσωπικά στοιχεία σας (Όνομα, ΑΜ, github profile) και μαζί με αυτόν εδώ τον πίνακα περιεχομένων | Σύνδεσμος στην [εβδομαδιαία παρουσίαση προόδου στις συζητήσεις](https://github.com/courses-ionio/iv/discussions/categories/show-and-tell) | Αυτοαξιολόγηση σύμφωνα με τα κριτήρια της αντίστοιχης άσκησης |
 | --- | --- | --- | --- |
-| 1 |  [Φορκ και δημιουργία σελίδας τελικής αναφοράς](https://courses-ionio.github.io/help/guide/), [προσθήκη πίνακα περιεχομένων](https://raw.githubusercontent.com/courses-ionio/iv/master/README.md), [συγγραφή της εισαγωγής](https://epidrome.github.io/teaching/intro/), αποστολή της εισαγωγής για σχολιασμό στην συζήτηση και καταγραφή του συνδέσμου συζήτησης δίπλα --> |https://github.com/courses-ionio/iv/discussions/15 | |
-| 2 | Άσκηση γραμμής εντολών (archlinux+wm) | https://github.com/courses-ionio/iv/discussions/24
-| 3 | Εναλλακτικό σύστημα | https://github.com/courses-ionio/iv/discussions/25
-| 4 | Άσκηση γραμμής εντολών (custom wm) | https://github.com/courses-ionio/iv/discussions/26
+| 1 |  [Φορκ και δημιουργία σελίδας τελικής αναφοράς](https://courses-ionio.github.io/help/guide/), [προσθήκη πίνακα περιεχομένων](https://raw.githubusercontent.com/courses-ionio/iv/master/README.md), [συγγραφή της εισαγωγής](https://epidrome.github.io/teaching/intro/), αποστολή της εισαγωγής για σχολιασμό στην συζήτηση και καταγραφή του συνδέσμου συζήτησης δίπλα --> |https://github.com/courses-ionio/iv/discussions/15 | Aνέφερα τους προσωπικούς μου στόχους για το μάθημα, είμαι αρκετά ικανοποιημένος από το τελικό αποτέλεσμα. `9/10`
+| 2 | Άσκηση γραμμής εντολών (archlinux+wm) | https://github.com/courses-ionio/iv/discussions/24 | Πραγματοποιήθηκε με επιτυχία η εγκατάσταση του arch linux καθώς και του window manager i3. `10/10`
+| 3 | Εναλλακτικό σύστημα | https://github.com/courses-ionio/iv/discussions/25 | Έκανα μια μικρή αλλαγή σε ένα ανοιχτό project στο uxn varvara, εγκατέστησα τον emulator και έτρεξα επίσης και κάποια έτοιμα projects του. `10/10`
+| 4 | Άσκηση γραμμής εντολών (custom wm) | https://github.com/courses-ionio/iv/discussions/26 | Παραμετροποίησα με επιτυχία τον i3, προσθέτοντας status-bar, wallpaper και notification manager. 
 | 5 | Αίτημα ενσωμάτωσης | https://github.com/courses-ionio/iv/discussions/31
 | 6 | Άσκηση γραμμής εντολών (cli data analysis) | https://github.com/courses-ionio/iv/discussions/32
 | 7 | Εναλλακτικό σύστημα | https://github.com/courses-ionio/iv/discussions/33 
