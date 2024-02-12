@@ -245,7 +245,7 @@ https://github.com/Axileaszervos/iv/assets/115211756/a2ae1e86-b3df-4803-83f0-a27
 * [Medip.lua](https://github.com/Axileaszervos/LUA-FILTERS---MAKE-LATEX/blob/main/Medip.lua)
 * [make-latex.sh](https://github.com/Axileaszervos/LUA-FILTERS---MAKE-LATEX/blob/main/make-latex.sh)
 
-
+## Pull Request
 Έπειτα απο το `green light` που δέχτηκε το issue, προχώρησα σε [pull request](https://github.com/ioniodi/guide/pull/8), το οποίο περιείχε τις αλλαγές που είχα πραγματοποιήσει.
 
 
