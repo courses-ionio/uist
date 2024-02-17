@@ -595,7 +595,7 @@ pandoc -N --quiet --variable "geometry=margin=1.2in" --variable mainfont="Noto S
 ![Screenshot 2023-11-20 191849](https://github.com/nkanagno/iv/assets/103074273/a74f71f0-a662-45b4-adac-9870e7d09818)
 
 ## Demo link (pdf) και Pull request:
-Το Demo προσωπικό μου pdf που δημιούργησα και το πρόσθεσα σε προσωπικό [issue#1](https://github.com/nkanagno/guide/issues/1) στο αποθετήριο [nkanagno/guide](https://github.com/nkanagno/guide) και τo [pull request που έκανα στο ionio/guide]().
+Το Demo προσωπικό μου pdf που δημιούργησα και το πρόσθεσα σε προσωπικό [issue#1](https://github.com/nkanagno/guide/issues/1) στο αποθετήριο [nkanagno/guide](https://github.com/nkanagno/guide) και τo [pull request που έκανα στο ionio/guide](https://github.com/ioniodi/guide/pull/9).
 
 ## <h2 id="aks9"> Αυταξιολόγηση: `βαθμός 10/10`</h2>
 Στο παραδοτέο αυτό πραγματοποιήθηκαν όλα τα ζητούμενα εμπρόθεσμα. Δηλαδή, έγινε δήλωση του θέματος μου σε [issue#4](https://github.com/ioniodi/guide/issues/4) στο  [guide](https://github.com/ioniodi/guide), έπειτα δημιουργήθηκαν τα κατάλληλα lua φίλτρα για το περιεχόμενο προπτυχιακών μαθημάτων, έγινε μετατροπή από latex σε pdf με χρήση pandoc ο οδηγός σπουδών [guide](https://github.com/ioniodi/guide) όπου τοποθετήθηκε σε προσωπικό [issue#1](https://github.com/nkanagno/guide/issues/1) στο αποθετήριο [nkanagno/guide](https://github.com/nkanagno/guide) και έγινε και τo απαιτούμενο [pull request στο ionio/guide](https://github.com/ioniodi/guide/pull/9). Τέλος, ανέβασα εμπρόθεσμα το παραδοτέο 9 στη συζήτηση [#43](https://github.com/courses-ionio/iv/discussions/43). 
