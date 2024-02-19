@@ -111,7 +111,7 @@ Pix64 by ZappedCow | no | 1-bit | yes|
 
 [ISSUE](https://github.com/ioniodi/guide/issues/2)
 
-[PULL REQUESTS]()
+[PULL REQUESTS](https://github.com/ioniodi/all_collections/pull/75)
 
 ## [Εβδομάδα Έκτη: cli data analysis]()
 
@@ -419,6 +419,8 @@ wordcloud_image.to_file(output_file)
 ## [Εβδομάδα ´Ενατη: Αίτημα Ενσωμάτωσης]()
 
 [ISSUE](https://github.com/ioniodi/guide/issues/2)
+
+[PULL REQUEST]()
 
 ```lua
 function Image(paragraph)
