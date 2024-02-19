@@ -8,10 +8,10 @@
 
 | Εβδομάδα | [Όλα τα παραδοτέα βρίσκονται στην ίδια σελίδα της τελικής αναφοράς](https://epidrome.github.io/teaching/deliverables/) με τα προσωπικά στοιχεία σας (Όνομα, ΑΜ, github profile) και μαζί με αυτόν εδώ τον πίνακα περιεχομένων | Σύνδεσμος στην [εβδομαδιαία παρουσίαση προόδου στις συζητήσεις](https://github.com/courses-ionio/iv/discussions/categories/show-and-tell) | Αυτοαξιολόγηση σύμφωνα με τα κριτήρια της αντίστοιχης άσκησης |
 | --- | --- | --- | --- |
-| 1 |  [Εβδομάδα Πρώτη: Εισαγωγή]() |[go!](https://github.com/courses-ionio/iv/discussions/16) | |
-| 2 | [Εβδομάδα Δεύτερη: Arch + wm]() |[go!](https://github.com/courses-ionio/iv/discussions/17)|
-| 3 | [Εβδομάδα Τρίτη: Εναλλακτικό Σύστημα]() |[go!](https://github.com/courses-ionio/iv/discussions/21)|
-| 4 | [Εβδομάδα Τέταρτη: Arch + costum wm]() |[go!]()|
+| 1 |  Εβδομάδα Πρώτη: Εισαγωγή |[go!](https://github.com/courses-ionio/iv/discussions/16) | |
+| 2 | Εβδομάδα Δεύτερη: Arch + wm |[go!](https://github.com/courses-ionio/iv/discussions/17)|
+| 3 | Εβδομάδα Τρίτη: Εναλλακτικό Σύστημα |[go!](https://github.com/courses-ionio/iv/discussions/21)|
+| 4 | Εβδομάδα Τέταρτη: Arch + costum wm |[go!]()|
 | 5 | Αίτημα ενσωμάτωσης |[go!]()|
 | 6 | Άσκηση γραμμής εντολών (cli data analysis) |[go!](https://github.com/courses-ionio/iv/discussions/28)|
 | 7 | Εναλλακτικό σύστημα |[go!]()|
@@ -25,11 +25,6 @@
 Σε μια κοινωνία όπου τα δεδομένα και οι πληροφορίες αφθονούν η οργάνωση τους και η επικοινωνία τους αποτελούν σημαντικές ικανότητες για κάποιον. Μέσα από το μάθημα Οπτικοποίηση της Πληροφορίας εβελπιστώ να αναπτύξω  δεξιότητες για την διαχείρισή τους τόσο από την σκοπιά της ανάλυσης όσο και του σχεδιασμού. Θέλω να αποκτήσω θεωρητικές γνώσεις για τις αρχές σχεδίασης και την κατανόηση δεδομένων από την πλευρά του ανθρώπου. Πέρα από αυτό με ενδιαφέρει και η πρακτική εξοικείωση  με τις υπάρχουσες τεχνολογίες οπτικοποίησης ,ειδικά λογισμικά και προγραμματισμό καθώς και η προοπτική προσαρμογής και δημιουργίας  εργαλείων περισσότερο προσαρμοσμένα σε δικά μου workflows. Με τα εφόδια αυτά θα είμαι σε θέση να κατασκευάσω εφαρμογές οπτικοποίησης με έμφαση στην ουσιαστική και ακριβή παρουσίαση των δεδομένων καθώς και με δυνατότητες διάδρασης.
 
 [πίνακας περιεχομένων :arrow_up:](https://github.com/inf2021090/iv/tree/inf2021090/projects/2021090#%CF%80%CE%AF%CE%BD%CE%B1%CE%BA%CE%B1%CF%82-%CF%80%CE%B5%CF%81%CE%B9%CE%B5%CF%87%CE%BF%CE%BC%CE%AD%CE%BD%CF%89%CE%BD)
-<details>
-  <summary>βιβλιογραφία</summary>
-
-  ||
-</details>
 
 ## [Εβδομάδα Δεύτερη: Arch  + WM]()
 
@@ -38,11 +33,6 @@
 [![asciicast](https://asciinema.org/a/8HNs8aCMSVI4XlMK29togXope.svg)](https://asciinema.org/a/8HNs8aCMSVI4XlMK29togXope)
 
 [πίνακας περιεχομένων :arrow_up:](https://github.com/inf2021090/iv/tree/inf2021090/projects/2021090#%CF%80%CE%AF%CE%BD%CE%B1%CE%BA%CE%B1%CF%82-%CF%80%CE%B5%CF%81%CE%B9%CE%B5%CF%87%CE%BF%CE%BC%CE%AD%CE%BD%CF%89%CE%BD)
-<details>
-  <summary>βιβλιογραφία</summary>
-
-  ||
-</details>
 
 ## [Εβδομάδα Τρίτη: Εναλλακτικό Σύστημα]()
 
@@ -83,11 +73,6 @@ Pix64 by ZappedCow | no | 1-bit | yes|
 Ενώ το TIC-80 δεν διαθέτει σταθερή χρωματική παλέτα όπως κάποιες άλλες κονσόλες, η γοητεία του έγκειται στην προσαρμοστικότητά του. Οι δημιουργοί παιχνιδιών έχουν την ελευθερία να πειραματίζονται με τα χρώματα, δίνοντας σε κάθε παιχνίδι το δικό του μοναδικό οπτικό στυλ. Αυτή η διαφάνεια τροφοδοτεί τη δημιουργικότητα και επιτρέπει στους προγραμματιστές να εξερευνήσουν διάφορα οπτικά θέματα.
 
 [πίνακας περιεχομένων :arrow_up:](https://github.com/inf2021090/iv/tree/inf2021090/projects/2021090#%CF%80%CE%AF%CE%BD%CE%B1%CE%BA%CE%B1%CF%82-%CF%80%CE%B5%CF%81%CE%B9%CE%B5%CF%87%CE%BF%CE%BC%CE%AD%CE%BD%CF%89%CE%BD)
-<details>
-  <summary>βιβλιογραφία</summary>
-
-  ||
-</details>
 
 ## [Εβδομάδα Τέταρτη: Arch + costum  wm]()
 
@@ -100,12 +85,6 @@ Pix64 by ZappedCow | no | 1-bit | yes|
 Αυτή η προσέγγιση μου επιτρέπει να έχω ένα καθαρό και αποτελεσματικό περιβάλλον, κάνοντας τις καθημερινές εργασίες πιο βολικές και ευχάριστες.
 
 [πίνακας περιεχομένων :arrow_up:](https://github.com/inf2021090/iv/tree/inf2021090/projects/2021090#%CF%80%CE%AF%CE%BD%CE%B1%CE%BA%CE%B1%CF%82-%CF%80%CE%B5%CF%81%CE%B9%CE%B5%CF%87%CE%BF%CE%BC%CE%AD%CE%BD%CF%89%CE%BD)
-
-<details>
-  <summary>βιβλιογραφία</summary>
-
-  ||
-</details>
 
 ## [Εβδομάδα Πέμπτη: Αίτημα Ενσωμάτωσης]()
 
@@ -333,12 +312,6 @@ EOF
 
 [πίνακας περιεχομένων :arrow_up:](https://github.com/inf2021090/iv/tree/inf2021090/projects/2021090#%CF%80%CE%AF%CE%BD%CE%B1%CE%BA%CE%B1%CF%82-%CF%80%CE%B5%CF%81%CE%B9%CE%B5%CF%87%CE%BF%CE%BC%CE%AD%CE%BD%CF%89%CE%BD)
 
-<details>
-  <summary>βιβλιογραφία</summary>
-
-  |http://www.gnuplot.info/ | https://www.tutorialspoint.com/unix/shell_scripting.html | https://www.freecodecamp.org/news/bash-scripting-tutorial-linux-shell-script-and-command-line-for-beginners/ | https://www.youtube.com/watch?v=9QUtcfyBFhE&list=PLaYBfUc8SG7W4cTZprVWjbtwrottWuk8c | https://www.tutorialspoint.com/awk/index.htm | https://linuxhandbook.com/awk-command-tutorial/ |
-</details>
-
 ## [Εβδομάδα Έβδομη: Εναλλακτικό Σύστημα]()
 
 ![ornament](https://github.com/inf2021090/varvara-projects/blob/main/Tree-card/ornament.png)
@@ -418,11 +391,6 @@ wordcloud_image.to_file(output_file)
 ![mobydick](https://i.imgur.com/rsGO4sK.jpg)
 
 [πίνακας περιεχομένων :arrow_up:](https://github.com/inf2021090/iv/tree/inf2021090/projects/2021090#%CF%80%CE%AF%CE%BD%CE%B1%CE%BA%CE%B1%CF%82-%CF%80%CE%B5%CF%81%CE%B9%CE%B5%CF%87%CE%BF%CE%BC%CE%AD%CE%BD%CF%89%CE%BD)
-<details>
-  <summary>βιβλιογραφία</summary>
-
-  ||
-</details>
 
 ## [Εβδομάδα ´Ενατη: Αίτημα Ενσωμάτωσης]()
 
@@ -440,7 +408,7 @@ wordcloud_image.to_file(output_file)
   *  [επίσημος οδηγός σπουδών](https://di.ionio.gr/gr/students/student-prospectus/)
   * [ενδεικτικό pdf](https://github.com/inf2021090/guide/issues/1)
 
-[ISSUE]([https://github.com/ioniodi/guide/issues/2](https://github.com/ioniodi/guide/issues/7))
+[ISSUE](https://github.com/ioniodi/guide/issues/7)
 
 [PULL REQUEST]()
 
