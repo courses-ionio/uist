@@ -111,7 +111,7 @@ Pix64 by ZappedCow | no | 1-bit | yes|
 
 [ISSUE](https://github.com/ioniodi/guide/issues/2)
 
-[issue](https://github.com/ioniodi/guide/issues/2)
+[PULL REQUESTS]()
 
 ## [Εβδομάδα Έκτη: cli data analysis]()
 
