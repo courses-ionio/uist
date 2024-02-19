@@ -426,6 +426,20 @@ wordcloud_image.to_file(output_file)
 
 ## [Εβδομάδα ´Ενατη: Αίτημα Ενσωμάτωσης]()
 
+### Δήλωση Θέματος
+- Σύντομη περιγραφή των επικείμενων αλλαγών
+Το περιεχόμενο των εργαστηρίων βρίσκεται στον φάκελο [_groups](https://github.com/ioniodi/all_collections/tree/69aa69103dec23e4af42a28cf7b1c7438c38af7d/_groups) του [all_collections](https://github.com/ioniodi/all_collections/tree/69aa69103dec23e4af42a28cf7b1c7438c38af7d), όλα τα αρχεία του έχουν την εξής δομή:
+ 1.  metadata πχ ref link
+ 2. παράγραφοι
+ 3. λίστα με εφαρμογές κάποιες φορές
+
+Για να μπορεί το περιεχόμενο να μεταφέρεται αυτόματα κατά την παραγωγή ενός εγγράφου pdf χρειάζεται η δημιουργία ενός [lua φίλτρου](https://github.com/inf2021090/guide/blob/demo/lua/labs.lua) με τα εξής χαρακτηριστικά:
+1. τμήμα που επεξεργάζεται τα μεταδεδομένα και τυπώνει τα απαραίτητα όπως όνομα εργαστηρίου και link 
+2. επεξεργασία του υπόλοιπου μπλοκ κειμένου στο οποίο ελέγχει αν αυτό αντιστοιχεί σε παράγραφο ή λίστα ώστε να τυπωθεί με την κατάλληλη μορφή.
+- Σχετικά σύνδεσμοι 
+  *  [επίσημος οδηγός σπουδών](https://di.ionio.gr/gr/students/student-prospectus/)
+  * [ενδεικτικό pdf](https://github.com/inf2021090/guide/issues/1)
+
 [ISSUE](https://github.com/ioniodi/guide/issues/2)
 
 [PULL REQUEST]()
