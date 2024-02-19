@@ -109,6 +109,14 @@ Pix64 by ZappedCow | no | 1-bit | yes|
 
 ## [Εβδομάδα Πέμπτη: Αίτημα Ενσωμάτωσης]()
 
+#### Θέματο
+- Σύντομη περιγραφή των επικείμενων αλλαγών
+  *  Στα αρχεία των επίκουρων καθηγητών doukakis.md, karydis.md λείπει η κατηγορία excerpt.
+  *  Προσθήκη της συγκεκριμένης κατηγορίας μαζί με περιεχόμενο σύμφωνα με τον οδηγό σπουδών. 
+- Σχετικά σύνδεσμοι 
+  *  [ερώτημα που γνωστοποίησε το πρόβλημα](https://github.com/courses-ionio/iv/discussions/30) από τον @Axileaszervos
+  *  [επίσημος οδηγός σπουδών](https://di.ionio.gr/gr/students/student-prospectus/)
+
 [ISSUE](https://github.com/ioniodi/guide/issues/2)
 
 [PULL REQUESTS](https://github.com/ioniodi/all_collections/pull/75)
