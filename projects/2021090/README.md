@@ -440,7 +440,7 @@ wordcloud_image.to_file(output_file)
   *  [επίσημος οδηγός σπουδών](https://di.ionio.gr/gr/students/student-prospectus/)
   * [ενδεικτικό pdf](https://github.com/inf2021090/guide/issues/1)
 
-[ISSUE](https://github.com/ioniodi/guide/issues/2)
+[ISSUE]([https://github.com/ioniodi/guide/issues/2](https://github.com/ioniodi/guide/issues/7))
 
 [PULL REQUEST]()
 
