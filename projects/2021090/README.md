@@ -417,7 +417,7 @@ wordcloud_image.to_file(output_file)
 
 [ISSUE](https://github.com/ioniodi/guide/issues/7)
 
-[PULL REQUEST]()
+[PULL REQUEST](https://github.com/ioniodi/guide/pull/10)
 
 ```lua
 function Image(paragraph)
