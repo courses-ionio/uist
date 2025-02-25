@@ -42,7 +42,7 @@
 
 **Βιβλιογραφία** 
 
-* [Κατασκευή Συστημάτων Διάδρασης]([https://pibook.epidro.me](https://repository.kallipos.gr/handle/11419/10224)), ΚΑΛΛΙΠΟΣ, κεφ. 3 Αρχέτυπα, 6 Σύνθεση, κεφ. 8 Τεχνολογία
+* [Κατασκευή Συστημάτων Διάδρασης](https://pibook.epidro.me](https://repository.kallipos.gr/handle/11419/10224), ΚΑΛΛΙΠΟΣ, κεφ. 3 Αρχέτυπα, 6 Σύνθεση, κεφ. 8 Τεχνολογία
 * [User Interface Software Development](http://faculty.washington.edu/ajko/books/uist/)
 
 Παρακαλώ **μην πειράξετε** το παρόν αρχείο, αλλά δημιουργήστε νέο στο φάκελο σας σύμφωνα με τις [οδηγίες](https://courses-ionio.github.io/help/guide/).
